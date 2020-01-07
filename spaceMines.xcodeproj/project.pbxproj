@@ -40,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		290E4C5A23C4DBBC005D609B /* MinaA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MinaA.png; path = "../../Desktop/Proyecto-LPS-master/MinaA.png"; sourceTree = "<group>"; };
-		290E4C5D23C4DBC7005D609B /* MinaA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MinaA.png; sourceTree = "<group>"; };
 		290E4C5E23C4DBD4005D609B /* Imagen fondo LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Imagen fondo LPS.jpg"; path = "../../../Desktop/Proyecto-LPS-master/Imagen fondo LPS.jpg"; sourceTree = "<group>"; };
 		290E4C6023C4DBDA005D609B /* LogoRedondoFINAL2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoRedondoFINAL2.png; path = "../../../Desktop/Proyecto-LPS-master/LogoRedondoFINAL2.png"; sourceTree = "<group>"; };
 		290E4C6223C4DBE0005D609B /* imagen_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imagen_perfil.png; path = "../../../Desktop/Proyecto-LPS-master/Iconos proyecto/imagen_perfil.png"; sourceTree = "<group>"; };
@@ -93,7 +92,6 @@
 				290E4C6323C4DBE0005D609B /* simbolo editar.png */,
 				290E4C6523C4DBE0005D609B /* simbolo guardar.png */,
 				290E4C6023C4DBDA005D609B /* LogoRedondoFINAL2.png */,
-				290E4C5D23C4DBC7005D609B /* MinaA.png */,
 			);
 			path = Imagenes;
 			sourceTree = "<group>";
