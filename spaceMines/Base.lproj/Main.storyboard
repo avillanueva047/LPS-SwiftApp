@@ -1742,6 +1742,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Editar" id="4os-Q4-763">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="aT4-ea-ZUe" kind="presentation" id="bIP-hb-0B5"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -1749,10 +1752,33 @@
             </objects>
             <point key="canvasLocation" x="4032.8000000000002" y="1748.2758620689656"/>
         </scene>
+        <!--Editar Perfil-->
+        <scene sceneID="7D6-j2-Nay">
+            <objects>
+                <viewController id="suQ-39-hy1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9AO-eV-tAz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c7A-j8-4KK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Editar Perfil" id="c6z-js-jIS">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="0fD-tt-eKL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="yok-VV-fqR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gk-FP-Bv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4894" y="2463"/>
+        </scene>
         <!--Atributos-->
         <scene sceneID="nhO-va-XFy">
             <objects>
-                <tableViewController id="Qav-bx-vWx" sceneMemberID="viewController">
+                <tableViewController id="Qav-bx-vWx" customClass="InfoAtributosController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m8u-vQ-d4g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1844,7 +1870,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzS-s1-BS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5764" y="1751"/>
+            <point key="canvasLocation" x="5761" y="1751"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X1b-Mc-vSp">
@@ -1883,6 +1909,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fI3-0A-B9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3093.5999999999999" y="1748.2758620689656"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YBc-Pb-dez">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aT4-ea-ZUe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BcT-KK-n1x">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="suQ-39-hy1" kind="relationship" relationship="rootViewController" id="lNR-A0-gwA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1G-Uc-afk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4032.8000000000002" y="2462.5187406296855"/>
         </scene>
     </scenes>
     <resources>

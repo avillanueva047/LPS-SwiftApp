@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 class InfoAtributosController: UITableViewController {
 
+    var exploracion:  NSManagedObject!
+    var atributos: [NSManagedObject] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //cargarDatos()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -18,33 +26,52 @@ class InfoAtributosController: UITableViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+       // cargarDatos()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return atributos.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "atributo", for: indexPath) as! AtributoCell
 
-        // Configure the cell...
+        cell.nombre.text = atributos[indexPath.row].value(forKey: "nombre") as? String
+        cell.valor.text = atributos[indexPath.row].value(forKey: "valor") as? String
+
 
         return cell
     }
-    */
+    
+    func cargarDatos(){
+        
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let mngcontext = appdelegate.persistentContainer.viewContext
+        
+        let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "atributo")
+        fetchRq.predicate = NSPredicate(format: "pertenece_a == %@ ", (exploracion))
+        
+        do{
+            atributos = try mngcontext.fetch(fetchRq)
+        }catch let error as NSError{
+            print("Error en carga de datos de atributos. \(error)")
+        }
+        
+        tableView.reloadData()
+    }
 
     /*
     // Override to support conditional editing of the table view.
