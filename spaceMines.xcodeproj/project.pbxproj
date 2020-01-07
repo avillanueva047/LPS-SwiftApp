@@ -83,7 +83,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		290E4C5923C4DB17005D609B /* New Group */ = {
+		290E4C5923C4DB17005D609B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
 				290E4C5E23C4DBD4005D609B /* Imagen fondo LPS.jpg */,
@@ -95,7 +95,7 @@
 				290E4C6023C4DBDA005D609B /* LogoRedondoFINAL2.png */,
 				290E4C5D23C4DBC7005D609B /* MinaA.png */,
 			);
-			path = "New Group";
+			path = Imagenes;
 			sourceTree = "<group>";
 		};
 		2951266C23A93EF400DDE781 /* Parte Pablo */ = {
@@ -135,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				290E4C5A23C4DBBC005D609B /* MinaA.png */,
-				290E4C5923C4DB17005D609B /* New Group */,
+				290E4C5923C4DB17005D609B /* Imagenes */,
 				29DA6F062396E0A20081E4F8 /* spaceMines */,
 				29DA6F1E2396E0A30081E4F8 /* spaceMinesTests */,
 				29DA6F052396E0A20081E4F8 /* Products */,
