@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jTk-CF-ny4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rGz-HF-5wN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,48 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="4y1-D6-kIC">
-            <objects>
-                <viewController id="jTk-CF-ny4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ibu-o8-K6W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-CV-Jix">
-                                <rect key="frame" x="67" y="146" width="240" height="244"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Mf7-tb-TFM" firstAttribute="bottom" secondItem="Gjx-CV-Jix" secondAttribute="bottom" constant="277" id="2cm-o7-3hk"/>
-                            <constraint firstItem="Gjx-CV-Jix" firstAttribute="top" secondItem="Mf7-tb-TFM" secondAttribute="top" constant="126" id="LIM-m7-oBZ"/>
-                            <constraint firstItem="Mf7-tb-TFM" firstAttribute="trailing" secondItem="Gjx-CV-Jix" secondAttribute="trailing" constant="68" id="aIF-Sa-JOG"/>
-                            <constraint firstItem="Gjx-CV-Jix" firstAttribute="leading" secondItem="Mf7-tb-TFM" secondAttribute="leading" constant="67" id="fH3-Fz-rGX"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Mf7-tb-TFM"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2cm-o7-3hk"/>
-                                <exclude reference="aIF-Sa-JOG"/>
-                                <exclude reference="LIM-m7-oBZ"/>
-                                <exclude reference="fH3-Fz-rGX"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="2cm-o7-3hk"/>
-                                <include reference="aIF-Sa-JOG"/>
-                                <include reference="LIM-m7-oBZ"/>
-                                <include reference="fH3-Fz-rGX"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ve9-IE-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2223.1999999999998" y="-437.63118440779613"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="WaR-B0-o2B">
             <objects>
@@ -253,12 +211,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lista Sonares" id="4V2-A6-HEq">
-                        <barButtonItem key="leftBarButtonItem" title="Imagen perfil" id="olG-Ju-km9">
+                        <barButtonItem key="leftBarButtonItem" title="Imagen perfil" image="imagen_perfil.png" style="plain" id="olG-Ju-km9">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="l3s-Ej-pLf" kind="show" id="MZf-pq-Pet"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
+                        <barButtonItem key="rightBarButtonItem" title="Imagen añadir" image="añadir_imagen.png" id="xCS-El-Afc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="Awb-3j-Nfc" kind="presentation" id="twD-Zf-dbb"/>
                             </connections>
@@ -379,7 +339,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Mi perfil" id="1G6-Ff-v3A">
+                    <navigationItem key="navigationItem" title="Mi perfil" id="1G6-Ff-v3A" colorLabel="IBBuiltInLabel-Gray">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="yRv-br-8XY"/>
                         <barButtonItem key="rightBarButtonItem" title="Imagen editar" id="zOx-Go-1JW">
                             <connections>
@@ -630,17 +590,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-ag-ceu">
-                                <rect key="frame" x="67" y="363" width="241" height="195"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoRedondoFINAL2.png" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-ag-ceu">
+                                <rect key="frame" x="67" y="363" width="241" height="235"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="195" id="fN4-mn-AzO"/>
+                                    <constraint firstAttribute="height" constant="235" id="fN4-mn-AzO"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urT-Ro-1Q0">
-                                <rect key="frame" x="151" y="292" width="73" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Recordar"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electronico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9l-Wr-haO">
                                 <rect key="frame" x="67" y="202" width="160" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -666,6 +621,11 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urT-Ro-1Q0">
+                                <rect key="frame" x="147" y="292" width="81" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Recordar"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -675,13 +635,13 @@
                             <constraint firstItem="g8Z-ag-ceu" firstAttribute="trailing" secondItem="D79-Ni-cp1" secondAttribute="trailing" id="9pW-fZ-S1S"/>
                             <constraint firstItem="D79-Ni-cp1" firstAttribute="leading" secondItem="3Zk-6O-dHC" secondAttribute="leading" constant="67" id="DnI-vp-d58"/>
                             <constraint firstItem="g8Z-ag-ceu" firstAttribute="top" secondItem="urT-Ro-1Q0" secondAttribute="bottom" constant="37" id="DqS-rL-vao"/>
-                            <constraint firstItem="urT-Ro-1Q0" firstAttribute="leading" secondItem="3Zk-6O-dHC" secondAttribute="leading" constant="151" id="EwV-wp-Dky"/>
+                            <constraint firstItem="urT-Ro-1Q0" firstAttribute="leading" secondItem="3Zk-6O-dHC" secondAttribute="leading" constant="147" id="EwV-wp-Dky"/>
                             <constraint firstItem="g8Z-ag-ceu" firstAttribute="centerX" secondItem="YS9-sf-AuU" secondAttribute="centerX" id="Hnh-LF-Lsw"/>
                             <constraint firstItem="a9l-Wr-haO" firstAttribute="leading" secondItem="3Zk-6O-dHC" secondAttribute="leading" constant="67" id="I21-kJ-pFG"/>
                             <constraint firstItem="a9l-Wr-haO" firstAttribute="top" secondItem="3Zk-6O-dHC" secondAttribute="top" constant="138" id="JFU-3F-pYn"/>
                             <constraint firstItem="a9l-Wr-haO" firstAttribute="leading" secondItem="g8Z-ag-ceu" secondAttribute="leading" id="O9K-Rb-pyI"/>
                             <constraint firstItem="3Zk-6O-dHC" firstAttribute="trailing" secondItem="g8Z-ag-ceu" secondAttribute="trailing" constant="67" id="PMZ-nG-yMR"/>
-                            <constraint firstItem="3Zk-6O-dHC" firstAttribute="bottom" secondItem="g8Z-ag-ceu" secondAttribute="bottom" constant="109" id="f6O-IF-rkz"/>
+                            <constraint firstItem="3Zk-6O-dHC" firstAttribute="bottom" secondItem="g8Z-ag-ceu" secondAttribute="bottom" constant="69" id="f6O-IF-rkz"/>
                             <constraint firstItem="3Zk-6O-dHC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a9l-Wr-haO" secondAttribute="trailing" symbolic="YES" id="me8-z0-WUN"/>
                             <constraint firstItem="D79-Ni-cp1" firstAttribute="top" secondItem="a9l-Wr-haO" secondAttribute="bottom" constant="18" id="zfZ-Cq-Akv"/>
                         </constraints>
@@ -707,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXH-fy-Uh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249" y="721"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="720.08995502248877"/>
         </scene>
         <!--Nuevo usuario-->
         <scene sceneID="feI-PY-OTa">
@@ -1034,6 +994,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0fg-yV-8fA">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1736,6 +1697,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YEt-u2-Ces">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1754,6 +1717,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x8G-Ne-r8C">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1772,6 +1736,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kv8-aU-DIf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1808,6 +1773,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V1z-rf-G1s">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1826,6 +1793,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hCE-dm-ecX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1930,6 +1898,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qQn-Ld-8Ix">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1941,6 +1910,11 @@
             <point key="canvasLocation" x="5024.8000000000002" y="1669.1154422788607"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogoRedondoFINAL2.png" width="658" height="677"/>
+        <image name="añadir_imagen.png" width="512" height="512"/>
+        <image name="imagen_perfil.png" width="512" height="512"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Cq2-Zd-g2D"/>
     </inferredMetricsTieBreakers>
