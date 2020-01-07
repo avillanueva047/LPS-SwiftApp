@@ -18,6 +18,7 @@
 		290E4C9023C4E483005D609B /* simbolo editar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8623C4E483005D609B /* simbolo editar.png */; };
 		290E4C9523C4E7DB005D609B /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9423C4E7DB005D609B /* PantallaInicioViewController.swift */; };
 		290E4C9723C4EB64005D609B /* RegistroUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9623C4EB64005D609B /* RegistroUsuarioViewController.swift */; };
+		290E4C9923C4F537005D609B /* AtributoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9823C4F537005D609B /* AtributoCell.swift */; };
 		2951266523A92FEF00DDE781 /* CalcularObjetoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */; };
 		2951266723A9300D00DDE781 /* CalcularObjetoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266623A9300D00DDE781 /* CalcularObjetoController.swift */; };
 		2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
@@ -53,6 +54,7 @@
 		290E4C8623C4E483005D609B /* simbolo editar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simbolo editar.png"; sourceTree = "<group>"; };
 		290E4C9423C4E7DB005D609B /* PantallaInicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaInicioViewController.swift; sourceTree = "<group>"; };
 		290E4C9623C4EB64005D609B /* RegistroUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroUsuarioViewController.swift; sourceTree = "<group>"; };
+		290E4C9823C4F537005D609B /* AtributoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtributoCell.swift; sourceTree = "<group>"; };
 		2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoCell.swift; sourceTree = "<group>"; };
 		2951266623A9300D00DDE781 /* CalcularObjetoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoController.swift; sourceTree = "<group>"; };
 		2951266823A9309500DDE781 /* InfoAtributosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtributosController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				2951266623A9300D00DDE781 /* CalcularObjetoController.swift */,
 				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
 				2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */,
+				290E4C9823C4F537005D609B /* AtributoCell.swift */,
 			);
 			path = "Parte Pablo";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				29DA6F0A2396E0A20081E4F8 /* ExploracionViewController.swift in Sources */,
 				2951266523A92FEF00DDE781 /* CalcularObjetoCell.swift in Sources */,
 				2951266723A9300D00DDE781 /* CalcularObjetoController.swift in Sources */,
+				290E4C9923C4F537005D609B /* AtributoCell.swift in Sources */,
 				2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */,
 				290E4C9523C4E7DB005D609B /* PantallaInicioViewController.swift in Sources */,
 				2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */,
