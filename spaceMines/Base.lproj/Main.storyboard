@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oct-rx-eIX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="LogoRedondoFINAL2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oct-rx-eIX">
                                 <rect key="frame" x="67" y="131" width="240" height="236"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYO-nY-o4z">
@@ -590,7 +590,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-ag-ceu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoRedondoFINAL2.png" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-ag-ceu">
                                 <rect key="frame" x="67" y="363" width="241" height="235"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="235" id="fN4-mn-AzO"/>
@@ -677,8 +677,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="23d-CI-3DQ">
-                                <rect key="frame" x="70" y="42" width="235" height="251"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagen_perfil.png" translatesAutoresizingMaskIntoConstraints="NO" id="23d-CI-3DQ">
+                                <rect key="frame" x="70" y="42" width="235" height="265.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-jX-tWK">
                                 <rect key="frame" x="70" y="391" width="89" height="34"/>
@@ -702,7 +702,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Usuario" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy5-cB-PGR">
-                                <rect key="frame" x="70" y="316" width="240" height="35"/>
+                                <rect key="frame" x="70" y="330.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -729,7 +729,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-en-TcB">
-                                <rect key="frame" x="70" y="353" width="235" height="30"/>
+                                <rect key="frame" x="70" y="367.5" width="235" height="15.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1005,10 +1005,10 @@
             </objects>
             <point key="canvasLocation" x="1378" y="-82"/>
         </scene>
-        <!--gdsfg-->
+        <!--Sonar 01-->
         <scene sceneID="mlL-Z9-R1g">
             <objects>
-                <viewController title="gdsfg" id="aoa-ZF-vIG" sceneMemberID="viewController">
+                <viewController id="aoa-ZF-vIG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HWA-Ke-bHG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1911,7 +1911,11 @@
             <point key="canvasLocation" x="5024.8000000000002" y="1669.1154422788607"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogoRedondoFINAL2.png" width="658" height="677"/>
+        <image name="imagen_perfil.png" width="512" height="512"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cq2-Zd-g2D"/>
+        <segue reference="YFq-fK-57T"/>
     </inferredMetricsTieBreakers>
 </document>

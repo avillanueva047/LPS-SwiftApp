@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290E4C8723C4E483005D609B /* PiedraA.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7C23C4E483005D609B /* PiedraA.png */; };
+		290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
+		290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
+		290E4C8A23C4E483005D609B /* Modelo_CajaBlanca.model in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7F23C4E483005D609B /* Modelo_CajaBlanca.model */; };
+		290E4C8B23C4E483005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */; };
+		290E4C8C23C4E483005D609B /* añadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* añadir_imagen.png */; };
+		290E4C8D23C4E483005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
+		290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8423C4E483005D609B /* simbolo cancelar.png */; };
+		290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8523C4E483005D609B /* imagen_perfil.png */; };
+		290E4C9023C4E483005D609B /* simbolo editar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8623C4E483005D609B /* simbolo editar.png */; };
 		2951266523A92FEF00DDE781 /* CalcularObjetoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */; };
 		2951266723A9300D00DDE781 /* CalcularObjetoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266623A9300D00DDE781 /* CalcularObjetoController.swift */; };
 		2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
@@ -31,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290E4C7C23C4E483005D609B /* PiedraA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PiedraA.png; sourceTree = "<group>"; };
+		290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL2.png; sourceTree = "<group>"; };
+		290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL3.png; sourceTree = "<group>"; };
+		290E4C7F23C4E483005D609B /* Modelo_CajaBlanca.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = Modelo_CajaBlanca.model; sourceTree = "<group>"; };
+		290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Imagen fondo LPS.jpg"; sourceTree = "<group>"; };
+		290E4C8223C4E483005D609B /* añadir_imagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "añadir_imagen.png"; sourceTree = "<group>"; };
+		290E4C8323C4E483005D609B /* guardar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guardar.png; sourceTree = "<group>"; };
+		290E4C8423C4E483005D609B /* simbolo cancelar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simbolo cancelar.png"; sourceTree = "<group>"; };
+		290E4C8523C4E483005D609B /* imagen_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagen_perfil.png; sourceTree = "<group>"; };
+		290E4C8623C4E483005D609B /* simbolo editar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simbolo editar.png"; sourceTree = "<group>"; };
 		2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoCell.swift; sourceTree = "<group>"; };
 		2951266623A9300D00DDE781 /* CalcularObjetoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoController.swift; sourceTree = "<group>"; };
 		2951266823A9309500DDE781 /* InfoAtributosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtributosController.swift; sourceTree = "<group>"; };
@@ -66,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290E4C7B23C4E483005D609B /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				290E4C7C23C4E483005D609B /* PiedraA.png */,
+				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
+				290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */,
+				290E4C7F23C4E483005D609B /* Modelo_CajaBlanca.model */,
+				290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */,
+				290E4C8223C4E483005D609B /* añadir_imagen.png */,
+				290E4C8323C4E483005D609B /* guardar.png */,
+				290E4C8423C4E483005D609B /* simbolo cancelar.png */,
+				290E4C8523C4E483005D609B /* imagen_perfil.png */,
+				290E4C8623C4E483005D609B /* simbolo editar.png */,
+			);
+			path = Imagenes;
+			sourceTree = "<group>";
+		};
 		2951266C23A93EF400DDE781 /* Parte Pablo */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +136,7 @@
 		29DA6F062396E0A20081E4F8 /* spaceMines */ = {
 			isa = PBXGroup;
 			children = (
+				290E4C7B23C4E483005D609B /* Imagenes */,
 				2951266C23A93EF400DDE781 /* Parte Pablo */,
 				29DA6F072396E0A20081E4F8 /* AppDelegate.swift */,
 				29DA6F0B2396E0A20081E4F8 /* Main.storyboard */,
@@ -200,7 +238,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290E4C8C23C4E483005D609B /* añadir_imagen.png in Resources */,
+				290E4C8723C4E483005D609B /* PiedraA.png in Resources */,
+				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
+				290E4C8D23C4E483005D609B /* guardar.png in Resources */,
+				290E4C8B23C4E483005D609B /* Imagen fondo LPS.jpg in Resources */,
+				290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */,
 				29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */,
+				290E4C8A23C4E483005D609B /* Modelo_CajaBlanca.model in Resources */,
+				290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */,
+				290E4C9023C4E483005D609B /* simbolo editar.png in Resources */,
+				290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */,
 				29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */,
 				29DA6F0D2396E0A20081E4F8 /* Main.storyboard in Resources */,
 			);
