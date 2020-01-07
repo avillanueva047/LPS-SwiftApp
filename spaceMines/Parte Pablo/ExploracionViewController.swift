@@ -12,8 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Imagen fondo LPS.jpg")!)
 
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
     }
 
 

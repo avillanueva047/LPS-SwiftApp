@@ -206,12 +206,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="p0c-ss-fK6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sonar" rowHeight="100" id="p0c-ss-fK6">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p0c-ss-fK6" id="QoO-eu-aea">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16j-Bg-g6u">
+                                            <rect key="frame" x="251" y="3" width="92" height="92"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre sonar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTW-n2-Enn">
+                                            <rect key="frame" x="49" y="39" width="123" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="fUc-JV-1yu" kind="show" id="CAq-Qq-iam"/>
@@ -240,7 +253,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbE-A9-yl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170" y="-82"/>
+            <point key="canvasLocation" x="2168.8000000000002" y="-82.3088455772114"/>
         </scene>
         <!--Mi perfil-->
         <scene sceneID="h09-df-aYB">
@@ -1003,13 +1016,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Knc-UW-xAw">
-                                            <rect key="frame" x="269" y="5" width="90" height="89.5"/>
+                                            <rect key="frame" x="241" y="5" width="90" height="89.5"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Knc-UW-xAw" firstAttribute="centerY" secondItem="1Ca-CO-E4B" secondAttribute="centerY" id="GVf-Tr-xjY"/>
-                                        <constraint firstItem="Knc-UW-xAw" firstAttribute="leading" secondItem="CrI-GX-eOl" secondAttribute="trailing" constant="61" id="Lt4-8q-XA5"/>
-                                        <constraint firstItem="Knc-UW-xAw" firstAttribute="trailing" secondItem="1Ca-CO-E4B" secondAttribute="trailingMargin" id="SLJ-2N-9RT"/>
+                                        <constraint firstItem="Knc-UW-xAw" firstAttribute="leading" secondItem="CrI-GX-eOl" secondAttribute="trailing" constant="33" id="Lt4-8q-XA5"/>
+                                        <constraint firstItem="Knc-UW-xAw" firstAttribute="trailing" secondItem="1Ca-CO-E4B" secondAttribute="trailingMargin" constant="-28" id="SLJ-2N-9RT"/>
                                         <constraint firstItem="CrI-GX-eOl" firstAttribute="leading" secondItem="1Ca-CO-E4B" secondAttribute="leadingMargin" constant="16" id="bXa-W7-E9s"/>
                                         <constraint firstItem="CrI-GX-eOl" firstAttribute="top" secondItem="1Ca-CO-E4B" secondAttribute="topMargin" constant="28" id="beC-eN-LWo"/>
                                         <constraint firstItem="Knc-UW-xAw" firstAttribute="top" secondItem="1Ca-CO-E4B" secondAttribute="topMargin" constant="-6" id="dFd-YD-O0K"/>
@@ -1877,6 +1890,6 @@
         <image name="imagen_perfil.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cq2-Zd-g2D"/>
+        <segue reference="YFq-fK-57T"/>
     </inferredMetricsTieBreakers>
 </document>

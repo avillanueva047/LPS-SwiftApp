@@ -19,7 +19,27 @@
 		290E4C9523C4E7DB005D609B /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9423C4E7DB005D609B /* PantallaInicioViewController.swift */; };
 		290E4C9723C4EB64005D609B /* RegistroUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9623C4EB64005D609B /* RegistroUsuarioViewController.swift */; };
 		290E4C9923C4F537005D609B /* AtributoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9823C4F537005D609B /* AtributoCell.swift */; };
-		2951266523A92FEF00DDE781 /* CalcularObjetoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */; };
+		290E4C9C23C4FA7D005D609B /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F092396E0A20081E4F8 /* ExploracionViewController.swift */; };
+		290E4C9D23C4FA7D005D609B /* CalcularObjetoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266623A9300D00DDE781 /* CalcularObjetoController.swift */; };
+		290E4C9E23C4FA7D005D609B /* AtributoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9823C4F537005D609B /* AtributoCell.swift */; };
+		290E4C9F23C4FA7D005D609B /* EditarExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */; };
+		290E4CA023C4FA7D005D609B /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9423C4E7DB005D609B /* PantallaInicioViewController.swift */; };
+		290E4CA123C4FA7D005D609B /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
+		290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */; };
+		290E4CA323C4FA7D005D609B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F072396E0A20081E4F8 /* AppDelegate.swift */; };
+		290E4CA423C4FA7D005D609B /* RegistroUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E4C9623C4EB64005D609B /* RegistroUsuarioViewController.swift */; };
+		290E4CA723C4FA7D005D609B /* añadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* añadir_imagen.png */; };
+		290E4CA823C4FA7D005D609B /* PiedraA.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7C23C4E483005D609B /* PiedraA.png */; };
+		290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8523C4E483005D609B /* imagen_perfil.png */; };
+		290E4CAA23C4FA7D005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
+		290E4CAB23C4FA7D005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */; };
+		290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
+		290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */; };
+		290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
+		290E4CAF23C4FA7D005D609B /* simbolo editar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8623C4E483005D609B /* simbolo editar.png */; };
+		290E4CB023C4FA7D005D609B /* simbolo cancelar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8423C4E483005D609B /* simbolo cancelar.png */; };
+		290E4CB123C4FA7D005D609B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F112396E0A30081E4F8 /* Assets.xcassets */; };
+		290E4CB223C4FA7D005D609B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		2951266723A9300D00DDE781 /* CalcularObjetoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266623A9300D00DDE781 /* CalcularObjetoController.swift */; };
 		2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
 		2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */; };
@@ -55,7 +75,8 @@
 		290E4C9423C4E7DB005D609B /* PantallaInicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaInicioViewController.swift; sourceTree = "<group>"; };
 		290E4C9623C4EB64005D609B /* RegistroUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroUsuarioViewController.swift; sourceTree = "<group>"; };
 		290E4C9823C4F537005D609B /* AtributoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtributoCell.swift; sourceTree = "<group>"; };
-		2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoCell.swift; sourceTree = "<group>"; };
+		290E4CB623C4FA7D005D609B /* spaceMines 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spaceMines 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		290E4CB723C4FA7D005D609B /* spaceMines copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "spaceMines copy-Info.plist"; path = "/Users/aula11/Documents/Codigo-Proyecto-LPS/spaceMines copy-Info.plist"; sourceTree = "<absolute>"; };
 		2951266623A9300D00DDE781 /* CalcularObjetoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoController.swift; sourceTree = "<group>"; };
 		2951266823A9309500DDE781 /* InfoAtributosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtributosController.swift; sourceTree = "<group>"; };
 		2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarExploracionViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		290E4CA523C4FA7D005D609B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29DA6F012396E0A20081E4F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				29DA6F092396E0A20081E4F8 /* ExploracionViewController.swift */,
-				2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */,
 				2951266623A9300D00DDE781 /* CalcularObjetoController.swift */,
 				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
 				2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */,
@@ -125,6 +152,7 @@
 				29DA6F062396E0A20081E4F8 /* spaceMines */,
 				29DA6F1E2396E0A30081E4F8 /* spaceMinesTests */,
 				29DA6F052396E0A20081E4F8 /* Products */,
+				290E4CB723C4FA7D005D609B /* spaceMines copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +161,7 @@
 			children = (
 				29DA6F042396E0A20081E4F8 /* spaceMines.app */,
 				29DA6F1B2396E0A30081E4F8 /* spaceMinesTests.xctest */,
+				290E4CB623C4FA7D005D609B /* spaceMines 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +195,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		290E4C9A23C4FA7D005D609B /* spaceMines 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290E4CB323C4FA7D005D609B /* Build configuration list for PBXNativeTarget "spaceMines 2" */;
+			buildPhases = (
+				290E4C9B23C4FA7D005D609B /* Sources */,
+				290E4CA523C4FA7D005D609B /* Frameworks */,
+				290E4CA623C4FA7D005D609B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spaceMines 2";
+			productName = spaceMines;
+			productReference = 290E4CB623C4FA7D005D609B /* spaceMines 2.app */;
+			productType = "com.apple.product-type.application";
+		};
 		29DA6F032396E0A20081E4F8 /* spaceMines */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29DA6F242396E0A30081E4F8 /* Build configuration list for PBXNativeTarget "spaceMines" */;
@@ -236,11 +282,31 @@
 			targets = (
 				29DA6F032396E0A20081E4F8 /* spaceMines */,
 				29DA6F1A2396E0A30081E4F8 /* spaceMinesTests */,
+				290E4C9A23C4FA7D005D609B /* spaceMines 2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		290E4CA623C4FA7D005D609B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E4CA723C4FA7D005D609B /* añadir_imagen.png in Resources */,
+				290E4CA823C4FA7D005D609B /* PiedraA.png in Resources */,
+				290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */,
+				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
+				290E4CAB23C4FA7D005D609B /* Imagen fondo LPS.jpg in Resources */,
+				290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */,
+				290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */,
+				290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */,
+				290E4CAF23C4FA7D005D609B /* simbolo editar.png in Resources */,
+				290E4CB023C4FA7D005D609B /* simbolo cancelar.png in Resources */,
+				290E4CB123C4FA7D005D609B /* Assets.xcassets in Resources */,
+				290E4CB223C4FA7D005D609B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29DA6F022396E0A20081E4F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,12 +336,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		290E4C9B23C4FA7D005D609B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E4C9C23C4FA7D005D609B /* ExploracionViewController.swift in Sources */,
+				290E4C9D23C4FA7D005D609B /* CalcularObjetoController.swift in Sources */,
+				290E4C9E23C4FA7D005D609B /* AtributoCell.swift in Sources */,
+				290E4C9F23C4FA7D005D609B /* EditarExploracionViewController.swift in Sources */,
+				290E4CA023C4FA7D005D609B /* PantallaInicioViewController.swift in Sources */,
+				290E4CA123C4FA7D005D609B /* InfoAtributosController.swift in Sources */,
+				290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */,
+				290E4CA323C4FA7D005D609B /* AppDelegate.swift in Sources */,
+				290E4CA423C4FA7D005D609B /* RegistroUsuarioViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29DA6F002396E0A20081E4F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				29DA6F0A2396E0A20081E4F8 /* ExploracionViewController.swift in Sources */,
-				2951266523A92FEF00DDE781 /* CalcularObjetoCell.swift in Sources */,
 				2951266723A9300D00DDE781 /* CalcularObjetoController.swift in Sources */,
 				290E4C9923C4F537005D609B /* AtributoCell.swift in Sources */,
 				2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */,
@@ -325,6 +406,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		290E4CB423C4FA7D005D609B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceMines copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ual.es.spaceMines;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "spaceMines 2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		290E4CB523C4FA7D005D609B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceMines copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ual.es.spaceMines;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "spaceMines 2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		29DA6F222396E0A30081E4F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -454,6 +574,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ual.es.spaceMines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = spaceMines;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,6 +594,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ual.es.spaceMines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = spaceMines;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -521,6 +643,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		290E4CB323C4FA7D005D609B /* Build configuration list for PBXNativeTarget "spaceMines 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290E4CB423C4FA7D005D609B /* Debug */,
+				290E4CB523C4FA7D005D609B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29DA6EFF2396E0A20081E4F8 /* Build configuration list for PBXProject "spaceMines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
