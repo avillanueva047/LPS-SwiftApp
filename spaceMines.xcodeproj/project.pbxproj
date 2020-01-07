@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290E4C5F23C4DBD5005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C5E23C4DBD4005D609B /* Imagen fondo LPS.jpg */; };
-		290E4C6123C4DBDA005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C6023C4DBDA005D609B /* LogoRedondoFINAL2.png */; };
-		290E4C6723C4DBE0005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C6223C4DBE0005D609B /* imagen_perfil.png */; };
-		290E4C6823C4DBE0005D609B /* simbolo editar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C6323C4DBE0005D609B /* simbolo editar.png */; };
-		290E4C6B23C4DBE0005D609B /* añadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C6623C4DBE0005D609B /* añadir_imagen.png */; };
-		290E4C7223C4DEC4005D609B /* cancelar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7023C4DEC4005D609B /* cancelar.png */; };
-		290E4C7523C4DF09005D609B /* simbolo guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7423C4DF09005D609B /* simbolo guardar.png */; };
 		2951266523A92FEF00DDE781 /* CalcularObjetoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */; };
 		2951266723A9300D00DDE781 /* CalcularObjetoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266623A9300D00DDE781 /* CalcularObjetoController.swift */; };
 		2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
@@ -38,13 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		290E4C5E23C4DBD4005D609B /* Imagen fondo LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Imagen fondo LPS.jpg"; path = "../../../Desktop/Proyecto-LPS-master/Imagen fondo LPS.jpg"; sourceTree = "<group>"; };
-		290E4C6023C4DBDA005D609B /* LogoRedondoFINAL2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoRedondoFINAL2.png; path = "../../../Desktop/Proyecto-LPS-master/LogoRedondoFINAL2.png"; sourceTree = "<group>"; };
-		290E4C6223C4DBE0005D609B /* imagen_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imagen_perfil.png; path = "../../../Desktop/Proyecto-LPS-master/Iconos proyecto/imagen_perfil.png"; sourceTree = "<group>"; };
-		290E4C6323C4DBE0005D609B /* simbolo editar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "simbolo editar.png"; path = "../../../Desktop/Proyecto-LPS-master/Iconos proyecto/simbolo editar.png"; sourceTree = "<group>"; };
-		290E4C6623C4DBE0005D609B /* añadir_imagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "añadir_imagen.png"; path = "../../../Desktop/Proyecto-LPS-master/Iconos proyecto/añadir_imagen.png"; sourceTree = "<group>"; };
-		290E4C7023C4DEC4005D609B /* cancelar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancelar.png; path = ../../../Desktop/cancelar.png; sourceTree = "<group>"; };
-		290E4C7423C4DF09005D609B /* simbolo guardar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "simbolo guardar.png"; path = "../../../Desktop/simbolo guardar.png"; sourceTree = "<group>"; };
 		2951266423A92FEF00DDE781 /* CalcularObjetoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoCell.swift; sourceTree = "<group>"; };
 		2951266623A9300D00DDE781 /* CalcularObjetoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularObjetoController.swift; sourceTree = "<group>"; };
 		2951266823A9309500DDE781 /* InfoAtributosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtributosController.swift; sourceTree = "<group>"; };
@@ -80,20 +66,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		290E4C5923C4DB17005D609B /* Imagenes */ = {
-			isa = PBXGroup;
-			children = (
-				290E4C5E23C4DBD4005D609B /* Imagen fondo LPS.jpg */,
-				290E4C6623C4DBE0005D609B /* añadir_imagen.png */,
-				290E4C7023C4DEC4005D609B /* cancelar.png */,
-				290E4C7423C4DF09005D609B /* simbolo guardar.png */,
-				290E4C6223C4DBE0005D609B /* imagen_perfil.png */,
-				290E4C6323C4DBE0005D609B /* simbolo editar.png */,
-				290E4C6023C4DBDA005D609B /* LogoRedondoFINAL2.png */,
-			);
-			path = Imagenes;
-			sourceTree = "<group>";
-		};
 		2951266C23A93EF400DDE781 /* Parte Pablo */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,31 +78,9 @@
 			path = "Parte Pablo";
 			sourceTree = "<group>";
 		};
-		2951266D23A93EFE00DDE781 /* Parte Fran */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Parte Fran";
-			sourceTree = "<group>";
-		};
-		2951266E23A93F0C00DDE781 /* Parte Cosmin */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Parte Cosmin";
-			sourceTree = "<group>";
-		};
-		2951266F23A93F1700DDE781 /* Parte Adalid */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Parte Adalid";
-			sourceTree = "<group>";
-		};
 		29DA6EFB2396E0A20081E4F8 = {
 			isa = PBXGroup;
 			children = (
-				290E4C5923C4DB17005D609B /* Imagenes */,
 				29DA6F062396E0A20081E4F8 /* spaceMines */,
 				29DA6F1E2396E0A30081E4F8 /* spaceMinesTests */,
 				29DA6F052396E0A20081E4F8 /* Products */,
@@ -149,9 +99,6 @@
 		29DA6F062396E0A20081E4F8 /* spaceMines */ = {
 			isa = PBXGroup;
 			children = (
-				2951266F23A93F1700DDE781 /* Parte Adalid */,
-				2951266E23A93F0C00DDE781 /* Parte Cosmin */,
-				2951266D23A93EFE00DDE781 /* Parte Fran */,
 				2951266C23A93EF400DDE781 /* Parte Pablo */,
 				29DA6F072396E0A20081E4F8 /* AppDelegate.swift */,
 				29DA6F0B2396E0A20081E4F8 /* Main.storyboard */,
@@ -254,15 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */,
-				290E4C7223C4DEC4005D609B /* cancelar.png in Resources */,
 				29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */,
-				290E4C6823C4DBE0005D609B /* simbolo editar.png in Resources */,
-				290E4C6723C4DBE0005D609B /* imagen_perfil.png in Resources */,
 				29DA6F0D2396E0A20081E4F8 /* Main.storyboard in Resources */,
-				290E4C6123C4DBDA005D609B /* LogoRedondoFINAL2.png in Resources */,
-				290E4C6B23C4DBE0005D609B /* añadir_imagen.png in Resources */,
-				290E4C5F23C4DBD5005D609B /* Imagen fondo LPS.jpg in Resources */,
-				290E4C7523C4DF09005D609B /* simbolo guardar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
