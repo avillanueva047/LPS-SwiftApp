@@ -140,7 +140,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Iniciar sesion"/>
                                 <connections>
-                                    <segue destination="frs-pC-qXW" kind="show" id="185-Kx-oEl"/>
+                                    <segue destination="frs-pC-qXW" kind="show" identifier="" id="185-Kx-oEl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWC-6p-Qjk" colorLabel="IBBuiltInLabel-Blue">
@@ -148,7 +148,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Recordar Contraseña"/>
                                 <connections>
-                                    <segue destination="PJ7-5x-ZLD" kind="presentation" id="cve-Ag-B8n"/>
+                                    <segue destination="PJ7-5x-ZLD" kind="presentation" identifier="nuevoUsuario" id="cve-Ag-B8n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -246,7 +246,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="Awb-3j-Nfc" kind="presentation" id="twD-Zf-dbb"/>
+                                <segue destination="Awb-3j-Nfc" kind="presentation" identifier="nuevoSonar" id="twD-Zf-dbb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -372,7 +372,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Imagen editar" id="zOx-Go-1JW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="5bq-mj-StP" kind="presentation" id="NBS-LS-WvK"/>
+                                <segue destination="5bq-mj-StP" kind="presentation" identifier="editarPerfil" id="NBS-LS-WvK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1030,7 +1030,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="B8B-Qi-jZr" kind="show" id="6tV-gV-LeY"/>
+                                    <segue destination="B8B-Qi-jZr" kind="show" identifier="verExploracion" id="6tV-gV-LeY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1046,7 +1046,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mkZ-oc-0oD">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="VPO-Mw-RMa" kind="presentation" id="gFC-7e-UjA"/>
+                                <segue destination="VPO-Mw-RMa" kind="presentation" identifier="nuevaExploracion" id="gFC-7e-UjA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1500,7 +1500,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="brW-OK-hym" kind="show" id="Izi-B5-ASL"/>
+                                    <segue destination="brW-OK-hym" kind="show" identifier="verAtributos" id="Izi-B5-ASL"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3J-EE-8Xh">
@@ -1935,6 +1935,6 @@
         <image name="imagen_perfil.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YFq-fK-57T"/>
+        <segue reference="Cq2-Zd-g2D"/>
     </inferredMetricsTieBreakers>
 </document>
