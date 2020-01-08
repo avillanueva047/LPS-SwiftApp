@@ -13,6 +13,8 @@ class ExplorarcionTableViewController: UITableViewController {
 
     var sonar: NSManagedObject!
     var exploraciones :[NSManagedObject] = []
+    private let appdelegate = UIApplication.shared.delegate as! AppDelegate
+    private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewWillAppear(_ animated: Bool) {
         //cargarDatos()
@@ -44,12 +46,38 @@ class ExplorarcionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exploracion", for: indexPath) as! ExploracionCell
 
-        
+        //fecha
+        cell
+        //imagen
+       // nok,bre
+       // tipo
+       // ubi
 
         return cell
     }
     
-
+    //Eliminacion de exploraciones
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let contexto = mngcontext
+        contexto.delete(self.exploraciones[indexPath.row] as NSManagedObject)
+        
+        self.exploraciones.remove(at: indexPath.row)
+        
+        do{
+            try contexto.save()
+        }catch _{
+            
+        }
+        self.tableView.deleteRows(at: [indexPath], with: .fade)
+    }
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

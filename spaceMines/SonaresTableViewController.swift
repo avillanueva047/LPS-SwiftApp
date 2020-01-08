@@ -17,7 +17,6 @@ class SonaresTableViewController: UITableViewController {
     private let appdelegate = UIApplication.shared.delegate as! AppDelegate
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    
     override func viewWillAppear(_ animated: Bool) {
         cargarDatos()
     }
@@ -101,9 +100,7 @@ class SonaresTableViewController: UITableViewController {
         } catch let error as NSError {
             print("Error en la carga de sonares .\(error)")
         }
-        
     }
-
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

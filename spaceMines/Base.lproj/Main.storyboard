@@ -1079,7 +1079,7 @@
         <!--Lista Exploraciones-->
         <scene sceneID="0bo-iW-LhR">
             <objects>
-                <tableViewController id="7aW-Kp-FfM" sceneMemberID="viewController">
+                <tableViewController id="7aW-Kp-FfM" customClass="ExplorarcionTableViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tYo-Px-tHL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1140,10 +1140,10 @@
             </objects>
             <point key="canvasLocation" x="3096.8000000000002" y="975.56221889055485"/>
         </scene>
-        <!--View Controller-->
+        <!--Exploracion View Controller-->
         <scene sceneID="yis-6k-PX9">
             <objects>
-                <viewController id="8NM-n6-ZQV" sceneMemberID="viewController">
+                <viewController id="8NM-n6-ZQV" customClass="ExploracionViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wj0-AW-Vfb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1159,9 +1159,9 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFj-JL-efo">
-                                <rect key="frame" x="106" y="563" width="165" height="35"/>
+                                <rect key="frame" x="123" y="563" width="148" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Calcular tipo objeto"/>
+                                <state key="normal" title="Introducir valores"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zea-XD-rMg">
                                 <rect key="frame" x="67" y="270" width="62" height="21"/>
@@ -1347,11 +1347,66 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="V4W-Uu-CbW"/>
+                    <navigationItem key="navigationItem" id="V4W-Uu-CbW">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="Ey0-SG-9AM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="ug6-47-zxh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5023.1999999999998" y="975.56221889055485"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="mAs-Um-Xn0">
+            <objects>
+                <tableViewController id="PEX-ae-SJ6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EmH-HX-hPR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="82j-Di-7Df">
+                                <rect key="frame" x="0.0" y="28" width="375" height="108"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="82j-Di-7Df" id="aIQ-t1-pdu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jY7-9j-a5v">
+                                            <rect key="frame" x="14" y="60" width="248" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </slider>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Atributo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-pR-xBy">
+                                            <rect key="frame" x="27" y="11" width="128" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLQ-AZ-CGZ">
+                                            <rect key="frame" x="302" y="64" width="39" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PEX-ae-SJ6" id="7dy-5s-diH"/>
+                            <outlet property="delegate" destination="PEX-ae-SJ6" id="KH8-uu-c18"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aL-pi-zzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6240.8000000000002" y="985.45727136431788"/>
         </scene>
         <!--El-->
         <scene sceneID="tkn-QC-ih9">
@@ -1928,38 +1983,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Editar" id="4os-Q4-763">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="aT4-ea-ZUe" kind="presentation" id="bIP-hb-0B5"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4u-Kv-8zL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4032.8000000000002" y="1748.2758620689656"/>
-        </scene>
-        <!--Editar Perfil-->
-        <scene sceneID="7D6-j2-Nay">
-            <objects>
-                <viewController id="suQ-39-hy1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9AO-eV-tAz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="c7A-j8-4KK"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Editar Perfil" id="c6z-js-jIS">
-                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="0fD-tt-eKL">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="yok-VV-fqR">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0gk-FP-Bv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4894" y="2463"/>
         </scene>
         <!--Atributos-->
         <scene sceneID="nhO-va-XFy">
@@ -2095,25 +2124,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fI3-0A-B9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3093.5999999999999" y="1748.2758620689656"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="YBc-Pb-dez">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aT4-ea-ZUe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BcT-KK-n1x">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="suQ-39-hy1" kind="relationship" relationship="rootViewController" id="lNR-A0-gwA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L1G-Uc-afk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4032.8000000000002" y="2462.5187406296855"/>
         </scene>
     </scenes>
     <resources>
