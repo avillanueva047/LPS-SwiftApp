@@ -214,11 +214,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16j-Bg-g6u">
-                                            <rect key="frame" x="251" y="3" width="92" height="92"/>
+                                            <rect key="frame" x="267" y="3" width="92" height="92"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZg-S8-nua">
+                                            <rect key="frame" x="16" y="39" width="243" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre sonar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTW-n2-Enn">
-                                            <rect key="frame" x="49" y="39" width="123" height="24"/>
+                                            <rect key="frame" x="16" y="7" width="123" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
@@ -227,6 +234,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descripcion" destination="nZg-S8-nua" id="qhW-Iu-xPL"/>
                                     <outlet property="imagen" destination="16j-Bg-g6u" id="SZj-Ka-h4F"/>
                                     <outlet property="nombre" destination="sTW-n2-Enn" id="xej-lN-oj3"/>
                                     <segue destination="fUc-JV-1yu" kind="show" identifier="exploraciones" id="CAq-Qq-iam"/>
@@ -1354,6 +1362,9 @@
                     <navigationItem key="navigationItem" title="Nuevo Sonar" id="eFI-o6-xlN">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="v58-YQ-yf7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelar:" destination="nG2-DI-Pfu" id="8J9-7J-Rxy"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="JDC-AE-MLd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

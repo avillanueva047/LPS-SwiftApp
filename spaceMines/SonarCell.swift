@@ -12,6 +12,7 @@ class SonarCell: UITableViewCell {
 
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var imagen: UIImageView!
+    @IBOutlet weak var descripcion: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

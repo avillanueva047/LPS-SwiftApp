@@ -43,6 +43,8 @@ class SonaresTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sonar", for: indexPath) as! SonarCell
         
         cell.nombre.text = sonares[indexPath.row].value(forKey: "mombre") as? String
+        cell.descripcion.text = sonares[indexPath.row].value(forKey: "descripcion") as? String
+        
         if let imagenCD = sonares[indexPath.row].value(forKey: "imagen") as? Data {
             let imagenSonar = UIImage(data: imagenCD)
             cell.imagen.image = imagenSonar
