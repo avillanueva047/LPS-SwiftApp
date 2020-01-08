@@ -1974,7 +1974,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vi7-cB-IxT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="añadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vi7-cB-IxT">
                                 <rect key="frame" x="102" y="94" width="171" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="HWH-pI-XVA"/>
