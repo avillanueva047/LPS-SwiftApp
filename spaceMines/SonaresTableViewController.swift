@@ -42,7 +42,7 @@ class SonaresTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sonar", for: indexPath) as! SonarCell
         
-        cell.nombre.text = sonares[indexPath.row].value(forKey: "mombre") as? String
+        cell.nombre.text = sonares[indexPath.row].value(forKey: "nombre") as? String
         cell.descripcion.text = sonares[indexPath.row].value(forKey: "descripcion") as? String
         
         if let imagenCD = sonares[indexPath.row].value(forKey: "imagen") as? Data {

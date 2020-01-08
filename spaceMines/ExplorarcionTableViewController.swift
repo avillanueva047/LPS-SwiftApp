@@ -17,17 +17,13 @@ class ExplorarcionTableViewController: UITableViewController {
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewWillAppear(_ animated: Bool) {
-        //cargarDatos()
+        cargarDatos()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        cargarDatos()
+        
     }
 
     // MARK: - Table view data source
@@ -46,14 +42,16 @@ class ExplorarcionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exploracion", for: indexPath) as! ExploracionCell
 
-        //fecha
-        cell
+        //nombre
+        cell.nombre.text = exploraciones[indexPath.row].value(forKey: "nombre") as? String
         //imagen
-       // nok,bre
-       // tipo
-       // ubi
-
+        if let imagenCD = exploraciones[indexPath.row].value(forKey: "imagen") as? Data {
+            let imageneExpl = UIImage(data: imagenCD)
+            cell.imagen.image = imageneExpl
+        }
         return cell
+     
+
     }
     
     //Eliminacion de exploraciones
@@ -76,8 +74,29 @@ class ExplorarcionTableViewController: UITableViewController {
         self.tableView.deleteRows(at: [indexPath], with: .fade)
     }
     
+    func cargarDatos(){
+        func cargarDatos(){
+            guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            
+            let mngcontext = appdelegate.persistentContainer.viewContext
+            
+            let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Exploracion")
+            fetchRq.predicate = NSPredicate(format: "hecha_por == %@", (sonar))
+            
+            do{
+                exploraciones = try mngcontext.fetch(fetchRq)
+            } catch let error as NSError {
+                print("Error en la carga de sonares .\(error)")
+            }
+        }
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+    }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
