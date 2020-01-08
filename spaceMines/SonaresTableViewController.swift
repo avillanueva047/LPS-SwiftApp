@@ -19,13 +19,14 @@ class SonaresTableViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        //cargarDatos()
+        cargarDatos()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        //cargarDatos()
+        tableView.delegate = self
+        cargarDatos()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -79,6 +80,28 @@ class SonaresTableViewController: UITableViewController {
                 segueDest.sonar = self.sonares[indexPath.row]
             }
         }
+    }
+    
+    @IBAction func ActualizarTabla (sender: UIStoryboardSegue){
+        cargarDatos()
+    }
+    
+    func cargarDatos(){
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let mngcontext = appdelegate.persistentContainer.viewContext
+        
+        let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Sonar")
+     //   fetchRq.predicate = NSPredicate(format: "pertenece_a == %@", (usuario))
+        
+        do{
+            sonares = try mngcontext.fetch(fetchRq)
+        } catch let error as NSError {
+            print("Error en la carga de sonares .\(error)")
+        }
+        
     }
 
     /*

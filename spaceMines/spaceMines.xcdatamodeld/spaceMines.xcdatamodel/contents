@@ -6,8 +6,13 @@
         <relationship name="pertenece_atributo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exploracion" inverseName="tiene" inverseEntity="Exploracion" syncable="YES"/>
     </entity>
     <entity name="Exploracion" representedClassName="Exploracion" syncable="YES" codeGenerationType="class">
+        <attribute name="fecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagen" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ubicacion" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hecha_por" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sonar" inverseName="tiene" inverseEntity="Sonar" syncable="YES"/>
-        <relationship name="tiene" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Atributo" inverseName="pertenece_atributo" inverseEntity="Atributo" syncable="YES"/>
+        <relationship name="tiene" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Atributo" inverseName="pertenece_atributo" inverseEntity="Atributo" syncable="YES"/>
     </entity>
     <entity name="Sonar" representedClassName="Sonar" syncable="YES" codeGenerationType="class">
         <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,7 +26,7 @@
     </entity>
     <elements>
         <element name="Atributo" positionX="-54" positionY="9" width="128" height="90"/>
-        <element name="Exploracion" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Exploracion" positionX="-36" positionY="9" width="128" height="150"/>
         <element name="Sonar" positionX="-54" positionY="-9" width="128" height="120"/>
         <element name="Usuario" positionX="-63" positionY="-18" width="128" height="60"/>
     </elements>
