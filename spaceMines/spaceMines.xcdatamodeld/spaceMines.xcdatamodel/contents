@@ -3,11 +3,11 @@
     <entity name="Atributo" representedClassName="Atributo" syncable="YES" codeGenerationType="class">
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="valor" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="pertenece_a" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exploracion" inverseName="tiene" inverseEntity="Exploracion" syncable="YES"/>
+        <relationship name="pertenece_atributo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exploracion" inverseName="tiene" inverseEntity="Exploracion" syncable="YES"/>
     </entity>
     <entity name="Exploracion" representedClassName="Exploracion" syncable="YES" codeGenerationType="class">
         <relationship name="hecha_por" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sonda" inverseName="tiene" inverseEntity="Sonda" syncable="YES"/>
-        <relationship name="tiene" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Atributo" inverseName="pertenece_a" inverseEntity="Atributo" syncable="YES"/>
+        <relationship name="tiene" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Atributo" inverseName="pertenece_atributo" inverseEntity="Atributo" syncable="YES"/>
     </entity>
     <entity name="Sonda" representedClassName="Sonda" syncable="YES" codeGenerationType="class">
         <relationship name="pertence_a" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="controla" inverseEntity="Usuario" syncable="YES"/>
@@ -17,9 +17,9 @@
         <relationship name="controla" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sonda" inverseName="pertence_a" inverseEntity="Sonda" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Atributo" positionX="-54" positionY="9" width="128" height="90"/>
         <element name="Exploracion" positionX="-36" positionY="9" width="128" height="75"/>
         <element name="Sonda" positionX="-54" positionY="-9" width="128" height="75"/>
         <element name="Usuario" positionX="-63" positionY="-18" width="128" height="60"/>
-        <element name="Atributo" positionX="-54" positionY="9" width="128" height="90"/>
     </elements>
 </model>

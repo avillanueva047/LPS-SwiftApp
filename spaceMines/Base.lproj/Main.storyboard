@@ -200,13 +200,13 @@
         <!--Lista Sonares-->
         <scene sceneID="PFN-0d-9ep">
             <objects>
-                <tableViewController id="1Lg-nC-2iO" sceneMemberID="viewController">
+                <tableViewController id="1Lg-nC-2iO" customClass="SonaresController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3aY-Ve-0KR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sonar" rowHeight="100" id="p0c-ss-fK6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sonar" rowHeight="100" id="p0c-ss-fK6" customClass="SonarCell" customModule="spaceMines" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p0c-ss-fK6" id="QoO-eu-aea">
@@ -227,7 +227,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fUc-JV-1yu" kind="show" id="CAq-Qq-iam"/>
+                                    <outlet property="imagen" destination="16j-Bg-g6u" id="SZj-Ka-h4F"/>
+                                    <outlet property="nombre" destination="sTW-n2-Enn" id="xej-lN-oj3"/>
+                                    <segue destination="fUc-JV-1yu" kind="show" identifier="exploraciones" id="CAq-Qq-iam"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -702,7 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXH-fy-Uh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250.40000000000001" y="720.08995502248877"/>
+            <point key="canvasLocation" x="-198" y="721"/>
         </scene>
         <!--Nuevo usuario-->
         <scene sceneID="feI-PY-OTa">
@@ -1268,16 +1270,20 @@
             </objects>
             <point key="canvasLocation" x="5023.1999999999998" y="975.56221889055485"/>
         </scene>
-        <!--Nuevo Sonar-->
+        <!--El-->
         <scene sceneID="tkn-QC-ih9">
             <objects>
-                <viewController id="nG2-DI-Pfu" sceneMemberID="viewController">
+                <viewController title="El" id="nG2-DI-Pfu" customClass="NuevoSonarController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aup-xN-jYw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-Md-gzS">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="añadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-Md-gzS">
                                 <rect key="frame" x="67" y="95" width="241" height="185"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VSH-xc-Vfz" appends="YES" id="YSr-3B-9qK"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8o-nH-6cL">
                                 <rect key="frame" x="67" y="323" width="70" height="24"/>
@@ -1353,8 +1359,18 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descSonar" destination="PCU-3S-yeI" id="zbW-5x-uun"/>
+                        <outlet property="imagenSonar" destination="VSH-xc-Vfz" id="7Qq-mN-PSo"/>
+                        <outlet property="nombreSonar" destination="TPs-Ax-YfL" id="j6L-NW-4Zq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buS-xS-WCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VSH-xc-Vfz">
+                    <connections>
+                        <action selector="seleccionarImagen:" destination="nG2-DI-Pfu" id="W9X-2V-Oji"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3086" y="-834"/>
         </scene>
@@ -1932,6 +1948,7 @@
     </scenes>
     <resources>
         <image name="LogoRedondoFINAL2.png" width="658" height="677"/>
+        <image name="añadir_imagen.png" width="512" height="512"/>
         <image name="imagen_perfil.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>

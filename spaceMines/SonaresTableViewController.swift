@@ -1,18 +1,22 @@
 //
-//  InfoAtributosController.swift
+//  SonaresTableViewController.swift
 //  spaceMines
 //
-//  Created by Aula11 on 17/12/19.
-//  Copyright © 2019 ual. All rights reserved.
+//  Created by Aula11 on 8/1/20.
+//  Copyright © 2020 ual. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class InfoAtributosController: UITableViewController {
+class SonaresTableViewController: UITableViewController {
 
-    var exploracion:  NSManagedObject!
-    var atributos: [NSManagedObject] = []
+    var usuario: NSManagedObject!
+    var sonar: NSManagedObject!
+    var sonares =  [NSManagedObject]()
+    private let appdelegate = UIApplication.shared.delegate as! AppDelegate
+    private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     override func viewWillAppear(_ animated: Bool) {
         //cargarDatos()
@@ -20,65 +24,60 @@ class InfoAtributosController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
-        // Uncomment the following line to preserve selection between presentations
-        
-       // cargarDatos()
+        tableView.dataSource = self
+        //cargarDatos()
     }
-
-    // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return atributos.count
+        return sonares.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "atributo", for: indexPath) as! AtributoCell
-
-        cell.nombre.text = atributos[indexPath.row].value(forKey: "nombre") as? String
-        cell.valor.text = atributos[indexPath.row].value(forKey: "valor") as? String
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sonar", for: indexPath) as! SonarCell
+        
+        cell.nombre.text = sonares[indexPath.row].value(forKey: "mombre") as? String
+        if let imagenCD = sonares[indexPath.row].value(forKey: "imagen") as? Data {
+            let imagenSonar = UIImage(data: imagenCD)
+            cell.imagen.image = imagenSonar
+        }
         return cell
     }
     
-    func cargarDatos(){
-        
-        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let mngcontext = appdelegate.persistentContainer.viewContext
-        
-        let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "atributo")
-        fetchRq.predicate = NSPredicate(format: "pertenece_atributo == %@ ", (exploracion))
-        
-        do{
-            atributos = try mngcontext.fetch(fetchRq)
-        }catch let error as NSError{
-            print("Error en carga de datos de atributos. \(error)")
-        }
-        
-        tableView.reloadData()
-    }
-
-    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let contexto = mngcontext
+        contexto.delete(self.sonares[indexPath.row] as NSManagedObject)
+        
+        self.sonares.remove(at: indexPath.row)
+        
+        do{
+            try contexto.save()
+        }catch{
+
+        }
+        self.tableView.deleteRows(at: [indexPath], with: .fade)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "exploraciones" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let segueDest = segue.destination as! ExplorarcionTableViewController
+                segueDest.sonar = self.sonares[indexPath.row]
+            }
+        }
+    }
 
     /*
     // Override to support editing the table view.

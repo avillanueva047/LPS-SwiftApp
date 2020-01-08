@@ -1,76 +1,49 @@
 //
-//  InfoAtributosController.swift
+//  ExplorarcionTableViewController.swift
 //  spaceMines
 //
-//  Created by Aula11 on 17/12/19.
-//  Copyright © 2019 ual. All rights reserved.
+//  Created by Aula11 on 8/1/20.
+//  Copyright © 2020 ual. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class InfoAtributosController: UITableViewController {
+class ExplorarcionTableViewController: UITableViewController {
 
-    var exploracion:  NSManagedObject!
-    var atributos: [NSManagedObject] = []
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //cargarDatos()
-    }
+    var sonar: NSManagedObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
+
         // Uncomment the following line to preserve selection between presentations
-        
-       // cargarDatos()
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return atributos.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "atributo", for: indexPath) as! AtributoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        cell.nombre.text = atributos[indexPath.row].value(forKey: "nombre") as? String
-        cell.valor.text = atributos[indexPath.row].value(forKey: "valor") as? String
+        // Configure the cell...
 
         return cell
     }
-    
-    func cargarDatos(){
-        
-        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let mngcontext = appdelegate.persistentContainer.viewContext
-        
-        let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "atributo")
-        fetchRq.predicate = NSPredicate(format: "pertenece_atributo == %@ ", (exploracion))
-        
-        do{
-            atributos = try mngcontext.fetch(fetchRq)
-        }catch let error as NSError{
-            print("Error en carga de datos de atributos. \(error)")
-        }
-        
-        tableView.reloadData()
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
