@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
-class NuevaExploracionViewController: UIViewController {
-
+class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    var sonar: NSManagedObject!
+    
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputUbicacion: UITextField!
     @IBOutlet weak var inputFecha: UITextField!
-    @IBOutlet weak var tipoObjeto: UISegmentedControl!
+    @IBOutlet weak var tipo: UIPickerView!
+    
+    var tipos = ["Mina", "Robot"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +32,22 @@ class NuevaExploracionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func cancelar(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
+    }
     
-
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return tipos.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return tipos[row]
+    }
+    
     /*
     // MARK: - Navigation
 

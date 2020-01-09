@@ -96,9 +96,13 @@ class ExplorarcionTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "exploracion" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let segueDest = segue.destination as! ExplorarcionTableViewController
-           //     segueDest.sonar = self.sonares[indexPath.row]
+                let segueDest = segue.destination as! ExploracionViewController
+                segueDest.exploracion = self.exploraciones[indexPath.row]
             }
+        } else if segue.identifier == "nuevaExploracion" {
+           
+            let segueDest = segue.destination as! NuevaExploracionViewController
+            segueDest.sonar = self.sonar
         }
     }
 

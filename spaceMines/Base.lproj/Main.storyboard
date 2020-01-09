@@ -323,7 +323,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Imagen perfil" style="plain" id="olG-Ju-km9">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="8g0-QE-yFe" kind="show" identifier="El" id="WOZ-dV-jNm"/>
+                                <segue destination="8g0-QE-yFe" kind="show" identifier="" id="WOZ-dV-jNm"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
@@ -1148,7 +1148,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DoU-d7-3gY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="añadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="DoU-d7-3gY">
                                 <rect key="frame" x="67" y="76" width="241" height="165"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="241" id="NRZ-Mq-Gvr"/>
@@ -1353,15 +1353,17 @@
                                 <exclude reference="PFj-JL-efo"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3gq-Nj-9L9"/>
-                                <exclude reference="4oS-Oc-aes"/>
-                                <exclude reference="ohZ-QH-dhl"/>
                                 <exclude reference="Yvr-nE-l5m"/>
                                 <exclude reference="pcg-fw-HJf"/>
                                 <exclude reference="8Tr-ZV-qwF"/>
                                 <exclude reference="OYW-gj-dzn"/>
                                 <exclude reference="YpO-GX-DX6"/>
                                 <exclude reference="1IH-Jx-nFg"/>
+                                <exclude reference="3gq-Nj-9L9"/>
+                                <exclude reference="4oS-Oc-aes"/>
+                                <exclude reference="ohZ-QH-dhl"/>
+                                <exclude reference="YYr-Yt-tJK"/>
+                                <exclude reference="mRZ-oh-BXQ"/>
                                 <exclude reference="kq5-9c-XzD"/>
                                 <exclude reference="d0p-RB-Ech"/>
                                 <exclude reference="dAA-qD-Ytc"/>
@@ -1371,8 +1373,6 @@
                                 <exclude reference="k3Y-Ts-JAQ"/>
                                 <exclude reference="MGm-ia-DOa"/>
                                 <exclude reference="aP6-MC-DfL"/>
-                                <exclude reference="YYr-Yt-tJK"/>
-                                <exclude reference="mRZ-oh-BXQ"/>
                                 <exclude reference="RHo-sM-Rwa"/>
                                 <exclude reference="wWa-bs-1ET"/>
                             </mask>
@@ -1389,15 +1389,17 @@
                                 <include reference="PFj-JL-efo"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3gq-Nj-9L9"/>
-                                <include reference="4oS-Oc-aes"/>
-                                <include reference="ohZ-QH-dhl"/>
                                 <include reference="Yvr-nE-l5m"/>
                                 <include reference="pcg-fw-HJf"/>
                                 <include reference="8Tr-ZV-qwF"/>
                                 <include reference="OYW-gj-dzn"/>
                                 <include reference="YpO-GX-DX6"/>
                                 <include reference="1IH-Jx-nFg"/>
+                                <include reference="3gq-Nj-9L9"/>
+                                <include reference="4oS-Oc-aes"/>
+                                <include reference="ohZ-QH-dhl"/>
+                                <include reference="YYr-Yt-tJK"/>
+                                <include reference="mRZ-oh-BXQ"/>
                                 <include reference="kq5-9c-XzD"/>
                                 <include reference="d0p-RB-Ech"/>
                                 <include reference="dAA-qD-Ytc"/>
@@ -1407,8 +1409,6 @@
                                 <include reference="k3Y-Ts-JAQ"/>
                                 <include reference="MGm-ia-DOa"/>
                                 <include reference="aP6-MC-DfL"/>
-                                <include reference="YYr-Yt-tJK"/>
-                                <include reference="mRZ-oh-BXQ"/>
                                 <include reference="RHo-sM-Rwa"/>
                                 <include reference="wWa-bs-1ET"/>
                             </mask>
@@ -1417,12 +1417,16 @@
                     <navigationItem key="navigationItem" id="V4W-Uu-CbW">
                         <barButtonItem key="leftBarButtonItem" title="Cancelar" id="Ey0-SG-9AM">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelar:" destination="8NM-n6-ZQV" id="PW6-qJ-JKC"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="inputFecha" destination="LBq-45-Tgw" id="imR-Tp-zf0"/>
                         <outlet property="inputNombre" destination="Hpm-du-xAo" id="k7t-xp-e10"/>
                         <outlet property="inputUbicacion" destination="gYX-Na-dcR" id="DFz-SF-pLz"/>
+                        <outlet property="tipo" destination="0ef-8W-pxw" id="EKi-Ht-EQr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1445,11 +1449,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="jY7-9j-a5v">
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="jY7-9j-a5v">
                                             <rect key="frame" x="14" y="60" width="248" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="244" id="r68-nt-feQ"/>
                                             </constraints>
+                                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="r68-nt-feQ"/>
@@ -1549,10 +1554,10 @@
             </objects>
             <point key="canvasLocation" x="5281" y="721"/>
         </scene>
-        <!--El-->
+        <!--Nuevo Sonar-->
         <scene sceneID="tkn-QC-ih9">
             <objects>
-                <viewController title="El" id="nG2-DI-Pfu" customClass="NuevoSonarController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nG2-DI-Pfu" customClass="NuevoSonarController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aup-xN-jYw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1620,6 +1625,9 @@
                                         <include reference="Zx1-h6-BgC"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="labelDescCambia:" destination="nG2-DI-Pfu" eventType="editingDidEnd" id="sTq-cl-02P"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW7-iO-47n">
                                 <rect key="frame" x="67" y="416" width="104" height="24"/>
@@ -1714,20 +1722,21 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="v58-YQ-yf7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="cancelar:" destination="nG2-DI-Pfu" id="48Z-eg-M6q"/>
+                                <action selector="cancelar:" destination="nG2-DI-Pfu" id="bmA-Ff-Ukr"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="JDC-AE-MLd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="sbk-uY-Xtk"/>
+                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="nSX-Lc-0vO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descSonar" destination="PCU-3S-yeI" id="zbW-5x-uun"/>
+                        <outlet property="botonGuardar" destination="JDC-AE-MLd" id="BL8-tS-2O1"/>
+                        <outlet property="descSonar" destination="PCU-3S-yeI" id="LCV-af-xfy"/>
                         <outlet property="imagenSonar" destination="VSH-xc-Vfz" id="7Qq-mN-PSo"/>
-                        <outlet property="nombreSonar" destination="TPs-Ax-YfL" id="j6L-NW-4Zq"/>
+                        <outlet property="nombreSonar" destination="TPs-Ax-YfL" id="Et5-BL-w0K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buS-xS-WCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2044,6 +2053,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imagenExploracion" destination="v3J-EE-8Xh" id="Q6c-cR-dfp"/>
+                        <outlet property="inputFecha" destination="OIq-OB-DBW" id="crr-Pi-XhI"/>
+                        <outlet property="inputNombre" destination="Eoh-eX-4CW" id="Z5E-No-4UM"/>
+                        <outlet property="inputObjeto" destination="FM5-vF-lyK" id="11N-R1-ZuJ"/>
+                        <outlet property="inputUbicacion" destination="iNC-U9-MwW" id="KQf-hl-hr5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4u-Kv-8zL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2457,6 +2473,6 @@
         <image name="imagen_perfil.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cq2-Zd-g2D"/>
+        <segue reference="YFq-fK-57T"/>
     </inferredMetricsTieBreakers>
 </document>

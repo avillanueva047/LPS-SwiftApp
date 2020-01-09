@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 class ExploracionViewController: UIViewController {
-
+    
+    var exploracion: NSManagedObject!
+    
+    @IBOutlet weak var inputNombre: UITextField!
+    @IBOutlet weak var inputObjeto: UITextField!
+    @IBOutlet weak var inputFecha: UITextField!
+    @IBOutlet weak var inputUbicacion: UITextField!
+    @IBOutlet weak var imagenExploracion: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,10 +27,14 @@ class ExploracionViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
 
+      //cargarDatos()
         // Do any additional setup after loading the view.
     }
     
 
+    func cargarDatos(){
+        
+    }
     /*
     // MARK: - Navigation
 

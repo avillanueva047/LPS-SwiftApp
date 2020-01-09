@@ -14,6 +14,7 @@ class NuevoSonarController: UIViewController {
     @IBOutlet weak var imagenSonar: UIImageView!
     @IBOutlet weak var nombreSonar: UITextField!
     @IBOutlet weak var descSonar: UITextField!
+    @IBOutlet weak var botonGuardar: UIBarButtonItem!
     
     var usuario: NSManagedObject!
     let imagePicker = UIImagePickerController()
@@ -24,15 +25,17 @@ class NuevoSonarController: UIViewController {
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        // Do any additional setup after loading the view.
+
+        botonGuardar.isEnabled = false
+    }
+    
+    @IBAction func labelDescCambia(_ sender: UITextField) {
+        botonGuardar.isEnabled = !(sender.text?.isEmpty)!
     }
     
     
-    
     @IBAction func cancelar(_ sender: Any) {
-       
-            dismiss(animated: true, completion: nil)
-     
+        navigationController!.popViewController(animated: true)
     }
     
     @IBAction func seleccionarImagen(_ sender: UITapGestureRecognizer) {
