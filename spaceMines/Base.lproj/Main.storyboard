@@ -1163,7 +1163,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Introducir valores"/>
                                 <connections>
-                                    <segue destination="l4m-0Y-E4x" kind="presentation" id="O5t-aP-yGN"/>
+                                    <segue destination="l4m-0Y-E4x" kind="presentation" identifier="introducirValores" id="O5t-aP-yGN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zea-XD-rMg">
@@ -1354,9 +1354,6 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancelar" id="Ey0-SG-9AM">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="ug6-47-zxh">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1460,9 +1457,20 @@
                             <outlet property="delegate" destination="PEX-ae-SJ6" id="KH8-uu-c18"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NAp-wn-cos"/>
+                    <navigationItem key="navigationItem" id="NAp-wn-cos">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="wte-SC-cnC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="ug6-47-zxh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="d2R-k1-ZJJ" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="YsD-L9-VZ1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aL-pi-zzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d2R-k1-ZJJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5281" y="721"/>
         </scene>
@@ -1637,7 +1645,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="JDC-AE-MLd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="MQn-bZ-fqA"/>
+                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="QjD-4S-Bpr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1765,7 +1773,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFY-6P-pJT">
-                                <rect key="frame" x="105" y="543" width="165" height="26"/>
+                                <rect key="frame" x="105" y="543.5" width="165" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="bd0-co-wcb"/>
                                 </constraints>
@@ -2344,7 +2352,6 @@
         <!--Navigation Controller-->
         <scene sceneID="dBO-lg-Oak">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0z1-Iy-2H3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l4m-0Y-E4x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aTV-hP-wTI">
@@ -2357,6 +2364,7 @@
                         <segue destination="PEX-ae-SJ6" kind="relationship" relationship="rootViewController" id="nCT-hU-8W9"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0z1-Iy-2H3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4270" y="721"/>
         </scene>
