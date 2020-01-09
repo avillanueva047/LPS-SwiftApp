@@ -48,6 +48,15 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         return tipos[row]
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "introducirValores" {
+            let segueDest = segue.destination as! AtributosController
+            segueDest.ubicacion = self.inputUbicacion.text
+            segueDest.nombre = self.inputNombre.text
+           // segueDest.imagen = sel
+            segueDest.tipo = self.tipo.value(forKey: "valor") as! String
+        }
+    }
     /*
     // MARK: - Navigation
 

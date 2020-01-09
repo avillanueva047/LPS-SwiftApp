@@ -1127,6 +1127,9 @@
                     <navigationItem key="navigationItem" title="Lista Exploraciones" id="6Ty-VW-rhA">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Atrás" id="XJd-IP-IGC">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelar:" destination="7aW-Kp-FfM" id="dhx-BN-DBZ"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Añadir" id="mkZ-oc-0oD">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1433,10 +1436,10 @@
             </objects>
             <point key="canvasLocation" x="3245.5999999999999" y="720.08995502248877"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Atributos Controller-->
         <scene sceneID="mAs-Um-Xn0">
             <objects>
-                <tableViewController id="PEX-ae-SJ6" sceneMemberID="viewController">
+                <tableViewController id="PEX-ae-SJ6" customClass="AtributosController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EmH-HX-hPR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1540,6 +1543,9 @@
                     <navigationItem key="navigationItem" id="NAp-wn-cos">
                         <barButtonItem key="leftBarButtonItem" title="Cancelar" id="wte-SC-cnC">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelar:" destination="PEX-ae-SJ6" id="CY0-2E-ZSu"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="ug6-47-zxh">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2463,7 +2469,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0z1-Iy-2H3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="721"/>
+            <point key="canvasLocation" x="4270" y="720"/>
         </scene>
     </scenes>
     <resources>

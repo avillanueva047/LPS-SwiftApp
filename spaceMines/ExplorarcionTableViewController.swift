@@ -28,6 +28,10 @@ class ExplorarcionTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    @IBAction func cancelar(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
