@@ -12,6 +12,7 @@ class AtributoCell: UITableViewCell {
 
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var valor: UILabel!
+    @IBOutlet weak var barraValor: UISlider!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +25,7 @@ class AtributoCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func valorCambia(_ sender: Any) {
+        valor.text = String(barraValor.value)
+    }
 }

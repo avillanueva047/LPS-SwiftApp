@@ -329,7 +329,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="nG2-DI-Pfu" kind="show" id="rNg-BF-BXo"/>
+                                <segue destination="nG2-DI-Pfu" kind="show" identifier="El" id="rNg-BF-BXo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1115,7 +1115,7 @@
                                 <connections>
                                     <outlet property="imagen" destination="Knc-UW-xAw" id="LKl-jo-cnF"/>
                                     <outlet property="nombre" destination="CrI-GX-eOl" id="oSE-yG-Ndx"/>
-                                    <segue destination="Yqq-4S-jDS" kind="show" id="OU9-CX-da1"/>
+                                    <segue destination="Yqq-4S-jDS" kind="show" identifier="exploracion" id="OU9-CX-da1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1131,7 +1131,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Añadir" id="mkZ-oc-0oD">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="8NM-n6-ZQV" kind="show" id="ZIX-l0-mAW"/>
+                                <segue destination="8NM-n6-ZQV" kind="show" identifier="nuevaExploracion" id="ZIX-l0-mAW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1369,7 +1369,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="82j-Di-7Df">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="82j-Di-7Df" customClass="AtributoCell" customModule="spaceMines" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="82j-Di-7Df" id="aIQ-t1-pdu">
@@ -1391,6 +1391,9 @@
                                                     <include reference="r68-nt-feQ"/>
                                                 </mask>
                                             </variation>
+                                            <connections>
+                                                <action selector="valorCambia:" destination="82j-Di-7Df" eventType="valueChanged" id="224-s0-5tp"/>
+                                            </connections>
                                         </slider>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Atributo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-pR-xBy">
                                             <rect key="frame" x="27" y="10" width="128" height="22"/>
@@ -1450,6 +1453,9 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="barraValor" destination="jY7-9j-a5v" id="g5r-m4-KLx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1965,7 +1971,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Editar" id="4os-Q4-763">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="Vu0-yF-tsY" kind="show" id="MAo-34-Fac"/>
+                                <segue destination="Vu0-yF-tsY" kind="show" identifier="editarExploracion" id="MAo-34-Fac"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
