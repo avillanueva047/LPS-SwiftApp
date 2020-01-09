@@ -10,6 +10,11 @@ import UIKit
 
 class NuevaExploracionViewController: UIViewController {
 
+    @IBOutlet weak var inputNombre: UITextField!
+    @IBOutlet weak var inputUbicacion: UITextField!
+    @IBOutlet weak var inputFecha: UITextField!
+    @IBOutlet weak var tipoObjeto: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,9 +22,11 @@ class NuevaExploracionViewController: UIViewController {
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-
+        
+        //cargarDatos()
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
