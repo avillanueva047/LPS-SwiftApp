@@ -2,25 +2,17 @@
 //  EditarExploracionViewController.swift
 //  spaceMines
 //
-//  Created by Aula11 on 17/12/19.
-//  Copyright © 2019 ual. All rights reserved.
+//  Created by Aula11 on 9/1/20.
+//  Copyright © 2020 ual. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
 class EditarExploracionViewController: UIViewController {
 
-    @IBOutlet weak var inputNombre: UITextField!
-    @IBOutlet weak var inputUbicacion: UITextField!
-    @IBOutlet weak var inputFecha: UITextField!
-    @IBOutlet weak var inputTipo: UITextField!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill

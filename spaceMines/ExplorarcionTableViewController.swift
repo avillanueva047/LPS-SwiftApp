@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class ExplorarcionTableViewController: UITableViewController {
-
+  
     var sonar: NSManagedObject!
     var exploraciones :[NSManagedObject] = []
     private let appdelegate = UIApplication.shared.delegate as! AppDelegate
@@ -94,7 +94,12 @@ class ExplorarcionTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
+        if segue.identifier == "exploracion" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let segueDest = segue.destination as! ExplorarcionTableViewController
+           //     segueDest.sonar = self.sonares[indexPath.row]
+            }
+        }
     }
 
     /*

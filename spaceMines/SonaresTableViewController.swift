@@ -93,7 +93,7 @@ class SonaresTableViewController: UITableViewController {
         let mngcontext = appdelegate.persistentContainer.viewContext
         
         let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Sonar")
-     //   fetchRq.predicate = NSPredicate(format: "pertenece_a == %@", (usuario))
+      //fetchRq.predicate = NSPredicate(format: "pertenece_a == %@", (usuario))
         
         do{
             sonares = try mngcontext.fetch(fetchRq)

@@ -310,7 +310,7 @@
                                     <outlet property="descripcion" destination="nZg-S8-nua" id="qhW-Iu-xPL"/>
                                     <outlet property="imagen" destination="16j-Bg-g6u" id="SZj-Ka-h4F"/>
                                     <outlet property="nombre" destination="sTW-n2-Enn" id="xej-lN-oj3"/>
-                                    <segue destination="7aW-Kp-FfM" kind="show" id="Yoz-wc-QYo"/>
+                                    <segue destination="7aW-Kp-FfM" kind="show" identifier="exploracionesSonar" id="Yoz-wc-QYo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -323,7 +323,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Imagen perfil" style="plain" id="olG-Ju-km9">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="8g0-QE-yFe" kind="show" id="WOZ-dV-jNm"/>
+                                <segue destination="8g0-QE-yFe" kind="show" identifier="El" id="WOZ-dV-jNm"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEF-v8-flm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3247" y="-82"/>
+            <point key="canvasLocation" x="3302" y="-82"/>
         </scene>
         <!--Editar perfil-->
         <scene sceneID="Cpn-So-CeB">
@@ -696,7 +696,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A74-gf-QQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4271" y="-82"/>
+            <point key="canvasLocation" x="4270" y="-82"/>
         </scene>
         <!--Recuperar contraseña-->
         <scene sceneID="ZRc-yc-8Sh">
@@ -1140,10 +1140,10 @@
             </objects>
             <point key="canvasLocation" x="2169" y="721"/>
         </scene>
-        <!--Exploracion View Controller-->
+        <!--Nueva Exploracion View Controller-->
         <scene sceneID="yis-6k-PX9">
             <objects>
-                <viewController id="8NM-n6-ZQV" customClass="ExploracionViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8NM-n6-ZQV" customClass="NuevaExploracionViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wj0-AW-Vfb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1369,7 +1369,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="82j-Di-7Df" customClass="AtributoCell" customModule="spaceMines" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="atributo" rowHeight="108" id="82j-Di-7Df" customClass="AtributoCell" customModule="spaceMines" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="82j-Di-7Df" id="aIQ-t1-pdu">
@@ -1651,7 +1651,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="JDC-AE-MLd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="QjD-4S-Bpr"/>
+                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="uJ4-Cg-guP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1690,10 +1690,10 @@
             </objects>
             <point key="canvasLocation" x="556" y="721"/>
         </scene>
-        <!--View Controller-->
+        <!--Exploracion View Controller-->
         <scene sceneID="Fni-Uw-5ge">
             <objects>
-                <viewController id="Yqq-4S-jDS" sceneMemberID="viewController">
+                <viewController id="Yqq-4S-jDS" customClass="ExploracionViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="arI-5D-qiA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1980,10 +1980,10 @@
             </objects>
             <point key="canvasLocation" x="2169" y="1527"/>
         </scene>
-        <!--View Controller-->
+        <!--Editar Exploracion View Controller-->
         <scene sceneID="Ezn-oW-24s">
             <objects>
-                <viewController id="Vu0-yF-tsY" sceneMemberID="viewController">
+                <viewController id="Vu0-yF-tsY" customClass="EditarExploracionViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAo-15-2Gd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2234,6 +2234,12 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="inputFecha" destination="sbD-fT-bGd" id="xGx-u9-LFj"/>
+                        <outlet property="inputNombre" destination="61R-Tc-Ckg" id="ZOk-TT-PyP"/>
+                        <outlet property="inputTipo" destination="FbH-fU-lLw" id="ikg-2c-Neb"/>
+                        <outlet property="inputUbicacion" destination="MbD-85-KiC" id="YyM-An-nR4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFS-6o-NvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
