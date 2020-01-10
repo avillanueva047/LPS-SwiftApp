@@ -27,7 +27,7 @@ class ExploracionViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
 
-      //cargarDatos()
+        //cargarDatos()
         // Do any additional setup after loading the view.
     }
     

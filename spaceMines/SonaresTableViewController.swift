@@ -23,8 +23,6 @@ class SonaresTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
         cargarDatos()
     }
     
@@ -82,7 +80,8 @@ class SonaresTableViewController: UITableViewController {
     }
     
     @IBAction func ActualizarTabla (sender: UIStoryboardSegue){
-        cargarDatos()
+       
+            self.cargarDatos() 
     }
     
     func cargarDatos(){
@@ -100,6 +99,8 @@ class SonaresTableViewController: UITableViewController {
         } catch let error as NSError {
             print("Error en la carga de sonares .\(error)")
         }
+        
+        tableView.reloadData()
     }
     /*
     // Override to support editing the table view.

@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NuevoSonarController: UIViewController {
+class NuevoSonarController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imagenSonar: UIImageView!
     @IBOutlet weak var nombreSonar: UITextField!
@@ -17,15 +17,15 @@ class NuevoSonarController: UIViewController {
     @IBOutlet weak var botonGuardar: UIBarButtonItem!
     
     var usuario: NSManagedObject!
-    let imagePicker = UIImagePickerController()
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-
+        
         botonGuardar.isEnabled = false
     }
     
@@ -39,9 +39,10 @@ class NuevoSonarController: UIViewController {
     }
     
     @IBAction func seleccionarImagen(_ sender: UITapGestureRecognizer) {
+        let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
-        imagePicker.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        imagePicker.delegate = self
         present(imagePicker, animated: true, completion: nil)
     }
     
@@ -59,7 +60,7 @@ class NuevoSonarController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
+      
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
         }
@@ -70,17 +71,16 @@ class NuevoSonarController: UIViewController {
         
         let sonar = NSManagedObject(entity: entidad, insertInto: mngcontext)
         
-
-        sonar.setValue(nombreSonar.text, forKey: "nombre")
-        sonar.setValue(descSonar.text, forKey: "descripcion")
-        sonar.setValue(imagenSonar.image?.pngData(), forKey: "imagen")
+        sonar.setValue(self.nombreSonar.text, forKey: "nombre")
+        sonar.setValue(self.descSonar.text, forKey: "descripcion")
+        sonar.setValue(self.imagenSonar.image?.pngData(), forKey: "imagen")
         
         do{
             try mngcontext.save()
         } catch let error as NSError{
             print("Error en el guardado de los atributos de un sonar . \(error)")
         }
-
+        
     }
     /*
     // MARK: - Navigation
@@ -93,3 +93,4 @@ class NuevoSonarController: UIViewController {
     */
 
 }
+

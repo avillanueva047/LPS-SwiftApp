@@ -53,8 +53,8 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
             let segueDest = segue.destination as! AtributosController
             segueDest.ubicacion = self.inputUbicacion.text
             segueDest.nombre = self.inputNombre.text
-           // segueDest.imagen = sel
-            segueDest.tipo = self.tipo.value(forKey: "valor") as! String
+          //segueDest.imagen = sel
+          //segueDest.tipo = self.tipo.value(forKey: "valor") as! String
         }
     }
     /*

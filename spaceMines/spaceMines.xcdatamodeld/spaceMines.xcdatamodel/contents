@@ -21,15 +21,12 @@
         <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagen" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="pertence_a" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="controla" inverseEntity="Usuario" syncable="YES"/>
         <relationship name="tiene" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exploracion" inverseName="hecha_por" inverseEntity="Exploracion" syncable="YES"/>
     </entity>
-    <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
-        <relationship name="controla" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sonar" inverseName="pertence_a" inverseEntity="Sonar" syncable="YES"/>
-    </entity>
+    <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class"/>
     <elements>
         <element name="Exploracion" positionX="-36" positionY="9" width="128" height="270"/>
-        <element name="Sonar" positionX="-54" positionY="-9" width="128" height="120"/>
-        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Sonar" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="45"/>
     </elements>
 </model>

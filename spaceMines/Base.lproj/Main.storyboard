@@ -215,10 +215,27 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoRedondoFINAL3.png" translatesAutoresizingMaskIntoConstraints="NO" id="16j-Bg-g6u">
                                             <rect key="frame" x="271" y="0.0" width="95" height="95"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="95" id="YGV-P6-Jgi"/>
+                                                <constraint firstAttribute="height" constant="95" id="pfu-Wc-Cqx"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="YGV-P6-Jgi"/>
+                                                    <exclude reference="pfu-Wc-Cqx"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="YGV-P6-Jgi"/>
+                                                    <include reference="pfu-Wc-Cqx"/>
+                                                </mask>
+                                            </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre sonar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTW-n2-Enn">
                                             <rect key="frame" x="20" y="7" width="146" height="24"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="515-pk-GzT"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="kRX-5d-Gq7"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -226,16 +243,18 @@
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="515-pk-GzT"/>
                                                     <exclude reference="kRX-5d-Gq7"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular">
                                                 <mask key="constraints">
+                                                    <include reference="515-pk-GzT"/>
                                                     <include reference="kRX-5d-Gq7"/>
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZg-S8-nua">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZg-S8-nua">
                                             <rect key="frame" x="16" y="39" width="239" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="y8B-Wl-dkA"/>
@@ -260,33 +279,45 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="16j-Bg-g6u" firstAttribute="leading" secondItem="nZg-S8-nua" secondAttribute="trailing" constant="16" id="30b-aX-3l1"/>
+                                        <constraint firstItem="16j-Bg-g6u" firstAttribute="leading" secondItem="nZg-S8-nua" secondAttribute="trailing" constant="16" id="6xl-T1-hUc"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="16j-Bg-g6u" secondAttribute="trailing" constant="-7" id="MoS-dR-9mQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="16j-Bg-g6u" secondAttribute="bottom" constant="4.5" id="X4f-Jk-NXG"/>
                                         <constraint firstItem="sTW-n2-Enn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QoO-eu-aea" secondAttribute="leadingMargin" constant="4" id="aSm-7b-K5c">
                                             <variation key="heightClass=regular" constant="0.0"/>
                                         </constraint>
+                                        <constraint firstItem="nZg-S8-nua" firstAttribute="top" secondItem="sTW-n2-Enn" secondAttribute="bottom" constant="8" id="ezI-TI-iQd"/>
+                                        <constraint firstItem="nZg-S8-nua" firstAttribute="leading" secondItem="QoO-eu-aea" secondAttribute="leadingMargin" id="gZb-rk-cDK"/>
                                         <constraint firstItem="16j-Bg-g6u" firstAttribute="leading" secondItem="sTW-n2-Enn" secondAttribute="trailing" id="gsL-tY-P2s">
                                             <variation key="heightClass=regular" constant="105"/>
                                         </constraint>
                                         <constraint firstItem="nZg-S8-nua" firstAttribute="leading" secondItem="QoO-eu-aea" secondAttribute="leadingMargin" id="lpl-u9-8iB"/>
                                         <constraint firstItem="16j-Bg-g6u" firstAttribute="top" secondItem="QoO-eu-aea" secondAttribute="top" id="mfH-k6-c58"/>
                                         <constraint firstItem="16j-Bg-g6u" firstAttribute="leading" secondItem="nZg-S8-nua" secondAttribute="trailing" constant="16" id="ntq-b9-Zhj"/>
+                                        <constraint firstItem="16j-Bg-g6u" firstAttribute="top" secondItem="QoO-eu-aea" secondAttribute="top" id="rZD-ZF-Rab"/>
                                         <constraint firstItem="nZg-S8-nua" firstAttribute="bottom" secondItem="QoO-eu-aea" secondAttribute="bottomMargin" id="tsT-rM-dOs"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="16j-Bg-g6u" secondAttribute="bottom" constant="-6" id="wVe-pY-alH"/>
                                         <constraint firstItem="nZg-S8-nua" firstAttribute="top" secondItem="sTW-n2-Enn" secondAttribute="bottom" constant="8" symbolic="YES" id="xSO-fP-42g"/>
                                         <constraint firstItem="sTW-n2-Enn" firstAttribute="top" secondItem="QoO-eu-aea" secondAttribute="topMargin" constant="-4" id="yEm-Kl-Yn3"/>
+                                        <constraint firstItem="nZg-S8-nua" firstAttribute="bottom" secondItem="QoO-eu-aea" secondAttribute="bottomMargin" id="ypW-ms-I7j"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="aSm-7b-K5c"/>
                                             <exclude reference="yEm-Kl-Yn3"/>
+                                            <exclude reference="ezI-TI-iQd"/>
+                                            <exclude reference="gZb-rk-cDK"/>
                                             <exclude reference="lpl-u9-8iB"/>
                                             <exclude reference="tsT-rM-dOs"/>
                                             <exclude reference="xSO-fP-42g"/>
+                                            <exclude reference="ypW-ms-I7j"/>
                                             <exclude reference="30b-aX-3l1"/>
+                                            <exclude reference="6xl-T1-hUc"/>
                                             <exclude reference="MoS-dR-9mQ"/>
+                                            <exclude reference="X4f-Jk-NXG"/>
                                             <exclude reference="gsL-tY-P2s"/>
                                             <exclude reference="mfH-k6-c58"/>
                                             <exclude reference="ntq-b9-Zhj"/>
+                                            <exclude reference="rZD-ZF-Rab"/>
                                             <exclude reference="wVe-pY-alH"/>
                                         </mask>
                                     </variation>
@@ -294,14 +325,20 @@
                                         <mask key="constraints">
                                             <include reference="aSm-7b-K5c"/>
                                             <include reference="yEm-Kl-Yn3"/>
+                                            <include reference="ezI-TI-iQd"/>
+                                            <include reference="gZb-rk-cDK"/>
                                             <include reference="lpl-u9-8iB"/>
                                             <include reference="tsT-rM-dOs"/>
                                             <exclude reference="xSO-fP-42g"/>
+                                            <include reference="ypW-ms-I7j"/>
                                             <include reference="30b-aX-3l1"/>
+                                            <include reference="6xl-T1-hUc"/>
                                             <include reference="MoS-dR-9mQ"/>
+                                            <include reference="X4f-Jk-NXG"/>
                                             <include reference="gsL-tY-P2s"/>
                                             <include reference="mfH-k6-c58"/>
                                             <exclude reference="ntq-b9-Zhj"/>
+                                            <include reference="rZD-ZF-Rab"/>
                                             <include reference="wVe-pY-alH"/>
                                         </mask>
                                     </variation>
@@ -329,7 +366,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="nG2-DI-Pfu" kind="show" identifier="El" id="rNg-BF-BXo"/>
+                                <segue destination="nG2-DI-Pfu" kind="show" identifier="nuevoSonar" id="rNg-BF-BXo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1094,23 +1131,66 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Exploracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrI-GX-eOl">
                                             <rect key="frame" x="32" y="39" width="176" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="bRI-mv-PD8"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="bRI-mv-PD8"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="bRI-mv-PD8"/>
+                                                </mask>
+                                            </variation>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Knc-UW-xAw">
                                             <rect key="frame" x="241" y="5" width="90" height="89.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="Gl4-JT-cUa"/>
+                                                <constraint firstAttribute="height" constant="89.5" id="YWM-Ae-HxX"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Gl4-JT-cUa"/>
+                                                    <exclude reference="YWM-Ae-HxX"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="Gl4-JT-cUa"/>
+                                                    <include reference="YWM-Ae-HxX"/>
+                                                </mask>
+                                            </variation>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Knc-UW-xAw" firstAttribute="centerY" secondItem="1Ca-CO-E4B" secondAttribute="centerY" id="GVf-Tr-xjY"/>
+                                        <constraint firstAttribute="bottom" secondItem="Knc-UW-xAw" secondAttribute="bottom" constant="5" id="Hfe-88-bcv"/>
                                         <constraint firstItem="Knc-UW-xAw" firstAttribute="leading" secondItem="CrI-GX-eOl" secondAttribute="trailing" constant="33" id="Lt4-8q-XA5"/>
                                         <constraint firstItem="Knc-UW-xAw" firstAttribute="trailing" secondItem="1Ca-CO-E4B" secondAttribute="trailingMargin" constant="-28" id="SLJ-2N-9RT"/>
                                         <constraint firstItem="CrI-GX-eOl" firstAttribute="leading" secondItem="1Ca-CO-E4B" secondAttribute="leadingMargin" constant="16" id="bXa-W7-E9s"/>
                                         <constraint firstItem="CrI-GX-eOl" firstAttribute="top" secondItem="1Ca-CO-E4B" secondAttribute="topMargin" constant="28" id="beC-eN-LWo"/>
                                         <constraint firstItem="Knc-UW-xAw" firstAttribute="top" secondItem="1Ca-CO-E4B" secondAttribute="topMargin" constant="-6" id="dFd-YD-O0K"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="CrI-GX-eOl" secondAttribute="bottom" constant="26" id="ge9-iD-Xr6"/>
+                                        <constraint firstItem="Knc-UW-xAw" firstAttribute="top" secondItem="1Ca-CO-E4B" secondAttribute="top" constant="5" id="nje-kL-9Bs"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Hfe-88-bcv"/>
+                                            <exclude reference="nje-kL-9Bs"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular">
+                                        <mask key="constraints">
+                                            <include reference="Hfe-88-bcv"/>
+                                            <include reference="nje-kL-9Bs"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imagen" destination="Knc-UW-xAw" id="LKl-jo-cnF"/>
@@ -1588,7 +1668,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="VSH-xc-Vfz" appends="YES" id="YSr-3B-9qK"/>
+                                    <outletCollection property="gestureRecognizers" destination="fcX-hf-s5t" appends="YES" id="QtC-zJ-BkS"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8o-nH-6cL">
@@ -1734,22 +1814,22 @@
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="JDC-AE-MLd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="nSX-Lc-0vO"/>
+                                <segue destination="9i5-MP-FoL" kind="unwind" unwindAction="ActualizarTablaWithSender:" id="cs4-xh-Oh7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="botonGuardar" destination="JDC-AE-MLd" id="BL8-tS-2O1"/>
                         <outlet property="descSonar" destination="PCU-3S-yeI" id="LCV-af-xfy"/>
-                        <outlet property="imagenSonar" destination="VSH-xc-Vfz" id="7Qq-mN-PSo"/>
+                        <outlet property="imagenSonar" destination="q2V-Md-gzS" id="xjo-eb-R3A"/>
                         <outlet property="nombreSonar" destination="TPs-Ax-YfL" id="Et5-BL-w0K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buS-xS-WCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9i5-MP-FoL" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="VSH-xc-Vfz">
+                <tapGestureRecognizer id="fcX-hf-s5t">
                     <connections>
-                        <action selector="seleccionarImagen:" destination="nG2-DI-Pfu" id="W9X-2V-Oji"/>
+                        <action selector="seleccionarImagen:" destination="nG2-DI-Pfu" id="qtn-Y1-SZg"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

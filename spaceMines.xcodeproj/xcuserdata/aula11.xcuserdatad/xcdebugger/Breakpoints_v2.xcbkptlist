@@ -2,4 +2,84 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spaceMines/SonarCell.swift"
+            timestampString = "600346654.219811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "SonarCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "spaceMines_2.SonarCell.descripcion.getter : weak Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "spaceMines 2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aula11/Documents/Codigo-Proyecto-LPS/spaceMines/SonarCell.swift"
+                  timestampString = "600343678.702633"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "spaceMines_2.SonarCell.descripcion.setter : weak Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "spaceMines 2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aula11/Documents/Codigo-Proyecto-LPS/spaceMines/SonarCell.swift"
+                  timestampString = "600343678.7054451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "spaceMines_2.SonarCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; spaceMines_2.SonarCell"
+                  moduleName = "spaceMines 2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aula11/Documents/Codigo-Proyecto-LPS/spaceMines/SonarCell.swift"
+                  timestampString = "600343678.708088"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "282">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "spaceMines_2.SonarCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;spaceMines_2.SonarCell&gt;"
+                  moduleName = "spaceMines 2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aula11/Documents/Codigo-Proyecto-LPS/spaceMines/SonarCell.swift"
+                  timestampString = "600343678.711177"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "241">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
