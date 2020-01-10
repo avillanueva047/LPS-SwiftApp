@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G9016" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Exploracion" representedClassName="Exploracion" syncable="YES" codeGenerationType="class">
-        <attribute name="atributo_4" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_11" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_17" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_21" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_36" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_44" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_45" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_49" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="atributo_52" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="atributo4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo17" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo21" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo36" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo44" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo45" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo49" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atributo52" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fecha" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagen" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>

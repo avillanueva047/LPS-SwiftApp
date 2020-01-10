@@ -78,23 +78,30 @@ class ExplorarcionTableViewController: UITableViewController {
         self.tableView.deleteRows(at: [indexPath], with: .fade)
     }
     
+    @IBAction func ActualizarTablaExploraciones (sender: UIStoryboardSegue){
+        
+        self.cargarDatos()
+    }
+    
+    
     func cargarDatos(){
-        func cargarDatos(){
-            guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            
-            let mngcontext = appdelegate.persistentContainer.viewContext
-            
-            let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Exploracion")
-            fetchRq.predicate = NSPredicate(format: "hecha_por == %@", (sonar))
-            
-            do{
-                exploraciones = try mngcontext.fetch(fetchRq)
-            } catch let error as NSError {
-                print("Error en la carga de sonares .\(error)")
-            }
+      
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
         }
+        
+        let mngcontext = appdelegate.persistentContainer.viewContext
+        
+        let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Exploracion")
+        fetchRq.predicate = NSPredicate(format: "hecha_por = %@", (sonar))
+        
+        do{
+            exploraciones = try mngcontext.fetch(fetchRq)
+        } catch let error as NSError {
+            print("Error en la carga de sonares .\(error)")
+        }
+    
+        tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){

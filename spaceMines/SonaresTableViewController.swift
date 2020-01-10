@@ -71,7 +71,7 @@ class SonaresTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "exploraciones" {
+        if segue.identifier == "exploracionesSonar" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let segueDest = segue.destination as! ExplorarcionTableViewController
                 segueDest.sonar = self.sonares[indexPath.row]
@@ -81,7 +81,7 @@ class SonaresTableViewController: UITableViewController {
     
     @IBAction func ActualizarTabla (sender: UIStoryboardSegue){
        
-            self.cargarDatos() 
+        self.cargarDatos()
     }
     
     func cargarDatos(){

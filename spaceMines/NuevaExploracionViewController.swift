@@ -15,10 +15,12 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputUbicacion: UITextField!
-    @IBOutlet weak var inputFecha: UITextField!
+    @IBOutlet weak var fecha: UIDatePicker!
     @IBOutlet weak var tipo: UIPickerView!
+    @IBOutlet weak var labelTipo: UILabel!
+    @IBOutlet weak var botonSiguiente: UIBarButtonItem!
     
-    var tipos = ["Mina", "Robot"]
+    let tipos = ["Mina", "Robot"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +30,18 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        //cargarDatos()
+       botonSiguiente.isEnabled = false
         // Do any additional setup after loading the view.
     }
     
     @IBAction func cancelar(_ sender: Any) {
         navigationController!.popViewController(animated: true)
     }
+    
+    @IBAction func labelCambia(_ sender: UITextField) {
+        botonSiguiente.isEnabled = !(sender.text?.isEmpty)!
+    }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -48,13 +55,22 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         return tipos[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        labelTipo.text = tipos[row]
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "introducirValores" {
-            let segueDest = segue.destination as! AtributosController
-            segueDest.ubicacion = self.inputUbicacion.text
+        if segue.identifier == "introducirAtributos" {
+            let segueDest = segue.destination as! IntroducirAtributosViewController
+            
             segueDest.nombre = self.inputNombre.text
-          //segueDest.imagen = sel
-          //segueDest.tipo = self.tipo.value(forKey: "valor") as! String
+            segueDest.ubicacion = self.inputUbicacion.text
+            let componentes = fecha.calendar.dateComponents([.month, .day, .year], from: fecha.date)
+            
+            segueDest.fecha = (String(describing: componentes.month) + "/" + String(describing: componentes.day) + "/" + String(describing: componentes.year))
+            
+            segueDest.tipo = self.labelTipo.text
+
         }
     }
     /*
