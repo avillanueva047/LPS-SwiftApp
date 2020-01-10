@@ -23,7 +23,6 @@ class ExplorarcionTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cargarDatos()
-        
     }
 
     // MARK: - Table view data source
@@ -109,6 +108,8 @@ class ExplorarcionTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let segueDest = segue.destination as! ExploracionViewController
                 segueDest.exploracion = self.exploraciones[indexPath.row]
+                segueDest.sonar = self.sonar
+                //segueDest.imagenExploracion =
             }
         } else if segue.identifier == "nuevaExploracion" {
            

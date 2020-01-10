@@ -19,6 +19,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBOutlet weak var tipo: UIPickerView!
     @IBOutlet weak var labelTipo: UILabel!
     @IBOutlet weak var botonSiguiente: UIBarButtonItem!
+    @IBOutlet weak var imagen: UIImageView!
     
     let tipos = ["Mina", "Robot"]
     
@@ -70,6 +71,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
             segueDest.fecha = (String(describing: componentes.month) + "/" + String(describing: componentes.day) + "/" + String(describing: componentes.year))
             
             segueDest.tipo = self.labelTipo.text
+            segueDest.imagen = self.imagen.image
 
         }
     }

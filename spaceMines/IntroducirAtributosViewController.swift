@@ -21,6 +21,7 @@ class IntroducirAtributosViewController: UIViewController {
     @IBOutlet weak var at49: UITextField!
     @IBOutlet weak var at52: UITextField!
     
+    var imagen: UIImage!
     var sonar: NSManagedObject!
     var nombre: String!
     var ubicacion: String!
@@ -29,17 +30,7 @@ class IntroducirAtributosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.at4.keyboardType = UIKeyboardType.decimalPad
-        self.at11.keyboardType = UIKeyboardType.decimalPad
-        self.at17.keyboardType = UIKeyboardType.decimalPad
-        self.at21.keyboardType = UIKeyboardType.decimalPad
-        self.at36.keyboardType = UIKeyboardType.decimalPad
-        self.at44.keyboardType = UIKeyboardType.decimalPad
-        self.at45.keyboardType = UIKeyboardType.decimalPad
-        self.at49.keyboardType = UIKeyboardType.decimalPad
-        self.at52.keyboardType = UIKeyboardType.decimalPad
-
+        nombre =  "SDFG"
         // Do any additional setup after loading the view.
     }
     
@@ -64,10 +55,12 @@ class IntroducirAtributosViewController: UIViewController {
         exploracion.setValue(at49.text, forKey: "atributo49")
         exploracion.setValue(at52.text, forKey: "atributo52")
         exploracion.setValue(fecha, forKey: "fecha")
-        exploracion.setValue(fecha, forKey: "fecha")
         exploracion.setValue(nombre, forKey: "nombre")
         exploracion.setValue(ubicacion, forKey: "ubicacion")
         exploracion.setValue(fecha, forKey: "fecha")
+        exploracion.setValue(fecha, forKey: "fecha")
+        exploracion.setValue(imagen?.pngData(), forKey: "imagen")
+
         
         do {
             try mngcontext.save()

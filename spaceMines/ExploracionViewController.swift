@@ -12,6 +12,7 @@ import CoreData
 class ExploracionViewController: UIViewController {
     
     var exploracion: NSManagedObject!
+    var sonar: NSManagedObject!
     
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputObjeto: UITextField!
@@ -32,9 +33,7 @@ class ExploracionViewController: UIViewController {
     }
     
 
-    func cargarDatos(){
-        
-    }
+    
     /*
     // MARK: - Navigation
 
