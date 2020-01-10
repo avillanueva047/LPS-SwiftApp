@@ -30,7 +30,6 @@ class IntroducirAtributosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nombre =  "SDFG"
         // Do any additional setup after loading the view.
     }
     
@@ -57,8 +56,6 @@ class IntroducirAtributosViewController: UIViewController {
         exploracion.setValue(fecha, forKey: "fecha")
         exploracion.setValue(nombre, forKey: "nombre")
         exploracion.setValue(ubicacion, forKey: "ubicacion")
-        exploracion.setValue(fecha, forKey: "fecha")
-        exploracion.setValue(fecha, forKey: "fecha")
         exploracion.setValue(imagen?.pngData(), forKey: "imagen")
 
         

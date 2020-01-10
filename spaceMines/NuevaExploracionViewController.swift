@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
+class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     var sonar: NSManagedObject!
     
@@ -20,6 +20,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBOutlet weak var labelTipo: UILabel!
     @IBOutlet weak var botonSiguiente: UIBarButtonItem!
     @IBOutlet weak var imagen: UIImageView!
+    
     
     let tipos = ["Mina", "Robot"]
     
@@ -59,6 +60,27 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         labelTipo.text = tipos[row]
     }
+    
+    @IBAction func seleccionarImagen(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imag = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
+            imagen.image = imag
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "introducirAtributos" {

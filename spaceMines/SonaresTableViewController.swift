@@ -80,7 +80,6 @@ class SonaresTableViewController: UITableViewController {
     }
     
     @IBAction func ActualizarTabla (sender: UIStoryboardSegue){
-       
         self.cargarDatos()
     }
     

@@ -44,8 +44,8 @@
 		29C347E223C612500040E926 /* SonarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E023C612500040E926 /* SonarCell.swift */; };
 		29C347E723C621420040E926 /* SonaresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E623C621420040E926 /* SonaresTableViewController.swift */; };
 		29C347E823C621420040E926 /* SonaresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E623C621420040E926 /* SonaresTableViewController.swift */; };
-		29C347EA23C626120040E926 /* ExplorarcionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E923C626120040E926 /* ExplorarcionTableViewController.swift */; };
-		29C347EB23C626120040E926 /* ExplorarcionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E923C626120040E926 /* ExplorarcionTableViewController.swift */; };
+		29C347EA23C626120040E926 /* ExploracionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E923C626120040E926 /* ExploracionTableViewController.swift */; };
+		29C347EB23C626120040E926 /* ExploracionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E923C626120040E926 /* ExploracionTableViewController.swift */; };
 		29C347F023C6263B0040E926 /* ExploracionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347EF23C6263B0040E926 /* ExploracionCell.swift */; };
 		29C347F123C6263B0040E926 /* ExploracionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347EF23C6263B0040E926 /* ExploracionCell.swift */; };
 		29C347F323C627B10040E926 /* NuevoSonarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F223C627B10040E926 /* NuevoSonarController.swift */; };
@@ -89,7 +89,7 @@
 		298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaExploracionViewController.swift; sourceTree = "<group>"; };
 		29C347E023C612500040E926 /* SonarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonarCell.swift; sourceTree = "<group>"; };
 		29C347E623C621420040E926 /* SonaresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonaresTableViewController.swift; sourceTree = "<group>"; };
-		29C347E923C626120040E926 /* ExplorarcionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorarcionTableViewController.swift; sourceTree = "<group>"; };
+		29C347E923C626120040E926 /* ExploracionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionTableViewController.swift; sourceTree = "<group>"; };
 		29C347EF23C6263B0040E926 /* ExploracionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionCell.swift; sourceTree = "<group>"; };
 		29C347F223C627B10040E926 /* NuevoSonarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoSonarController.swift; sourceTree = "<group>"; };
 		29C347F523C646D80040E926 /* ExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionViewController.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				29C347E023C612500040E926 /* SonarCell.swift */,
 				29C347F223C627B10040E926 /* NuevoSonarController.swift */,
 				29C347E623C621420040E926 /* SonaresTableViewController.swift */,
-				29C347E923C626120040E926 /* ExplorarcionTableViewController.swift */,
+				29C347E923C626120040E926 /* ExploracionTableViewController.swift */,
 				29C347EF23C6263B0040E926 /* ExploracionCell.swift */,
 				29C347F523C646D80040E926 /* ExploracionViewController.swift */,
 				298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */,
@@ -356,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C347EB23C626120040E926 /* ExplorarcionTableViewController.swift in Sources */,
+				29C347EB23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
 				290E4C9E23C4FA7D005D609B /* AtributoCell.swift in Sources */,
 				29C347E823C621420040E926 /* SonaresTableViewController.swift in Sources */,
 				29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */,
@@ -376,7 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C347EA23C626120040E926 /* ExplorarcionTableViewController.swift in Sources */,
+				29C347EA23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
 				290E4C9923C4F537005D609B /* AtributoCell.swift in Sources */,
 				29C347E723C621420040E926 /* SonaresTableViewController.swift in Sources */,
 				29C347F323C627B10040E926 /* NuevoSonarController.swift in Sources */,

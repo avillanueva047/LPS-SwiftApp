@@ -1231,27 +1231,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="añadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-cy-dZL">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="añadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-cy-dZL">
                                 <rect key="frame" x="106" y="71" width="163" height="158"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="158" id="A0p-O3-hOo"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="158" id="aMF-h1-H1y"/>
                                     <constraint firstAttribute="width" constant="163" id="lNa-Yu-nDR"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="A0p-O3-hOo"/>
-                                        <exclude reference="aMF-h1-H1y"/>
                                         <exclude reference="lNa-Yu-nDR"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="A0p-O3-hOo"/>
-                                        <include reference="aMF-h1-H1y"/>
                                         <include reference="lNa-Yu-nDR"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MwP-MD-UgT" appends="YES" id="t3c-Y2-gwg"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsv-NK-4EJ">
                                 <rect key="frame" x="81" y="359" width="77" height="21"/>
@@ -1512,7 +1513,7 @@
                     <connections>
                         <outlet property="botonSiguiente" destination="iQq-6L-0fc" id="Q0k-3G-SNP"/>
                         <outlet property="fecha" destination="gFX-vb-hIq" id="x1N-C8-y5B"/>
-                        <outlet property="imagen" destination="Bu8-cy-dZL" id="ihv-O7-0Bc"/>
+                        <outlet property="imagen" destination="Bu8-cy-dZL" id="cDM-oS-xAr"/>
                         <outlet property="inputNombre" destination="Ugg-5G-vI7" id="jOt-nE-LKi"/>
                         <outlet property="inputUbicacion" destination="fKA-iT-ZBY" id="rOV-WB-Kuq"/>
                         <outlet property="labelTipo" destination="izD-Gd-jOn" id="rH3-MV-Igd"/>
@@ -1520,6 +1521,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MwP-MD-UgT">
+                    <connections>
+                        <action selector="seleccionarImagen:" destination="8NM-n6-ZQV" id="dxg-b4-31O"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3245.5999999999999" y="720.08995502248877"/>
         </scene>
@@ -1982,7 +1988,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="59Q-va-lKr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="ZII-B5-nGu" kind="unwind" unwindAction="ActualizarTablaExploracionesWithSender:" id="Dpw-fo-nyz"/>
+                                <segue destination="ZII-B5-nGu" kind="unwind" unwindAction="ActualizarTablaExploracionesWithSender:" id="Ke7-LR-Lc6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2903,6 +2909,6 @@
         <image name="imagen_perfil.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YFq-fK-57T"/>
+        <segue reference="Cq2-Zd-g2D"/>
     </inferredMetricsTieBreakers>
 </document>

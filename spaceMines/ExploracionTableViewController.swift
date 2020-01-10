@@ -41,10 +41,9 @@ class ExplorarcionTableViewController: UITableViewController {
         return exploraciones.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exploracion", for: indexPath) as! ExploracionCell
-
+        
         //nombre
         cell.nombre.text = exploraciones[indexPath.row].value(forKey: "nombre") as? String
         //imagen
@@ -54,7 +53,6 @@ class ExplorarcionTableViewController: UITableViewController {
         }
         return cell
      
-
     }
     
     //Eliminacion de exploraciones
@@ -82,8 +80,7 @@ class ExplorarcionTableViewController: UITableViewController {
         self.cargarDatos()
     }
     
-    
-    func cargarDatos(){
+    func cargarDatos() {
       
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -92,30 +89,35 @@ class ExplorarcionTableViewController: UITableViewController {
         let mngcontext = appdelegate.persistentContainer.viewContext
         
         let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Exploracion")
-        fetchRq.predicate = NSPredicate(format: "hecha_por = %@", (sonar))
+        fetchRq.predicate = NSPredicate(format: "hecha_por == %@", (sonar))
         
         do{
             exploraciones = try mngcontext.fetch(fetchRq)
+
         } catch let error as NSError {
+            
             print("Error en la carga de sonares .\(error)")
         }
     
         tableView.reloadData()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "exploracion" {
+            
             if let indexPath = tableView.indexPathForSelectedRow {
                 let segueDest = segue.destination as! ExploracionViewController
                 segueDest.exploracion = self.exploraciones[indexPath.row]
                 segueDest.sonar = self.sonar
-                //segueDest.imagenExploracion =
             }
+            
         } else if segue.identifier == "nuevaExploracion" {
            
             let segueDest = segue.destination as! NuevaExploracionViewController
             segueDest.sonar = self.sonar
         }
+        
     }
 
     /*
