@@ -25,27 +25,6 @@ class ExplorarcionTableViewController: UITableViewController {
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
         }
-        
-        let mngcontext = appdelegate.persistentContainer.viewContext
-        
-        let entidad = NSEntityDescription.entity(forEntityName: "Exploracion", in: mngcontext)!
-        
-        let exploracion = NSManagedObject(entity: entidad, insertInto: mngcontext)
-        
-       
-       
-        exploracion.setValue("Prueba", forKey: "nombre")
-      
-        exploracion.setValue(UIImage(named: "guardar")?.pngData(), forKey: "imagen")
-        
-        
-        do {
-            try mngcontext.save()
-        } catch let error as NSError {
-            print("Se ha producido un error en el guardado de exploracion .\(error)")
-        }
-        cargarDatos()
-        print(exploraciones.count)
     }
 
     // MARK: - Table view data source

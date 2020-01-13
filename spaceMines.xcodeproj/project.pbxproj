@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290E4C8723C4E483005D609B /* PiedraA.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7C23C4E483005D609B /* PiedraA.png */; };
 		290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
 		290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
 		290E4C8B23C4E483005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */; };
@@ -23,7 +22,6 @@
 		290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */; };
 		290E4CA323C4FA7D005D609B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F072396E0A20081E4F8 /* AppDelegate.swift */; };
 		290E4CA723C4FA7D005D609B /* aniadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* aniadir_imagen.png */; };
-		290E4CA823C4FA7D005D609B /* PiedraA.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7C23C4E483005D609B /* PiedraA.png */; };
 		290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8523C4E483005D609B /* imagen_perfil.png */; };
 		290E4CAA23C4FA7D005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
 		290E4CAB23C4FA7D005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */; };
@@ -58,6 +56,10 @@
 		29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F112396E0A30081E4F8 /* Assets.xcassets */; };
 		29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */; };
 		29DA6F202396E0A30081E4F8 /* spaceMinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F1F2396E0A30081E4F8 /* spaceMinesTests.swift */; };
+		29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50923CCB2FF0022F553 /* minaBien.png */; };
+		29E5F50C23CCB2FF0022F553 /* minaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50923CCB2FF0022F553 /* minaBien.png */; };
+		29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
+		29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +73,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		290E4C7C23C4E483005D609B /* PiedraA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PiedraA.png; sourceTree = "<group>"; };
 		290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL2.png; sourceTree = "<group>"; };
 		290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL3.png; sourceTree = "<group>"; };
 		290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Imagen fondo LPS.jpg"; sourceTree = "<group>"; };
@@ -103,6 +104,8 @@
 		29DA6F1B2396E0A30081E4F8 /* spaceMinesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spaceMinesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DA6F1F2396E0A30081E4F8 /* spaceMinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceMinesTests.swift; sourceTree = "<group>"; };
 		29DA6F212396E0A30081E4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E5F50923CCB2FF0022F553 /* minaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minaBien.png; sourceTree = "<group>"; };
+		29E5F50A23CCB2FF0022F553 /* rocaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocaBien.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +136,11 @@
 		290E4C7B23C4E483005D609B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
-				290E4C7C23C4E483005D609B /* PiedraA.png */,
 				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
 				290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */,
 				290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */,
+				29E5F50923CCB2FF0022F553 /* minaBien.png */,
+				29E5F50A23CCB2FF0022F553 /* rocaBien.png */,
 				290E4C8223C4E483005D609B /* aniadir_imagen.png */,
 				290E4C8323C4E483005D609B /* guardar.png */,
 				290E4C8423C4E483005D609B /* simbolo cancelar.png */,
@@ -309,8 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				290E4CA723C4FA7D005D609B /* aniadir_imagen.png in Resources */,
-				290E4CA823C4FA7D005D609B /* PiedraA.png in Resources */,
+				29E5F50C23CCB2FF0022F553 /* minaBien.png in Resources */,
 				290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */,
+				29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
 				290E4CAB23C4FA7D005D609B /* Imagen fondo LPS.jpg in Resources */,
 				290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */,
@@ -328,8 +333,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */,
-				290E4C8723C4E483005D609B /* PiedraA.png in Resources */,
+				29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */,
 				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
+				29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4C8D23C4E483005D609B /* guardar.png in Resources */,
 				290E4C8B23C4E483005D609B /* Imagen fondo LPS.jpg in Resources */,
 				290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */,

@@ -1226,18 +1226,12 @@
         <!--Nueva Exploracion View Controller-->
         <scene sceneID="yis-6k-PX9">
             <objects>
-                <tapGestureRecognizer id="MwP-MD-UgT">
-                    <connections>
-                        <action selector="seleccionarImagen:" destination="8NM-n6-ZQV" id="dxg-b4-31O"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="8NM-n6-ZQV" customClass="NuevaExploracionViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wj0-AW-Vfb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simbolo cancelar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-cy-dZL">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aniadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-cy-dZL">
                                 <rect key="frame" x="106" y="71" width="163" height="158"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -1526,14 +1520,18 @@
                         <outlet property="tipo" destination="pCN-jA-yfy" id="AzB-DF-mQc"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="MwP-MD-UgT">
+                    <connections>
+                        <action selector="seleccionarImagen:" destination="8NM-n6-ZQV" id="dxg-b4-31O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3245.5999999999999" y="720.08995502248877"/>
         </scene>
         <!--Introducir Atributos View Controller-->
         <scene sceneID="Fxa-kM-eig">
             <objects>
-                <exit id="ZII-B5-nGu" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PEf-eX-o87" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Rtg-P2-IcE" customClass="IntroducirAtributosViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDC-XU-TsR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -2006,6 +2004,8 @@
                         <outlet property="at52" destination="Kw3-2Z-P9c" id="qSK-4f-cV2"/>
                     </connections>
                 </viewController>
+                <exit id="ZII-B5-nGu" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEf-eX-o87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4270" y="721"/>
         </scene>
@@ -2905,9 +2905,9 @@
     <resources>
         <image name="LogoRedondoFINAL2.png" width="658" height="677"/>
         <image name="LogoRedondoFINAL3.png" width="386" height="661"/>
+        <image name="aniadir_imagen.png" width="512" height="512"/>
         <image name="añadir_imagen.png" width="512" height="512"/>
         <image name="imagen_perfil.png" width="512" height="512"/>
-        <image name="simbolo cancelar.png" width="550" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Cq2-Zd-g2D"/>
