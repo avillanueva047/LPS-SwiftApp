@@ -60,6 +60,8 @@
 		29E5F50C23CCB2FF0022F553 /* minaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50923CCB2FF0022F553 /* minaBien.png */; };
 		29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
 		29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
+		29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
+		29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		29DA6F212396E0A30081E4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E5F50923CCB2FF0022F553 /* minaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minaBien.png; sourceTree = "<group>"; };
 		29E5F50A23CCB2FF0022F553 /* rocaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocaBien.png; sourceTree = "<group>"; };
+		29E5F50F23CCBEF90022F553 /* sonarBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonarBien.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,7 @@
 				290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */,
 				29E5F50923CCB2FF0022F553 /* minaBien.png */,
 				29E5F50A23CCB2FF0022F553 /* rocaBien.png */,
+				29E5F50F23CCBEF90022F553 /* sonarBien.png */,
 				290E4C8223C4E483005D609B /* aniadir_imagen.png */,
 				290E4C8323C4E483005D609B /* guardar.png */,
 				290E4C8423C4E483005D609B /* simbolo cancelar.png */,
@@ -323,6 +327,7 @@
 				290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */,
 				290E4CAF23C4FA7D005D609B /* simbolo editar.png in Resources */,
 				290E4CB023C4FA7D005D609B /* simbolo cancelar.png in Resources */,
+				29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */,
 				290E4CB123C4FA7D005D609B /* Assets.xcassets in Resources */,
 				290E4CB223C4FA7D005D609B /* Main.storyboard in Resources */,
 			);
@@ -343,6 +348,7 @@
 				290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */,
 				290E4C9023C4E483005D609B /* simbolo editar.png in Resources */,
 				290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */,
+				29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */,
 				29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */,
 				29DA6F0D2396E0A20081E4F8 /* Main.storyboard in Resources */,
 			);

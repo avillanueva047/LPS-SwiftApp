@@ -16,15 +16,15 @@ class ExplorarcionTableViewController: UITableViewController {
     private let appdelegate = UIApplication.shared.delegate as! AppDelegate
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         cargarDatos()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
-            return
-        }
+       cargarDatos()
     }
 
     // MARK: - Table view data source
@@ -87,16 +87,13 @@ class ExplorarcionTableViewController: UITableViewController {
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
-        print("uno")
         let mngcontext = appdelegate.persistentContainer.viewContext
         
         let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Exploracion")
         fetchRq.predicate = NSPredicate(format: "hecha_por = %@", ((sonar)))
-        print("dos")
 
         do{
             exploraciones = try mngcontext.fetch(fetchRq)
-            print("tres")
 
         } catch let error as NSError {
             

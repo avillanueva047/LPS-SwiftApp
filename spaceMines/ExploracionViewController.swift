@@ -20,6 +20,7 @@ class ExploracionViewController: UIViewController {
     @IBOutlet weak var inputUbicacion: UITextField!
     @IBOutlet weak var imagenExploracion: UIImageView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,12 +29,22 @@ class ExploracionViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
 
-        //cargarDatos()
-        // Do any additional setup after loading the view.
+        inputNombre.isUserInteractionEnabled = false
+        inputObjeto.isUserInteractionEnabled = false
+        inputFecha.isUserInteractionEnabled = false
+        inputUbicacion.isUserInteractionEnabled = false
     }
     
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "verAtributos" {
+            
+            let segueDest = segue.destination as! InfoAtributosController
+            segueDest.exploracion = self.exploracion
+        }
+        
+    }
     /*
     // MARK: - Navigation
 

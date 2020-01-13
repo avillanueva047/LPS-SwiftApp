@@ -14,9 +14,9 @@ class EditarExploracionViewController: UIViewController {
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputUbicacion: UITextField!
     @IBOutlet weak var inputFecha: UITextField!
-    @IBOutlet weak var inputTipo: UITextField!
+    @IBOutlet weak var botonGuardar: UIBarButtonItem!
     
-    
+  let tipos = ["Mina", "Robot"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,13 @@ class EditarExploracionViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
+        botonGuardar.isEnabled = false
     }
     
-
+    @IBAction func labelCambia(_ sender: UITextField) {
+        botonGuardar.isEnabled = !((sender.text?.isEmpty)! && (inputUbicacion.text?.isEmpty)! && (inputFecha.text?.isEmpty)!)
+    }
+    
     /*
     // MARK: - Navigation
 

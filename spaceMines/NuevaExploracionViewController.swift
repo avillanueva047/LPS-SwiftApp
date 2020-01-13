@@ -43,6 +43,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBAction func labelCambia(_ sender: UITextField) {
         botonSiguiente.isEnabled = !(sender.text?.isEmpty)!
     }
+    @IBOutlet weak var imagenCambia: UILabel!
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
