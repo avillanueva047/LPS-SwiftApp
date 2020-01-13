@@ -30,6 +30,7 @@ class ExploracionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill

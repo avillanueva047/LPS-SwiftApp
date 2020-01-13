@@ -31,7 +31,7 @@ class IntroducirAtributosViewController: UIViewController {
     var tipo: String!
     var fecha: String!
     
-    //Estructuras auxiliares para obsrevar ver lista de atributos
+    //Estructuras auxiliares para ver lista de atributos
     var nombreAtributos: [String]!
     var valorAtributos: [String]!
     
@@ -43,20 +43,14 @@ class IntroducirAtributosViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        botonGuardar.isEnabled = false
         
         // Do any additional setup after loading the view.
     }
-    
-    func botonInactivo(){
-        if((at4.text?.isEmpty)! && (at11.text?.isEmpty)! && (at17.text?.isEmpty)! && (at21.text?.isEmpty)! && (at36.text?.isEmpty)! && (at44.text?.isEmpty)! && (at45.text?.isEmpty)! && (at49.text?.isEmpty)! && (at52.text?.isEmpty)!){
-            botonGuardar.isEnabled = false
-        }
-    }
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         nombreAtributos = ["Atributo 4", "Atributo 11", "Atributo 17", "Atributo 21", "Atributo 36", "Atributo 44", "Atributo 45", "Atributo 49", "Atributo 52"]
-        valorAtributos = [at4.text!, at11.text!, at17.text!, at21.text!, at36.text!, at44.text!, at45.text!, at49.text!, ]
+        valorAtributos = ([at4.text, at11.text, at17.text, at21.text, at36.text, at44.text, at45.text, at49.text, at52.text ] as! [String])
         
         let segueDest = segue.destination as! ExplorarcionTableViewController
         segueDest.nombreAtributos = self.nombreAtributos

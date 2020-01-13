@@ -19,13 +19,12 @@ class InfoAtributosController: UITableViewController {
         super.viewDidLoad()
        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
+        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        self.title = "Atributos de" + (exploracion.value(forKey: "nombre") as? String)!
         // Uncomment the following line to preserve selection between presentations
-        
+        nombreAtributos = ["!!", "dfb", "dfgdsf,"]
     }
 
     // MARK: - Table view data source

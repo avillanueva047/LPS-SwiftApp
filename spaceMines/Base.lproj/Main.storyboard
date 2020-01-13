@@ -2353,7 +2353,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="brW-OK-hym" kind="show" identifier="verAtributos" id="Izi-B5-ASL"/>
+                                    <segue destination="Qav-bx-vWx" kind="show" identifier="verAtributos" id="jc3-PO-oFd"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simbolo editar.png" translatesAutoresizingMaskIntoConstraints="NO" id="v3J-EE-8Xh">
@@ -2924,13 +2924,13 @@
                                             <include reference="fDf-Xx-PNu"/>
                                             <include reference="gmM-2T-drh"/>
                                             <include reference="8a6-GM-8Nf"/>
-                                            <include reference="V11-Rx-xf2"/>
+                                            <exclude reference="V11-Rx-xf2"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nombre" destination="E7k-rb-Mcj" id="LFG-mt-x8h"/>
-                                    <outlet property="valor" destination="WQP-Ge-eGM" id="cF4-QL-jIN"/>
+                                    <outlet property="nombre" destination="E7k-rb-Mcj" id="Fob-MN-NRD"/>
+                                    <outlet property="valor" destination="WQP-Ge-eGM" id="VsT-2K-7or"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2950,26 +2950,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzS-s1-BS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="1527"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="X1b-Mc-vSp">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="brW-OK-hym" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NHu-dK-r8k">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Qav-bx-vWx" kind="relationship" relationship="rootViewController" id="9kc-sO-LGX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOK-RG-wSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3246" y="1527"/>
+            <point key="canvasLocation" x="3345" y="1527"/>
         </scene>
     </scenes>
     <resources>
