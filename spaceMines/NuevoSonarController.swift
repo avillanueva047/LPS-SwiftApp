@@ -22,7 +22,7 @@ class NuevoSonarController: UIViewController,UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
+        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         

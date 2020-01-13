@@ -18,7 +18,7 @@ class EditarExploracionViewController: UIViewController {
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var labelTipo: UILabel!
     
-    var sonar: NSManagedObject!
+   // var sonar: NSManagedObject!
     var exploracion: NSManagedObject!
     
     let tipos = ["Mina", "Robot"]
@@ -30,7 +30,7 @@ class EditarExploracionViewController: UIViewController {
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        // Do any additional setup after loading the view.
+
         botonGuardar.isEnabled = false
     }
     

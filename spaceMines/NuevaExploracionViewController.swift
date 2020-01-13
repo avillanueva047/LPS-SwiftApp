@@ -28,7 +28,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         super.viewDidLoad()
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
+        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
@@ -44,8 +44,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         botonSiguiente.isEnabled = !(sender.text?.isEmpty)!
     }
   
-    
-    
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

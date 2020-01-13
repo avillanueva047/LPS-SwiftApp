@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
 		290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
-		290E4C8B23C4E483005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */; };
+		290E4C8B23C4E483005D609B /* Imagen_fondo_LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */; };
 		290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* aniadir_imagen.png */; };
 		290E4C8D23C4E483005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
 		290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8423C4E483005D609B /* simbolo cancelar.png */; };
@@ -24,7 +24,7 @@
 		290E4CA723C4FA7D005D609B /* aniadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* aniadir_imagen.png */; };
 		290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8523C4E483005D609B /* imagen_perfil.png */; };
 		290E4CAA23C4FA7D005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
-		290E4CAB23C4FA7D005D609B /* Imagen fondo LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */; };
+		290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */; };
 		290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
 		290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */; };
 		290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
@@ -77,7 +77,7 @@
 /* Begin PBXFileReference section */
 		290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL2.png; sourceTree = "<group>"; };
 		290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL3.png; sourceTree = "<group>"; };
-		290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Imagen fondo LPS.jpg"; sourceTree = "<group>"; };
+		290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Imagen_fondo_LPS.jpg; sourceTree = "<group>"; };
 		290E4C8223C4E483005D609B /* aniadir_imagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aniadir_imagen.png; sourceTree = "<group>"; };
 		290E4C8323C4E483005D609B /* guardar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guardar.png; sourceTree = "<group>"; };
 		290E4C8423C4E483005D609B /* simbolo cancelar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simbolo cancelar.png"; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			children = (
 				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
 				290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */,
-				290E4C8023C4E483005D609B /* Imagen fondo LPS.jpg */,
+				290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */,
 				29E5F50923CCB2FF0022F553 /* minaBien.png */,
 				29E5F50A23CCB2FF0022F553 /* rocaBien.png */,
 				29E5F50F23CCBEF90022F553 /* sonarBien.png */,
@@ -321,7 +321,7 @@
 				290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */,
 				29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
-				290E4CAB23C4FA7D005D609B /* Imagen fondo LPS.jpg in Resources */,
+				290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */,
 				290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */,
 				290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */,
 				290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */,
@@ -342,7 +342,7 @@
 				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
 				29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4C8D23C4E483005D609B /* guardar.png in Resources */,
-				290E4C8B23C4E483005D609B /* Imagen fondo LPS.jpg in Resources */,
+				290E4C8B23C4E483005D609B /* Imagen_fondo_LPS.jpg in Resources */,
 				290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */,
 				29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */,
 				290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */,

@@ -14,18 +14,21 @@ class ExploracionViewController: UIViewController {
     var exploracion: NSManagedObject!
     var sonar: NSManagedObject!
     
+    var datos: [String : String]!
+    var atributos: [String : Int]!
+    
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputObjeto: UITextField!
     @IBOutlet weak var inputFecha: UITextField!
     @IBOutlet weak var inputUbicacion: UITextField!
     @IBOutlet weak var imagenExploracion: UIImageView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
+        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
 
@@ -42,7 +45,11 @@ class ExploracionViewController: UIViewController {
             
             let segueDest = segue.destination as! InfoAtributosController
             segueDest.exploracion = self.exploracion
+            
         } else if segue.identifier == "editarExploracion" {
+            
+            let segueDest = segue.destination as! EditarExploracionViewController
+            segueDest.exploracion = self.exploracion
             
         }
         
