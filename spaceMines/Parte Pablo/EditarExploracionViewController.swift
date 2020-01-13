@@ -79,9 +79,10 @@ class EditarExploracionViewController: UIViewController {
         exploracion.setValue(labelTipo.text, forKey: "tipo")
         exploracion.setValue(imagen.image?.pngData(), forKey: "imagen")
 
-        
-        do{
-            
+        do {
+            try mngcontext.save()
+        } catch let error as NSError {
+            print("Se ha producido un error en el guardado de edicion de exploracion .\(error)")
         }
         
     }
