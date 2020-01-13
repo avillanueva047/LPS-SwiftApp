@@ -12,10 +12,10 @@ import CoreData
 class ExploracionViewController: UIViewController {
     
     var exploracion: NSManagedObject!
-    var sonar: NSManagedObject!
-    
-    var datos: [String : String]!
-    var atributos: [String : Int]!
+    //var sonar: NSManagedObject!
+
+    var valoreAtributos: [String]!
+    var nombreAtributos: [String]!
     
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputObjeto: UITextField!
@@ -23,6 +23,9 @@ class ExploracionViewController: UIViewController {
     @IBOutlet weak var inputUbicacion: UITextField!
     @IBOutlet weak var imagenExploracion: UIImageView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        cargarDatos()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +34,22 @@ class ExploracionViewController: UIViewController {
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-
+        
+        self.title = "Exploracion" + (exploracion.value(forKey: "nombre") as? String)!
+        
+        cargarDatos()
+        
         inputNombre.isUserInteractionEnabled = false
         inputObjeto.isUserInteractionEnabled = false
         inputFecha.isUserInteractionEnabled = false
         inputUbicacion.isUserInteractionEnabled = false
     }
     
+
+    @IBAction func cancelar(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
+
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -46,12 +58,23 @@ class ExploracionViewController: UIViewController {
             let segueDest = segue.destination as! InfoAtributosController
             segueDest.exploracion = self.exploracion
             
+            
         } else if segue.identifier == "editarExploracion" {
             
             let segueDest = segue.destination as! EditarExploracionViewController
             segueDest.exploracion = self.exploracion
             
         }
+    }
+    
+    
+    func cargarDatos() {
+        
+        self.inputFecha.text = exploracion.value(forKey: "fecha") as? String
+        self.inputUbicacion.text = exploracion.value(forKey: "ubicacion") as? String
+        self.inputNombre.text = exploracion.value(forKey: "nombre") as? String
+        self.imagenExploracion.image = exploracion.value(forKey: "imagen") as? UIImage
+        self.inputObjeto.text = exploracion.value(forKey: "tipo") as? String
         
     }
     /*

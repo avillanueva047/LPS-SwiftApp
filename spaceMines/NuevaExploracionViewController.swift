@@ -68,6 +68,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
             imagen.image = UIImage(named: "rocaBien")
         }
     }
+    
     @IBAction func seleccionarImagen(_ sender: Any) {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
@@ -92,14 +93,16 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "introducirAtributos" {
             let segueDest = segue.destination as! IntroducirAtributosViewController
+      
             
             segueDest.nombre = self.inputNombre.text
             segueDest.ubicacion = self.inputUbicacion.text
-            let componentes = fecha.calendar.dateComponents([.month, .day, .year], from: fecha.date)
-            
             segueDest.sonar = self.sonar
-            segueDest.fecha = (String(describing: componentes.month) + "/" + String(describing: componentes.day) + "/" + String(describing: componentes.year))
             
+            let dateformater = DateFormatter()
+            dateformater.dateFormat = "MM/dd/yyyy"
+            segueDest.fecha = dateformater.string(from: fecha.date)
+    
             segueDest.tipo = self.labelTipo.text
             segueDest.imagen = self.imagen.image
 

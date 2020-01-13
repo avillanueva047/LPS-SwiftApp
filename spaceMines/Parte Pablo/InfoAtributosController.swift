@@ -12,11 +12,8 @@ import CoreData
 class InfoAtributosController: UITableViewController {
 
     var exploracion:  NSManagedObject!
-    var atributos: [NSManagedObject] = []
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //cargarDatos()
-    }
+    var nombreAtributos: [String]!
+    var valorAtributos: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +22,10 @@ class InfoAtributosController: UITableViewController {
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+        
+        self.title = "Atributos de" + (exploracion.value(forKey: "nombre") as? String)!
         // Uncomment the following line to preserve selection between presentations
         
-       // cargarDatos()
     }
 
     // MARK: - Table view data source
@@ -39,19 +37,20 @@ class InfoAtributosController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return atributos.count
+        return nombreAtributos.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "atributo", for: indexPath) as! AtributoCell
 
-        cell.nombre.text = atributos[indexPath.row].value(forKey: "nombre") as? String
-        cell.valor.text = atributos[indexPath.row].value(forKey: "valor") as? String
+        cell.nombre.text = nombreAtributos![indexPath.row]
+        cell.valor.text = valorAtributos![indexPath.row]
 
         return cell
     }
     
+    /*
     func cargarDatos(){
         
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -71,7 +70,7 @@ class InfoAtributosController: UITableViewController {
         
         tableView.reloadData()
     }
-
+*/
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

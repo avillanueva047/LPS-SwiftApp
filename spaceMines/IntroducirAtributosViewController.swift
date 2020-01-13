@@ -11,6 +11,7 @@ import CoreData
 
 class IntroducirAtributosViewController: UIViewController {
 
+    //Atributos de cada exploracion
     @IBOutlet weak var at4: UITextField!
     @IBOutlet weak var at11: UITextField!
     @IBOutlet weak var at17: UITextField!
@@ -20,7 +21,9 @@ class IntroducirAtributosViewController: UIViewController {
     @IBOutlet weak var at45: UITextField!
     @IBOutlet weak var at49: UITextField!
     @IBOutlet weak var at52: UITextField!
+    @IBOutlet weak var botonGuardar: UIBarButtonItem!
     
+    //Valores que se nos dan en el segue de la vista anterior
     var imagen: UIImage!
     var sonar: NSManagedObject!
     var nombre: String!
@@ -28,12 +31,33 @@ class IntroducirAtributosViewController: UIViewController {
     var tipo: String!
     var fecha: String!
     
+    //Estructuras auxiliares para obsrevar ver lista de atributos
+    var nombreAtributos: [String]!
+    var valorAtributos: [String]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        botonInactivo()
+        
         // Do any additional setup after loading the view.
     }
     
+    func botonInactivo(){
+        if((at4.text?.isEmpty)! && (at11.text?.isEmpty)! && (at17.text?.isEmpty)! && (at21.text?.isEmpty)! && (at36.text?.isEmpty)! && (at44.text?.isEmpty)! && (at45.text?.isEmpty)! && (at49.text?.isEmpty)! && (at52.text?.isEmpty)!){
+            botonGuardar.isEnabled = false
+        }else{
+            botonGuardar.isEnabled = true
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        nombreAtributos = ["Atributo 4", "Atributo 11", "Atributo 17", "Atributo 21", "Atributo 36", "Atributo 44", "Atributo 45", "Atributo 49", "Atributo 52"]
+        valorAtributos = [at4.text!, at11.text!, at17.text!, at21.text!, at36.text!, at44.text!, at45.text!, at49.text!, ]
+        
+        let segueDest = segue.destination as! ExplorarcionTableViewController
+        segueDest.nombreAtributos = self.nombreAtributos
+        segueDest.valorAtributos = self.valorAtributos
+        
         
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
             return

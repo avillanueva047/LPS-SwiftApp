@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class EditarExploracionViewController: UIViewController {
+class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate  {
 
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputUbicacion: UITextField!
@@ -73,6 +73,8 @@ class EditarExploracionViewController: UIViewController {
         let entidad = NSEntityDescription.entity(forEntityName: "Exploracion", in: mngcontext)!
         exploracion = NSManagedObject(entity: entidad, insertInto: mngcontext)
         
+        self.title = "Editar exploracion" + (exploracion.value(forKey: "nombre") as? String)!
+
         exploracion.setValue(inputNombre.text, forKey: "nombre")
         exploracion.setValue(inputUbicacion.text, forKey: "fecha")
         exploracion.setValue(inputFecha.text, forKey: "ubicacion")
@@ -84,6 +86,12 @@ class EditarExploracionViewController: UIViewController {
         } catch let error as NSError {
             print("Se ha producido un error en el guardado de edicion de exploracion .\(error)")
         }
+        
+    }
+    
+    
+    @IBAction func cancelar(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
         
     }
     /*
