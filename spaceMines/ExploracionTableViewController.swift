@@ -22,7 +22,30 @@ class ExplorarcionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        
+        let mngcontext = appdelegate.persistentContainer.viewContext
+        
+        let entidad = NSEntityDescription.entity(forEntityName: "Exploracion", in: mngcontext)!
+        
+        let exploracion = NSManagedObject(entity: entidad, insertInto: mngcontext)
+        
+       
+       
+        exploracion.setValue("Prueba", forKey: "nombre")
+      
+        exploracion.setValue(UIImage(named: "guardar")?.pngData(), forKey: "imagen")
+        
+        
+        do {
+            try mngcontext.save()
+        } catch let error as NSError {
+            print("Se ha producido un error en el guardado de exploracion .\(error)")
+        }
         cargarDatos()
+        print(exploraciones.count)
     }
 
     // MARK: - Table view data source
@@ -85,14 +108,16 @@ class ExplorarcionTableViewController: UITableViewController {
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
-        
+        print("uno")
         let mngcontext = appdelegate.persistentContainer.viewContext
         
         let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "Exploracion")
-        fetchRq.predicate = NSPredicate(format: "hecha_por == %@", (sonar))
-        
+        fetchRq.predicate = NSPredicate(format: "hecha_por = %@", ((sonar)))
+        print("dos")
+
         do{
             exploraciones = try mngcontext.fetch(fetchRq)
+            print("tres")
 
         } catch let error as NSError {
             
@@ -112,7 +137,9 @@ class ExplorarcionTableViewController: UITableViewController {
                 segueDest.sonar = self.sonar
             }
             
-        } else if segue.identifier == "nuevaExploracion" {
+        }
+        
+        if segue.identifier == "nuevaExploracion" {
            
             let segueDest = segue.destination as! NuevaExploracionViewController
             segueDest.sonar = self.sonar

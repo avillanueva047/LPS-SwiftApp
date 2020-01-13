@@ -90,6 +90,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
             segueDest.ubicacion = self.inputUbicacion.text
             let componentes = fecha.calendar.dateComponents([.month, .day, .year], from: fecha.date)
             
+            segueDest.sonar = self.sonar
             segueDest.fecha = (String(describing: componentes.month) + "/" + String(describing: componentes.day) + "/" + String(describing: componentes.year))
             
             segueDest.tipo = self.labelTipo.text

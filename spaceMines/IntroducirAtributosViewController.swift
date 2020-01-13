@@ -34,6 +34,7 @@ class IntroducirAtributosViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
         }
@@ -44,6 +45,7 @@ class IntroducirAtributosViewController: UIViewController {
         
         let exploracion = NSManagedObject(entity: entidad, insertInto: mngcontext)
         
+       //Atributos
         exploracion.setValue(at4.text, forKey: "atributo4")
         exploracion.setValue(at11.text, forKey: "atributo11")
         exploracion.setValue(at17.text, forKey: "atributo17")
@@ -53,11 +55,13 @@ class IntroducirAtributosViewController: UIViewController {
         exploracion.setValue(at45.text, forKey: "atributo45")
         exploracion.setValue(at49.text, forKey: "atributo49")
         exploracion.setValue(at52.text, forKey: "atributo52")
+       //Caracteristicas
         exploracion.setValue(fecha, forKey: "fecha")
         exploracion.setValue(nombre, forKey: "nombre")
         exploracion.setValue(ubicacion, forKey: "ubicacion")
         exploracion.setValue(imagen?.pngData(), forKey: "imagen")
-
+       //Relacion
+        exploracion.setValue(sonar, forKey: "hecha_por")
         
         do {
             try mngcontext.save()
