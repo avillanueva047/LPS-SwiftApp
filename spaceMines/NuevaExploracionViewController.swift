@@ -32,7 +32,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-       botonSiguiente.isEnabled = false
+        botonSiguiente.isEnabled = false
         // Do any additional setup after loading the view.
     }
     
@@ -43,7 +43,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBAction func labelCambia(_ sender: UITextField) {
         botonSiguiente.isEnabled = !(sender.text?.isEmpty)!
     }
-    @IBOutlet weak var imagenCambia: UILabel!
+  
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -62,6 +62,13 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         labelTipo.text = tipos[row]
     }
     
+    @IBAction func cambiarImagen(_ sender: Any) {
+        if labelTipo.text == "Mina" {
+            imagen.image = UIImage(named: "minaBien")
+        } else {
+            imagen.image = UIImage(named: "rocaBien")
+        }
+    }
     @IBAction func seleccionarImagen(_ sender: Any) {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary

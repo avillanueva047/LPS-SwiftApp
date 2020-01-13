@@ -42,6 +42,8 @@ class ExploracionViewController: UIViewController {
             
             let segueDest = segue.destination as! InfoAtributosController
             segueDest.exploracion = self.exploracion
+        } else if segue.identifier == "editarExploracion" {
+            
         }
         
     }

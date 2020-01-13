@@ -213,7 +213,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoRedondoFINAL3.png" translatesAutoresizingMaskIntoConstraints="NO" id="16j-Bg-g6u">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sonarBien.png" translatesAutoresizingMaskIntoConstraints="NO" id="16j-Bg-g6u">
                                             <rect key="frame" x="271" y="0.0" width="95" height="95"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="95" id="YGV-P6-Jgi"/>
@@ -1522,7 +1522,7 @@
                 </viewController>
                 <tapGestureRecognizer id="MwP-MD-UgT">
                     <connections>
-                        <action selector="seleccionarImagen:" destination="8NM-n6-ZQV" id="dxg-b4-31O"/>
+                        <action selector="cambiarImagen:" destination="8NM-n6-ZQV" id="hDL-H3-rTz"/>
                     </connections>
                 </tapGestureRecognizer>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muV-BC-NfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2017,7 +2017,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="añadir_imagen.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-Md-gzS">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sonarBien.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-Md-gzS">
                                 <rect key="frame" x="67" y="95" width="241" height="195"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -2530,6 +2530,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minaBien.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vi7-cB-IxT">
                                 <rect key="frame" x="102" y="94" width="171" height="142"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="HWH-pI-XVA"/>
                                     <constraint firstAttribute="width" constant="171" id="RqR-P6-KLk"/>
@@ -2546,6 +2547,9 @@
                                         <include reference="RqR-P6-KLk"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VSK-sP-wkP" appends="YES" id="X7I-ZY-IsL"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paW-Tn-xus">
                                 <rect key="frame" x="65" y="283" width="62" height="21"/>
@@ -2565,8 +2569,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypv-le-K4a">
-                                <rect key="frame" x="65" y="488" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypv-le-K4a">
+                                <rect key="frame" x="65" y="488" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2643,6 +2647,10 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWV-fg-58l">
+                                <rect key="frame" x="81" y="517" width="213" height="84"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2740,21 +2748,28 @@
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="Bxk-L8-xho">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="EPJ-rR-Rtr" kind="unwind" unwindAction="ActualizarTablaExploracionesWithSender:" id="FOn-2s-z1W"/>
+                                <segue destination="EPJ-rR-Rtr" kind="unwind" unwindAction="ActualizarTablaExploracionesWithSender:" id="ATl-GJ-U7b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="botonGuardar" destination="Bxk-L8-xho" id="OJB-zl-6k8"/>
+                        <outlet property="imagen" destination="Vi7-cB-IxT" id="Xq7-b0-FBo"/>
                         <outlet property="inputFecha" destination="sbD-fT-bGd" id="xGx-u9-LFj"/>
                         <outlet property="inputNombre" destination="61R-Tc-Ckg" id="ZOk-TT-PyP"/>
                         <outlet property="inputUbicacion" destination="MbD-85-KiC" id="YyM-An-nR4"/>
+                        <outlet property="labelTipo" destination="ypv-le-K4a" id="6yz-Tk-prN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFS-6o-NvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EPJ-rR-Rtr" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="VSK-sP-wkP">
+                    <connections>
+                        <action selector="cambiaImagen:" destination="Vu0-yF-tsY" id="gTa-la-NEi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2169" y="2297"/>
+            <point key="canvasLocation" x="2168.8000000000002" y="2296.1019490254876"/>
         </scene>
         <!--Atributos-->
         <scene sceneID="nhO-va-XFy">
@@ -2875,11 +2890,10 @@
     </scenes>
     <resources>
         <image name="LogoRedondoFINAL2.png" width="658" height="677"/>
-        <image name="LogoRedondoFINAL3.png" width="386" height="661"/>
-        <image name="añadir_imagen.png" width="512" height="512"/>
         <image name="imagen_perfil.png" width="512" height="512"/>
         <image name="minaBien.png" width="200" height="200"/>
         <image name="rocaBien.png" width="200" height="200"/>
+        <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Cq2-Zd-g2D"/>
