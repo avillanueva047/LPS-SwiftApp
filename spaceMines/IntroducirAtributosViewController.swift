@@ -37,7 +37,13 @@ class IntroducirAtributosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        botonInactivo()
+      
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        
+        botonGuardar.isEnabled = false
         
         // Do any additional setup after loading the view.
     }
@@ -45,8 +51,6 @@ class IntroducirAtributosViewController: UIViewController {
     func botonInactivo(){
         if((at4.text?.isEmpty)! && (at11.text?.isEmpty)! && (at17.text?.isEmpty)! && (at21.text?.isEmpty)! && (at36.text?.isEmpty)! && (at44.text?.isEmpty)! && (at45.text?.isEmpty)! && (at49.text?.isEmpty)! && (at52.text?.isEmpty)!){
             botonGuardar.isEnabled = false
-        }else{
-            botonGuardar.isEnabled = true
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

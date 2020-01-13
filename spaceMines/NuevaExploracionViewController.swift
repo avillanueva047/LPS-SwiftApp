@@ -22,7 +22,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBOutlet weak var imagen: UIImageView!
     
     
-    let tipos = ["Mina", "Robot"]
+    let tipos = ["Mina", "Roca"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
