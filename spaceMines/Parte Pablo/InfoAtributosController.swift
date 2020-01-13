@@ -13,7 +13,7 @@ class InfoAtributosController: UITableViewController {
 
     var exploracion:  NSManagedObject!
     var nombreAtributos: [String]!
-    var valorAtributos: [String]!
+    //var valorAtributos: [String] = ["sdfg", "fadsf"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,6 @@ class InfoAtributosController: UITableViewController {
         self.view.insertSubview(backgroundImage, at: 0)
         
         // Uncomment the following line to preserve selection between presentations
-        nombreAtributos = ["!!", "dfb", "dfgdsf,"]
     }
 
     // MARK: - Table view data source
@@ -43,8 +42,8 @@ class InfoAtributosController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "atributo", for: indexPath) as! AtributoCell
 
-        cell.nombre.text = nombreAtributos![indexPath.row]
-        cell.valor.text = valorAtributos![indexPath.row]
+        cell.nombre.text = nombreAtributos[indexPath.row]
+        cell.valor.text = "VAYA"
 
         return cell
     }

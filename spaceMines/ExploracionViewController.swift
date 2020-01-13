@@ -14,7 +14,7 @@ class ExploracionViewController: UIViewController {
     var exploracion: NSManagedObject!
     //var sonar: NSManagedObject!
 
-    var valoreAtributos: [String]!
+   // var valoreAtributos: [String]!
     var nombreAtributos: [String]!
     
     @IBOutlet weak var inputNombre: UITextField!
@@ -59,7 +59,7 @@ class ExploracionViewController: UIViewController {
             let segueDest = segue.destination as! InfoAtributosController
             segueDest.exploracion = self.exploracion
             segueDest.nombreAtributos = self.nombreAtributos
-            segueDest.valorAtributos = self.valoreAtributos
+           // segueDest.valorAtributos = self.valoreAtributos
             
         } else if segue.identifier == "editarExploracion" {
             

@@ -18,8 +18,8 @@ class ExplorarcionTableViewController: UITableViewController {
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var nombreAtributos: [String]!
-    var valorAtributos: [String]!
-
+   // var valorAtributos: [String]!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         cargarDatos()
@@ -27,12 +27,11 @@ class ExplorarcionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
        cargarDatos()
     }
-
+    
     // MARK: - Table view data source
-
+    
     @IBAction func cancelar(_ sender: Any) {
         navigationController!.popViewController(animated: true)
     }
@@ -41,12 +40,12 @@ class ExplorarcionTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return exploraciones.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exploracion", for: indexPath) as! ExploracionCell
         
@@ -115,7 +114,7 @@ class ExplorarcionTableViewController: UITableViewController {
                 let segueDest = segue.destination as! ExploracionViewController
                 segueDest.exploracion = self.exploraciones[indexPath.row]
                 segueDest.nombreAtributos = self.nombreAtributos
-                segueDest.valoreAtributos = self.valorAtributos
+                //segueDest.valoreAtributos = self.valorAtributos
             }
             
         }
