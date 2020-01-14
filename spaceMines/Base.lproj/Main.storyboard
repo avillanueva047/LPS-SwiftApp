@@ -2082,9 +2082,6 @@
                                         <include reference="Zx1-h6-BgC"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="labelDescCambia:" destination="nG2-DI-Pfu" eventType="editingDidEnd" id="sTq-cl-02P"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW7-iO-47n">
                                 <rect key="frame" x="67" y="416" width="104" height="24"/>
@@ -2110,10 +2107,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="labelDesc:" destination="nG2-DI-Pfu" eventType="editingDidEnd" id="QsO-tB-kdL"/>
-                                    <action selector="labelNomnbre:" destination="nG2-DI-Pfu" eventType="editingDidEnd" id="qJ2-TA-8fj"/>
-                                </connections>
                             </textField>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sonarBien.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-Md-gzS">
                                 <rect key="frame" x="82" y="97" width="205" height="195"/>

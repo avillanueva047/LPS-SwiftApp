@@ -19,9 +19,9 @@ class InfoAtributosController: UITableViewController {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         nombreAtributos = ["Atributo 4", "Atributo 11", "Atributo 17", "Atributo 21", "Atributo 36", "Atributo 44", "Atributo 45", "Atributo 49", "Atributo 52"]
-        valorAtributos = cargarValores() 
+        valorAtributos = cargarValores()
     }
-
+    
     // MARK: - Table view data source
 
     @IBAction func cacelar(_ sender: Any) {
@@ -38,12 +38,11 @@ class InfoAtributosController: UITableViewController {
         return nombreAtributos.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "atributo", for: indexPath) as! AtributoCell
 
         cell.nombre.text = nombreAtributos[indexPath.row]
-        cell.valor.text = "VAYA"
+        cell.valor.text = valorAtributos[indexPath.row]
 
         return cell
     }

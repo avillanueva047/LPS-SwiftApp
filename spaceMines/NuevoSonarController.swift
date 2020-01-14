@@ -58,12 +58,7 @@ class NuevoSonarController: UIViewController,UIImagePickerControllerDelegate, UI
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func labelNomnbre(_ sender: Any) {
-        view.endEditing(true)
-    }
-    @IBAction func labelDesc(_ sender: Any) {
-        view.endEditing(true)
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
       
