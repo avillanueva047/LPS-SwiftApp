@@ -24,6 +24,7 @@ class ExplorarcionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
        cargarDatos()
     }
     
@@ -53,6 +54,9 @@ class ExplorarcionTableViewController: UITableViewController {
             let imageneExpl = UIImage(data: imagenCD)
             cell.imagen.image = imageneExpl
         }
+        
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+
         return cell
      
     }

@@ -17,6 +17,7 @@ class InfoAtributosController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
         // Uncomment the following line to preserve selection between presentations
         nombreAtributos = ["Atributo 4", "Atributo 11", "Atributo 17", "Atributo 21", "Atributo 36", "Atributo 44", "Atributo 45", "Atributo 49", "Atributo 52"]
         valorAtributos = cargarValores()
@@ -44,6 +45,8 @@ class InfoAtributosController: UITableViewController {
         cell.nombre.text = nombreAtributos[indexPath.row]
         cell.valor.text = valorAtributos[indexPath.row]
 
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        
         return cell
     }
     

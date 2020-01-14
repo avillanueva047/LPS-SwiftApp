@@ -23,6 +23,10 @@ class SonaresTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.backgroundColor = UIColor.clear
+        tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
+        
         cargarDatos()
     }
     
@@ -47,6 +51,9 @@ class SonaresTableViewController: UITableViewController {
             let imagenSonar = UIImage(data: imagenCD)
             cell.imagen.image = imagenSonar
         }
+        
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        
         return cell
     }
     

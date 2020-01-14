@@ -29,8 +29,7 @@ class ExploracionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
@@ -45,7 +44,6 @@ class ExploracionViewController: UIViewController {
         inputFecha.isUserInteractionEnabled = false
         inputUbicacion.isUserInteractionEnabled = false
     }
-    
 
     @IBAction func cancelar(_ sender: Any) {
         
@@ -71,13 +69,17 @@ class ExploracionViewController: UIViewController {
         }
     }
     
-    
     func cargarDatos() {
         
         self.inputFecha.text = exploracion.value(forKey: "fecha") as? String
         self.inputUbicacion.text = exploracion.value(forKey: "ubicacion") as? String
         self.inputNombre.text = exploracion.value(forKey: "nombre") as? String
-        self.imagenExploracion.image = exploracion.value(forKey: "imagen") as? UIImage
+        
+        if let imagenCD = exploracion.value(forKey: "imagen") as? Data {
+            let imageneExpl = UIImage(data: imagenCD)
+             imagenExploracion.image = imageneExpl
+        }
+        
         self.inputObjeto.text = exploracion.value(forKey: "tipo") as? String
         
     }
