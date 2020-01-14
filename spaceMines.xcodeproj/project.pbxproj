@@ -50,6 +50,10 @@
 		29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F223C627B10040E926 /* NuevoSonarController.swift */; };
 		29C347F623C646D80040E926 /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F523C646D80040E926 /* ExploracionViewController.swift */; };
 		29C347F723C646D80040E926 /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F523C646D80040E926 /* ExploracionViewController.swift */; };
+		29D6A4B723CE20DC00903E69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B623CE20DC00903E69 /* MenuViewController.swift */; };
+		29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B623CE20DC00903E69 /* MenuViewController.swift */; };
+		29D6A4BA23CE211000903E69 /* MenuEnTransicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */; };
+		29D6A4BB23CE211000903E69 /* MenuEnTransicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */; };
 		29DA6F082396E0A20081E4F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F072396E0A20081E4F8 /* AppDelegate.swift */; };
 		29DA6F0D2396E0A20081E4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		29DA6F102396E0A20081E4F8 /* spaceMines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */; };
@@ -96,6 +100,8 @@
 		29C347EF23C6263B0040E926 /* ExploracionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionCell.swift; sourceTree = "<group>"; };
 		29C347F223C627B10040E926 /* NuevoSonarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoSonarController.swift; sourceTree = "<group>"; };
 		29C347F523C646D80040E926 /* ExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionViewController.swift; sourceTree = "<group>"; };
+		29D6A4B623CE20DC00903E69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEnTransicion.swift; sourceTree = "<group>"; };
 		29DA6F042396E0A20081E4F8 /* spaceMines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spaceMines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DA6F072396E0A20081E4F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DA6F0C2396E0A20081E4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -183,6 +189,8 @@
 				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
 				2915243923CDD83C00593E18 /* AtributoCell.swift */,
 				29C347F223C627B10040E926 /* NuevoSonarController.swift */,
+				29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */,
+				29D6A4B623CE20DC00903E69 /* MenuViewController.swift */,
 				29C347E623C621420040E926 /* SonaresTableViewController.swift */,
 				29C347E923C626120040E926 /* ExploracionTableViewController.swift */,
 				29C347EF23C6263B0040E926 /* ExploracionCell.swift */,
@@ -363,6 +371,7 @@
 				29C347EB23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
 				29C347E823C621420040E926 /* SonaresTableViewController.swift in Sources */,
 				29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */,
+				29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */,
 				290E4C9F23C4FA7D005D609B /* EditarExploracionViewController.swift in Sources */,
 				29C347E223C612500040E926 /* SonarCell.swift in Sources */,
 				298481C223C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */,
@@ -371,6 +380,7 @@
 				2952FAE823C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */,
 				2915243B23CDD83C00593E18 /* AtributoCell.swift in Sources */,
+				29D6A4BB23CE211000903E69 /* MenuEnTransicion.swift in Sources */,
 				290E4CA323C4FA7D005D609B /* AppDelegate.swift in Sources */,
 				29C347F723C646D80040E926 /* ExploracionViewController.swift in Sources */,
 			);
@@ -383,6 +393,7 @@
 				29C347EA23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
 				29C347E723C621420040E926 /* SonaresTableViewController.swift in Sources */,
 				29C347F323C627B10040E926 /* NuevoSonarController.swift in Sources */,
+				29D6A4B723CE20DC00903E69 /* MenuViewController.swift in Sources */,
 				2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */,
 				29C347E123C612500040E926 /* SonarCell.swift in Sources */,
 				298481C123C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */,
@@ -391,6 +402,7 @@
 				2952FAE723C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				29DA6F102396E0A20081E4F8 /* spaceMines.xcdatamodeld in Sources */,
 				2915243A23CDD83C00593E18 /* AtributoCell.swift in Sources */,
+				29D6A4BA23CE211000903E69 /* MenuEnTransicion.swift in Sources */,
 				29DA6F082396E0A20081E4F8 /* AppDelegate.swift in Sources */,
 				29C347F623C646D80040E926 /* ExploracionViewController.swift in Sources */,
 			);

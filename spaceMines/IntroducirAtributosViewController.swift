@@ -35,7 +35,7 @@ class IntroducirAtributosViewController: UIViewController {
    
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
       
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")

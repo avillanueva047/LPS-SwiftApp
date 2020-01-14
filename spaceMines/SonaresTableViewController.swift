@@ -144,5 +144,52 @@ class SonaresTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    let transition = MenuEnTransicion()
+    
+    
+    @IBAction func menuLateral(_ sender: UIBarButtonItem) {
+        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
+        menuViewController.didTapMenuType = { menuType in
+            self.transitionToNew(menuType)
+        }
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate =  self
+        present(menuViewController, animated: true)
+    }
+    
+    func transitionToNew(_ menuType: MenuType) {
+        //let title = String(describing: menuType).capitalized
+        //self.title = title
+        //Lista Sonar
+        /*if menuType.rawValue == 1{
+         let registerViewController = self.storyboard?.instantiateViewController(withIdentifier: "NuevoSonarController") as! NuevoSonarController
+         
+         self.present(registerViewController, animated: true)
+         }*/
+        //Editar Perfil
+        if menuType.rawValue == 2{
+            let editarPerfilViewController = self.storyboard?.instantiateViewController(withIdentifier: "NuevoSonarController") as! NuevoSonarController
+            self.navigationController?.pushViewController(editarPerfilViewController, animated: true)
+        }
+        //Contacto
+        if menuType.rawValue == 3{
+            let editarPerfilViewController = self.storyboard?.instantiateViewController(withIdentifier: "NuevoSonarController") as! NuevoSonarController
+            self.navigationController?.pushViewController(editarPerfilViewController, animated: true)
+        }
+        //Cerrar sesión
+        if menuType.rawValue == 4{
+            let editarPerfilViewController = self.storyboard?.instantiateViewController(withIdentifier: "NuevoSonarController") as! NuevoSonarController
+            self.navigationController?.pushViewController(editarPerfilViewController, animated: true)
+        }
+    }
+}
+extension SonaresTableViewController : UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresentig = true
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresentig = false
+        return transition
+    }
 }
