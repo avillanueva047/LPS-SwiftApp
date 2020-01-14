@@ -17,17 +17,15 @@ class InfoAtributosController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
-        
         // Uncomment the following line to preserve selection between presentations
     }
 
     // MARK: - Table view data source
 
+    @IBAction func cacelar(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -48,27 +46,6 @@ class InfoAtributosController: UITableViewController {
         return cell
     }
     
-    /*
-    func cargarDatos(){
-        
-        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let mngcontext = appdelegate.persistentContainer.viewContext
-        
-        let fetchRq = NSFetchRequest<NSManagedObject>(entityName: "atributo")
-        fetchRq.predicate = NSPredicate(format: "pertenece_atributo == %@ ", (exploracion))
-        
-        do{
-            atributos = try mngcontext.fetch(fetchRq)
-        }catch let error as NSError{
-            print("Error en carga de datos de atributos. \(error)")
-        }
-        
-        tableView.reloadData()
-    }
-*/
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -36,7 +36,7 @@ class ExploracionViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        self.title = "Exploracion" + (exploracion.value(forKey: "nombre") as? String)!
+        self.title = "Exploracion " + (exploracion.value(forKey: "nombre") as? String)!
         
         cargarDatos()
         
@@ -48,6 +48,7 @@ class ExploracionViewController: UIViewController {
     
 
     @IBAction func cancelar(_ sender: Any) {
+        
         navigationController!.popViewController(animated: true)
 
     }

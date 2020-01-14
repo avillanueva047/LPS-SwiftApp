@@ -1444,6 +1444,7 @@
                                 <exclude reference="R28-rO-aXN"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="6rf-dL-u9L"/>
                                 <exclude reference="Kb6-y0-vFC"/>
                                 <exclude reference="PFW-yk-rQ6"/>
                                 <exclude reference="Y3h-6v-YVc"/>
@@ -1459,9 +1460,6 @@
                                 <exclude reference="AAi-Ea-bw6"/>
                                 <exclude reference="gC0-ZP-9Vm"/>
                                 <exclude reference="vh4-t1-b2W"/>
-                                <exclude reference="6rf-dL-u9L"/>
-                                <exclude reference="DBz-s2-72O"/>
-                                <exclude reference="ExN-io-xas"/>
                                 <exclude reference="6Kt-B8-u5c"/>
                                 <exclude reference="FeC-sI-TWk"/>
                                 <exclude reference="xf8-KJ-Dhh"/>
@@ -1477,6 +1475,8 @@
                                 <exclude reference="8Wd-yI-BBg"/>
                                 <exclude reference="Fsy-i4-y8i"/>
                                 <exclude reference="b7B-Fa-bIY"/>
+                                <exclude reference="DBz-s2-72O"/>
+                                <exclude reference="ExN-io-xas"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -1484,6 +1484,7 @@
                                 <include reference="R28-rO-aXN"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="6rf-dL-u9L"/>
                                 <include reference="Kb6-y0-vFC"/>
                                 <include reference="PFW-yk-rQ6"/>
                                 <include reference="Y3h-6v-YVc"/>
@@ -1499,9 +1500,6 @@
                                 <include reference="AAi-Ea-bw6"/>
                                 <include reference="gC0-ZP-9Vm"/>
                                 <include reference="vh4-t1-b2W"/>
-                                <include reference="6rf-dL-u9L"/>
-                                <include reference="DBz-s2-72O"/>
-                                <include reference="ExN-io-xas"/>
                                 <include reference="6Kt-B8-u5c"/>
                                 <include reference="FeC-sI-TWk"/>
                                 <include reference="xf8-KJ-Dhh"/>
@@ -1517,6 +1515,8 @@
                                 <include reference="8Wd-yI-BBg"/>
                                 <include reference="Fsy-i4-y8i"/>
                                 <include reference="b7B-Fa-bIY"/>
+                                <include reference="DBz-s2-72O"/>
+                                <include reference="ExN-io-xas"/>
                             </mask>
                         </variation>
                     </view>
@@ -2864,23 +2864,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="atributo" rowHeight="100" id="M9R-aE-Caz" customClass="AtributoCell" customModule="spaceMines">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="atributo" rowHeight="100" id="M9R-aE-Caz" customClass="AtributoCell" customModule="spaceMines" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M9R-aE-Caz" id="rNO-pB-qrs">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atributo x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7k-rb-Mcj">
                                             <rect key="frame" x="44" y="39.5" width="88" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQP-Ge-eGM">
-                                            <rect key="frame" x="232" y="39.5" width="46" height="20.5"/>
+                                            <rect key="frame" x="266" y="39.5" width="46" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -2929,8 +2927,8 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nombre" destination="E7k-rb-Mcj" id="Fob-MN-NRD"/>
-                                    <outlet property="valor" destination="WQP-Ge-eGM" id="VsT-2K-7or"/>
+                                    <outlet property="nombre" destination="E7k-rb-Mcj" id="XNB-W0-1fv"/>
+                                    <outlet property="valor" destination="WQP-Ge-eGM" id="KAX-Mb-56U"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2942,6 +2940,9 @@
                     <navigationItem key="navigationItem" id="37u-Hc-APY">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Atrás" id="qZa-ft-UJs">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cacelar:" destination="Qav-bx-vWx" id="L7m-CG-6sT"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="BM5-Qw-a0R">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
