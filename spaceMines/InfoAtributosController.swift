@@ -13,11 +13,13 @@ class InfoAtributosController: UITableViewController {
 
     var exploracion:  NSManagedObject!
     var nombreAtributos: [String]!
-    //var valorAtributos: [String] = ["sdfg", "fadsf"]
+    var valorAtributos: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
+        nombreAtributos = ["Atributo 4", "Atributo 11", "Atributo 17", "Atributo 21", "Atributo 36", "Atributo 44", "Atributo 45", "Atributo 49", "Atributo 52"]
+        valorAtributos = cargarValores() 
     }
 
     // MARK: - Table view data source
@@ -44,6 +46,12 @@ class InfoAtributosController: UITableViewController {
         cell.valor.text = "VAYA"
 
         return cell
+    }
+    
+    func cargarValores() -> [String]{
+        
+        let valores: [String] = [exploracion.value(forKey: "atributo4") as! String, exploracion.value(forKey: "atributo11") as! String,exploracion.value(forKey: "atributo17") as! String, exploracion.value(forKey: "atributo21") as! String,exploracion.value(forKey: "atributo36") as! String, exploracion.value(forKey: "atributo44") as! String, exploracion.value(forKey: "atributo45") as! String, exploracion.value(forKey: "atributo49") as! String, exploracion.value(forKey: "atributo52") as! String]
+        return valores
     }
     
     /*

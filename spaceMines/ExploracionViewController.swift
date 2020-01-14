@@ -60,7 +60,8 @@ class ExploracionViewController: UIViewController {
             let segueDest = segue.destination as! InfoAtributosController
             segueDest.exploracion = self.exploracion
             segueDest.nombreAtributos = self.nombreAtributos
-           // segueDest.valorAtributos = self.valoreAtributos
+            //segueDest.valorAtributos = self.valoreAtributos
+            print(nombreAtributos)
             
         } else if segue.identifier == "editarExploracion" {
             

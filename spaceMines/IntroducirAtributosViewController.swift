@@ -32,8 +32,7 @@ class IntroducirAtributosViewController: UIViewController {
     var fecha: String!
     
     //Estructuras auxiliares para ver lista de atributos
-    var nombreAtributos: [String] = ["Atributo 4", "Atributo 11", "Atributo 17", "Atributo 21", "Atributo 36", "Atributo 44", "Atributo 45", "Atributo 49", "Atributo 52"]
-    //var valorAtributos: [String]! = [at4.text, at11.text, at17.text, at21.text, at36.text, at44.text, at45.text, at49.text, at52.text]
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +47,6 @@ class IntroducirAtributosViewController: UIViewController {
     }
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let segueDest = segue.destination as! ExplorarcionTableViewController
-        segueDest.nombreAtributos = self.nombreAtributos
-        //segueDest.valorAtributos = self.valorAtributos
-        
         
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
@@ -79,6 +73,7 @@ class IntroducirAtributosViewController: UIViewController {
         exploracion.setValue(nombre, forKey: "nombre")
         exploracion.setValue(ubicacion, forKey: "ubicacion")
         exploracion.setValue(imagen?.pngData(), forKey: "imagen")
+        exploracion.setValue(tipo, forKey: "tipo")
        //Relacion
         exploracion.setValue(sonar, forKey: "hecha_por")
         

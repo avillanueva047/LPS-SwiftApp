@@ -93,7 +93,6 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "introducirAtributos" {
             let segueDest = segue.destination as! IntroducirAtributosViewController
-      
             
             segueDest.nombre = self.inputNombre.text
             segueDest.ubicacion = self.inputUbicacion.text
@@ -103,9 +102,8 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
             dateformater.dateFormat = "MM/dd/yyyy"
             segueDest.fecha = dateformater.string(from: fecha.date)
     
-            segueDest.tipo = self.labelTipo.text
+            segueDest.tipo = labelTipo.text
             segueDest.imagen = self.imagen.image
-
         }
     }
     /*

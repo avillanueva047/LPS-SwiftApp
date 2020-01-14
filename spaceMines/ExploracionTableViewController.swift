@@ -16,10 +16,7 @@ class ExplorarcionTableViewController: UITableViewController {
     
     private let appdelegate = UIApplication.shared.delegate as! AppDelegate
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    var nombreAtributos: [String]!
-   // var valorAtributos: [String]!
-    
+
     
     override func viewWillAppear(_ animated: Bool) {
         cargarDatos()
@@ -113,8 +110,6 @@ class ExplorarcionTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let segueDest = segue.destination as! ExploracionViewController
                 segueDest.exploracion = self.exploraciones[indexPath.row]
-                segueDest.nombreAtributos = self.nombreAtributos
-                //segueDest.valoreAtributos = self.valorAtributos
             }
             
         }
