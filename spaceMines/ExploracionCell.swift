@@ -16,7 +16,9 @@ class ExploracionCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imagen.layer.cornerRadius = imagen.bounds.size.width / 2
+        imagen.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

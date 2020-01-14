@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NuevoSonarController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imagenSonar: UIImageView!
     @IBOutlet weak var nombreSonar: UITextField!
@@ -20,7 +20,8 @@ class NuevoSonarController: UIViewController,UIImagePickerControllerDelegate, UI
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.imagenSonar.layer.cornerRadius = imagenSonar.bounds.size.width / 2.0
+        self.imagenSonar.clipsToBounds = true
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
@@ -53,7 +54,8 @@ class NuevoSonarController: UIViewController,UIImagePickerControllerDelegate, UI
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let imag = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
             imagenSonar.image = imag
-        }
+            self.imagenSonar.layer.cornerRadius = imagenSonar.bounds.size.width / 2.0
+            self.imagenSonar.clipsToBounds = true        }
         
         dismiss(animated: true, completion: nil)
     }

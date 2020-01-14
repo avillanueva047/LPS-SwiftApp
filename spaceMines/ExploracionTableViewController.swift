@@ -34,6 +34,10 @@ class ExplorarcionTableViewController: UITableViewController {
         navigationController!.popViewController(animated: true)
     }
     
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Eliminar"
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
