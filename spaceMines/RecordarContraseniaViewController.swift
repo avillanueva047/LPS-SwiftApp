@@ -48,7 +48,9 @@ class RecordarContraseniaViewController: UIViewController {
                     self.performSegue(withIdentifier: "recuperarContraseña", sender: self)
                 }
             }
-            errorUsuarioNoEncontrado()
+            if(usuario == nil){
+                errorUsuarioNoEncontrado()
+            }
         }
     }
     

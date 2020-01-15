@@ -820,7 +820,6 @@
                                 </state>
                                 <connections>
                                     <action selector="recordarContrasenia:" destination="CaS-8y-MDA" eventType="touchUpInside" id="VkU-6m-n43"/>
-                                    <segue destination="NG5-nQ-NPJ" kind="show" identifier="recuperarContraseña" id="pNn-Od-WKW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -852,6 +851,12 @@
                                 <action selector="cancel:" destination="CaS-8y-MDA" id="a4P-Th-qnL"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Comprobar" id="Tbq-ne-dfQ">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="NG5-nQ-NPJ" kind="show" id="Qhz-lP-lBq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="introducirCorreoTxt" destination="D79-Ni-cp1" id="u1B-ib-EBg"/>
@@ -875,7 +880,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-0E-Fch">
-                                <rect key="frame" x="57" y="469" width="300" height="40"/>
+                                <rect key="frame" x="57" y="425" width="300" height="40"/>
                                 <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ohZ-R6-tSB"/>
@@ -888,10 +893,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoRedondoFINAL2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-X3-qCb">
-                                <rect key="frame" x="92" y="552" width="230" height="240"/>
+                                <rect key="frame" x="92" y="508" width="230" height="284"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repetir Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ruc-mG-qTR">
-                                <rect key="frame" x="57" y="391" width="300" height="30"/>
+                                <rect key="frame" x="57" y="347" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="K3J-Z7-lHP"/>
                                 </constraints>
@@ -900,7 +905,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8iI-jd-KFz">
-                                <rect key="frame" x="57" y="335" width="300" height="30"/>
+                                <rect key="frame" x="57" y="291" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="uWg-0M-9dL"/>
                                 </constraints>
@@ -909,7 +914,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce tu nueva contraseña. Asegúrate que ambos campos coincidan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-b9-0mL">
-                                <rect key="frame" x="57" y="238" width="300" height="80"/>
+                                <rect key="frame" x="57" y="194" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="KFb-vQ-kzk"/>
                                 </constraints>
@@ -918,7 +923,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperar Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkB-MG-gY9">
-                                <rect key="frame" x="57" y="189" width="300" height="41"/>
+                                <rect key="frame" x="57" y="145" width="300" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="xoM-z3-wHk"/>
                                 </constraints>
@@ -2358,14 +2363,14 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="tIL-tR-p1l"/>
                                         <exclude reference="KWA-ih-WeN"/>
+                                        <exclude reference="tIL-tR-p1l"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="tIL-tR-p1l"/>
                                         <include reference="KWA-ih-WeN"/>
+                                        <include reference="tIL-tR-p1l"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -2483,7 +2488,7 @@
         <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wdy-MG-Psa"/>
+        <segue reference="Qhz-lP-lBq"/>
         <segue reference="wpD-21-6hL"/>
     </inferredMetricsTieBreakers>
 </document>
