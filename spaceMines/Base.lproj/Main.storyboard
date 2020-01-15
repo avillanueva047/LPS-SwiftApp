@@ -471,9 +471,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="4cV-7Q-gUv"/>
-                                <exclude reference="Txx-J7-Hvh"/>
-                                <exclude reference="UD5-EI-YTl"/>
                                 <exclude reference="KlG-7e-HQn"/>
                                 <exclude reference="TIU-aP-pBR"/>
                                 <exclude reference="oXc-oQ-4Vz"/>
@@ -483,20 +480,20 @@
                                 <exclude reference="NCC-48-9Pw"/>
                                 <exclude reference="P1v-nT-a5h"/>
                                 <exclude reference="QAn-wI-CfK"/>
+                                <exclude reference="Txx-J7-Hvh"/>
                                 <exclude reference="h0n-hQ-izL"/>
                                 <exclude reference="oOg-sA-9Xx"/>
                                 <exclude reference="wV4-vC-Y5f"/>
                                 <exclude reference="x8f-R5-ER0"/>
+                                <exclude reference="4cV-7Q-gUv"/>
                                 <exclude reference="mIB-w3-tL4"/>
                                 <exclude reference="IRd-gZ-Gs5"/>
                                 <exclude reference="zEC-he-mIG"/>
+                                <exclude reference="UD5-EI-YTl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="4cV-7Q-gUv"/>
-                                <include reference="Txx-J7-Hvh"/>
-                                <include reference="UD5-EI-YTl"/>
                                 <include reference="KlG-7e-HQn"/>
                                 <include reference="TIU-aP-pBR"/>
                                 <include reference="oXc-oQ-4Vz"/>
@@ -506,13 +503,16 @@
                                 <include reference="NCC-48-9Pw"/>
                                 <include reference="P1v-nT-a5h"/>
                                 <include reference="QAn-wI-CfK"/>
+                                <include reference="Txx-J7-Hvh"/>
                                 <include reference="h0n-hQ-izL"/>
                                 <include reference="oOg-sA-9Xx"/>
                                 <include reference="wV4-vC-Y5f"/>
                                 <include reference="x8f-R5-ER0"/>
+                                <include reference="4cV-7Q-gUv"/>
                                 <include reference="mIB-w3-tL4"/>
                                 <include reference="IRd-gZ-Gs5"/>
                                 <include reference="zEC-he-mIG"/>
+                                <include reference="UD5-EI-YTl"/>
                             </mask>
                         </variation>
                     </view>
@@ -685,13 +685,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="9Pv-pq-bDo"/>
-                                <exclude reference="ITM-SF-uy7"/>
-                                <exclude reference="MQW-Tz-DSy"/>
-                                <exclude reference="Wy7-kE-H3h"/>
-                                <exclude reference="r6q-xy-MdE"/>
                                 <exclude reference="6jf-Pk-OJ0"/>
                                 <exclude reference="QWa-fb-g8r"/>
+                                <exclude reference="Wy7-kE-H3h"/>
                                 <exclude reference="6ra-Z7-4fr"/>
                                 <exclude reference="Aqz-rX-DUT"/>
                                 <exclude reference="KFQ-pq-IBM"/>
@@ -703,16 +699,20 @@
                                 <exclude reference="Yhn-xC-aTL"/>
                                 <exclude reference="e8O-py-bqk"/>
                                 <exclude reference="jCh-jN-VzH"/>
+                                <exclude reference="r6q-xy-MdE"/>
                                 <exclude reference="Zzo-87-hQf"/>
                                 <exclude reference="sMA-Vf-ssG"/>
                                 <exclude reference="1ch-7w-aTP"/>
+                                <exclude reference="MQW-Tz-DSy"/>
                                 <exclude reference="A3D-94-hr0"/>
                                 <exclude reference="N3X-te-JHw"/>
                                 <exclude reference="zmh-tf-hmB"/>
                                 <exclude reference="HRM-Aa-CDt"/>
+                                <exclude reference="ITM-SF-uy7"/>
                                 <exclude reference="vqU-q3-WVn"/>
                                 <exclude reference="nKk-bM-toH"/>
                                 <exclude reference="22u-jM-Amn"/>
+                                <exclude reference="9Pv-pq-bDo"/>
                                 <exclude reference="dsY-T5-NNE"/>
                                 <exclude reference="sMH-wF-ajl"/>
                                 <exclude reference="E9w-Vx-XvO"/>
@@ -721,13 +721,9 @@
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="9Pv-pq-bDo"/>
-                                <include reference="ITM-SF-uy7"/>
-                                <include reference="MQW-Tz-DSy"/>
-                                <include reference="Wy7-kE-H3h"/>
-                                <include reference="r6q-xy-MdE"/>
                                 <include reference="6jf-Pk-OJ0"/>
                                 <include reference="QWa-fb-g8r"/>
+                                <include reference="Wy7-kE-H3h"/>
                                 <include reference="6ra-Z7-4fr"/>
                                 <include reference="Aqz-rX-DUT"/>
                                 <include reference="KFQ-pq-IBM"/>
@@ -739,16 +735,20 @@
                                 <include reference="Yhn-xC-aTL"/>
                                 <include reference="e8O-py-bqk"/>
                                 <include reference="jCh-jN-VzH"/>
+                                <include reference="r6q-xy-MdE"/>
                                 <include reference="Zzo-87-hQf"/>
                                 <include reference="sMA-Vf-ssG"/>
                                 <include reference="1ch-7w-aTP"/>
+                                <include reference="MQW-Tz-DSy"/>
                                 <include reference="A3D-94-hr0"/>
                                 <include reference="N3X-te-JHw"/>
                                 <include reference="zmh-tf-hmB"/>
                                 <include reference="HRM-Aa-CDt"/>
+                                <include reference="ITM-SF-uy7"/>
                                 <include reference="vqU-q3-WVn"/>
                                 <include reference="nKk-bM-toH"/>
                                 <include reference="22u-jM-Amn"/>
+                                <include reference="9Pv-pq-bDo"/>
                                 <include reference="dsY-T5-NNE"/>
                                 <include reference="sMH-wF-ajl"/>
                                 <include reference="E9w-Vx-XvO"/>
@@ -809,23 +809,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urT-Ro-1Q0">
-                                <rect key="frame" x="57" y="431" width="300" height="34"/>
+                                <rect key="frame" x="57" y="431" width="300" height="40"/>
                                 <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="SZB-1m-ddX"/>
+                                    <constraint firstAttribute="height" constant="40" id="SZB-1m-ddX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Recordar">
+                                <state key="normal" title="Comprobar Correo">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="recordarContrasenia:" destination="CaS-8y-MDA" eventType="touchUpInside" id="VkU-6m-n43"/>
+                                    <segue destination="NG5-nQ-NPJ" kind="show" identifier="recuperarContraseña" id="pNn-Od-WKW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="urT-Ro-1Q0" firstAttribute="centerY" secondItem="YS9-sf-AuU" secondAttribute="centerY" id="1Xn-SC-cI5"/>
+                            <constraint firstItem="urT-Ro-1Q0" firstAttribute="centerY" secondItem="YS9-sf-AuU" secondAttribute="centerY" constant="3" id="1Xn-SC-cI5"/>
                             <constraint firstItem="D79-Ni-cp1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="urT-Ro-1Q0" secondAttribute="trailing" id="2kp-3y-scI"/>
                             <constraint firstItem="CXj-jX-paN" firstAttribute="trailing" secondItem="D79-Ni-cp1" secondAttribute="trailing" id="6yC-Nr-dJU"/>
                             <constraint firstItem="D79-Ni-cp1" firstAttribute="top" secondItem="CXj-jX-paN" secondAttribute="bottom" constant="29" id="A2d-B0-6uH"/>
@@ -835,7 +836,7 @@
                             <constraint firstItem="g8Z-ag-ceu" firstAttribute="leading" secondItem="YS9-sf-AuU" secondAttribute="leading" constant="92" id="PCe-Bn-neo"/>
                             <constraint firstItem="a9l-Wr-haO" firstAttribute="leading" secondItem="YS9-sf-AuU" secondAttribute="leading" constant="57" id="UCM-ZU-s0m"/>
                             <constraint firstItem="a9l-Wr-haO" firstAttribute="centerX" secondItem="YS9-sf-AuU" secondAttribute="centerX" id="VB0-hF-iM7"/>
-                            <constraint firstItem="g8Z-ag-ceu" firstAttribute="top" secondItem="urT-Ro-1Q0" secondAttribute="bottom" constant="93" id="XLZ-Zm-BhY"/>
+                            <constraint firstItem="g8Z-ag-ceu" firstAttribute="top" secondItem="urT-Ro-1Q0" secondAttribute="bottom" constant="87" id="XLZ-Zm-BhY"/>
                             <constraint firstItem="a9l-Wr-haO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CXj-jX-paN" secondAttribute="leading" id="YH5-lN-1ax"/>
                             <constraint firstItem="urT-Ro-1Q0" firstAttribute="top" secondItem="D79-Ni-cp1" secondAttribute="bottom" constant="31" id="YfA-Rb-YBr"/>
                             <constraint firstItem="urT-Ro-1Q0" firstAttribute="centerX" secondItem="g8Z-ag-ceu" secondAttribute="centerX" id="dFg-DV-ceA"/>
@@ -848,28 +849,23 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancelar" style="done" id="RjQ-2i-AKF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="cancel:" destination="CaS-8y-MDA" id="ZKL-Ga-KTp"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Reset" id="EkO-VE-Vi8">
-                            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="MdL-va-zii" kind="presentation" id="wZA-Zd-tJs"/>
+                                <action selector="cancel:" destination="CaS-8y-MDA" id="a4P-Th-qnL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="introducirCorreoTxt" destination="D79-Ni-cp1" id="u1B-ib-EBg"/>
                         <outlet property="recordarContraseniaBtn" destination="urT-Ro-1Q0" id="jnb-Bf-I9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXH-fy-Uh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="678"/>
+            <point key="canvasLocation" x="-355" y="747"/>
         </scene>
-        <!--View Controller-->
+        <!--Recuperar Contraseña-->
         <scene sceneID="jVo-ir-LqK">
             <objects>
-                <viewController id="NG5-nQ-NPJ" sceneMemberID="viewController">
+                <viewController id="NG5-nQ-NPJ" customClass="RecuperarContraseniaViewController" customModule="spaceMines" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RO6-WZ-Yi5"/>
                         <viewControllerLayoutGuide type="bottom" id="m1b-p6-MLz"/>
@@ -877,13 +873,100 @@
                     <view key="view" contentMode="scaleToFill" id="ezK-OA-yL0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-0E-Fch">
+                                <rect key="frame" x="57" y="469" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ohZ-R6-tSB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Recuperar Contraseña"/>
+                                <connections>
+                                    <action selector="recuperarContrasenia:" destination="NG5-nQ-NPJ" eventType="touchUpInside" id="dxt-hJ-1GZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoRedondoFINAL2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-X3-qCb">
+                                <rect key="frame" x="92" y="552" width="230" height="240"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repetir Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ruc-mG-qTR">
+                                <rect key="frame" x="57" y="391" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K3J-Z7-lHP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8iI-jd-KFz">
+                                <rect key="frame" x="57" y="335" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uWg-0M-9dL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce tu nueva contraseña. Asegúrate que ambos campos coincidan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-b9-0mL">
+                                <rect key="frame" x="57" y="238" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KFb-vQ-kzk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperar Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkB-MG-gY9">
+                                <rect key="frame" x="57" y="189" width="300" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="xoM-z3-wHk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tkB-MG-gY9" firstAttribute="leading" secondItem="ezK-OA-yL0" secondAttribute="leadingMargin" constant="37" id="0EQ-If-7ow"/>
+                            <constraint firstItem="mfh-X3-qCb" firstAttribute="top" secondItem="dSi-0E-Fch" secondAttribute="bottom" constant="43" id="47b-K6-Mcf"/>
+                            <constraint firstItem="dSi-0E-Fch" firstAttribute="centerX" secondItem="mfh-X3-qCb" secondAttribute="centerX" id="6Tl-H7-PVn"/>
+                            <constraint firstItem="ruc-mG-qTR" firstAttribute="leading" secondItem="dSi-0E-Fch" secondAttribute="leading" id="7gj-7C-wm3"/>
+                            <constraint firstItem="8iI-jd-KFz" firstAttribute="top" secondItem="fXQ-b9-0mL" secondAttribute="bottom" constant="17" id="9Al-uU-EcJ"/>
+                            <constraint firstItem="fXQ-b9-0mL" firstAttribute="trailing" secondItem="8iI-jd-KFz" secondAttribute="trailing" id="CS0-zj-UaR"/>
+                            <constraint firstItem="8iI-jd-KFz" firstAttribute="leading" secondItem="ruc-mG-qTR" secondAttribute="leading" id="CyB-R9-JEw"/>
+                            <constraint firstItem="tkB-MG-gY9" firstAttribute="leading" secondItem="fXQ-b9-0mL" secondAttribute="leading" id="EPZ-1l-qme"/>
+                            <constraint firstItem="ruc-mG-qTR" firstAttribute="top" secondItem="8iI-jd-KFz" secondAttribute="bottom" constant="26" id="ET5-Al-RUc"/>
+                            <constraint firstItem="fXQ-b9-0mL" firstAttribute="leading" secondItem="8iI-jd-KFz" secondAttribute="leading" id="Eks-7Z-od6"/>
+                            <constraint firstItem="ruc-mG-qTR" firstAttribute="trailing" secondItem="dSi-0E-Fch" secondAttribute="trailing" id="Lgp-TQ-VtY"/>
+                            <constraint firstItem="tkB-MG-gY9" firstAttribute="centerX" secondItem="ezK-OA-yL0" secondAttribute="centerX" id="RUq-1h-QZX"/>
+                            <constraint firstItem="fXQ-b9-0mL" firstAttribute="top" secondItem="tkB-MG-gY9" secondAttribute="bottom" constant="8" symbolic="YES" id="WX7-OO-CU9"/>
+                            <constraint firstItem="mfh-X3-qCb" firstAttribute="leading" secondItem="ezK-OA-yL0" secondAttribute="leadingMargin" constant="72" id="WlM-pl-brg"/>
+                            <constraint firstItem="tkB-MG-gY9" firstAttribute="trailing" secondItem="fXQ-b9-0mL" secondAttribute="trailing" id="XKN-fn-ZRc"/>
+                            <constraint firstItem="dSi-0E-Fch" firstAttribute="top" secondItem="ruc-mG-qTR" secondAttribute="bottom" constant="48" id="lZg-w7-yfg"/>
+                            <constraint firstItem="tkB-MG-gY9" firstAttribute="top" secondItem="RO6-WZ-Yi5" secondAttribute="bottom" constant="101" id="pv3-Ge-j1y"/>
+                            <constraint firstItem="8iI-jd-KFz" firstAttribute="trailing" secondItem="ruc-mG-qTR" secondAttribute="trailing" id="ugF-Rk-pHk"/>
+                            <constraint firstItem="m1b-p6-MLz" firstAttribute="top" secondItem="mfh-X3-qCb" secondAttribute="bottom" constant="70" id="wSB-Jz-BO2"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cHK-w8-528"/>
+                    <navigationItem key="navigationItem" title="Recuperar Contraseña" id="cHK-w8-528">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="G5O-Fz-Flf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="dWr-h8-YV3" kind="showDetail" id="wpD-21-6hL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comprobacionContraseniaTxt" destination="ruc-mG-qTR" id="gl2-RQ-JWu"/>
+                        <outlet property="nuevaContraseniaTxt" destination="8iI-jd-KFz" id="qs7-Ad-Hrk"/>
+                        <outlet property="recuperarContraseniaBtn" destination="dSi-0E-Fch" id="lAR-N9-JqJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GG-Wl-1XW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="678"/>
+            <point key="canvasLocation" x="-1123" y="747"/>
         </scene>
         <!--Nuevo usuario-->
         <scene sceneID="feI-PY-OTa">
@@ -1725,7 +1808,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HK3-4x-Qtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1109" y="678"/>
+            <point key="canvasLocation" x="506" y="747"/>
         </scene>
         <!--Exploracion View Controller-->
         <scene sceneID="Fni-Uw-5ge">
@@ -2350,25 +2433,6 @@
             </objects>
             <point key="canvasLocation" x="-355" y="-777"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cxn-0D-OOF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MdL-va-zii" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8NO-dJ-EgN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.20763194560000001" green="0.21580889819999999" blue="0.22353631260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="NG5-nQ-NPJ" kind="relationship" relationship="rootViewController" id="OMm-lg-MAB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jKL-ky-u6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="768" y="678"/>
-        </scene>
     </scenes>
     <resources>
         <image name="LogoRedondoFINAL2.png" width="658" height="677"/>
@@ -2381,6 +2445,6 @@
         <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Aa-EB-p5C"/>
+        <segue reference="wpD-21-6hL"/>
     </inferredMetricsTieBreakers>
 </document>

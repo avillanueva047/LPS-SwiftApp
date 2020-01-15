@@ -66,6 +66,8 @@
 		29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
 		29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
 		29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
+		6374FD2523CF5E17006BCFAB /* RecuperarContraseniaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374FD2423CF5E17006BCFAB /* RecuperarContraseniaViewController.swift */; };
+		6374FD2623CF6273006BCFAB /* RecuperarContraseniaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374FD2423CF5E17006BCFAB /* RecuperarContraseniaViewController.swift */; };
 		63997B7023CE5C1200C5EEFD /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */; };
 		63997B7223CE5CD000C5EEFD /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */; };
 		63997B7323CE5F7900C5EEFD /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */; };
@@ -125,6 +127,7 @@
 		29E5F50923CCB2FF0022F553 /* minaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minaBien.png; sourceTree = "<group>"; };
 		29E5F50A23CCB2FF0022F553 /* rocaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocaBien.png; sourceTree = "<group>"; };
 		29E5F50F23CCBEF90022F553 /* sonarBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonarBien.png; sourceTree = "<group>"; };
+		6374FD2423CF5E17006BCFAB /* RecuperarContraseniaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarContraseniaViewController.swift; sourceTree = "<group>"; };
 		63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PantallaInicioViewController.swift; path = Imagenes/PantallaInicioViewController.swift; sourceTree = "<group>"; };
 		63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +218,7 @@
 				29C347F223C627B10040E926 /* NuevoSonarController.swift */,
 				63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */,
 				63997B7723CE727200C5EEFD /* RecordarContraseniaViewController.swift */,
+				6374FD2423CF5E17006BCFAB /* RecuperarContraseniaViewController.swift */,
 				63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */,
 				29C347E023C612500040E926 /* SonarCell.swift */,
 				29C347E623C621420040E926 /* SonaresTableViewController.swift */,
@@ -396,6 +400,7 @@
 				29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */,
 				63997B7323CE5F7900C5EEFD /* PantallaInicioViewController.swift in Sources */,
 				63997B7423CE5F7900C5EEFD /* IniciarSesionViewController.swift in Sources */,
+				6374FD2623CF6273006BCFAB /* RecuperarContraseniaViewController.swift in Sources */,
 				290E4C9F23C4FA7D005D609B /* EditarExploracionViewController.swift in Sources */,
 				29C347E223C612500040E926 /* SonarCell.swift in Sources */,
 				298481C223C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */,
@@ -422,6 +427,7 @@
 				63997B7223CE5CD000C5EEFD /* PantallaInicioViewController.swift in Sources */,
 				29C347F323C627B10040E926 /* NuevoSonarController.swift in Sources */,
 				29D6A4B723CE20DC00903E69 /* MenuViewController.swift in Sources */,
+				6374FD2523CF5E17006BCFAB /* RecuperarContraseniaViewController.swift in Sources */,
 				2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */,
 				63997B7823CE727200C5EEFD /* RecordarContraseniaViewController.swift in Sources */,
 				29C347E123C612500040E926 /* SonarCell.swift in Sources */,
