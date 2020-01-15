@@ -66,6 +66,16 @@
 		29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
 		29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
 		29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
+		63997B7023CE5C1200C5EEFD /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */; };
+		63997B7223CE5CD000C5EEFD /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */; };
+		63997B7323CE5F7900C5EEFD /* PantallaInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */; };
+		63997B7423CE5F7900C5EEFD /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */; };
+		63997B7623CE654B00C5EEFD /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */; };
+		63997B7823CE727200C5EEFD /* RecordarContraseniaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7723CE727200C5EEFD /* RecordarContraseniaViewController.swift */; };
+		63997B7923CE7B1700C5EEFD /* RecordarContraseniaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7723CE727200C5EEFD /* RecordarContraseniaViewController.swift */; };
+		63997B7A23CE7B1700C5EEFD /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */; };
+		63997B8823CEB3D500C5EEFD /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 63997B8723CEB3D400C5EEFD /* default_image.png */; };
+		63997B8923CEB3D500C5EEFD /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 63997B8723CEB3D400C5EEFD /* default_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +125,11 @@
 		29E5F50923CCB2FF0022F553 /* minaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minaBien.png; sourceTree = "<group>"; };
 		29E5F50A23CCB2FF0022F553 /* rocaBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocaBien.png; sourceTree = "<group>"; };
 		29E5F50F23CCBEF90022F553 /* sonarBien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonarBien.png; sourceTree = "<group>"; };
+		63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
+		63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PantallaInicioViewController.swift; path = Imagenes/PantallaInicioViewController.swift; sourceTree = "<group>"; };
+		63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
+		63997B7723CE727200C5EEFD /* RecordarContraseniaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordarContraseniaViewController.swift; sourceTree = "<group>"; };
+		63997B8723CEB3D400C5EEFD /* default_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +163,7 @@
 				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
 				290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */,
 				290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */,
+				63997B8723CEB3D400C5EEFD /* default_image.png */,
 				29E5F50923CCB2FF0022F553 /* minaBien.png */,
 				29E5F50A23CCB2FF0022F553 /* rocaBien.png */,
 				29E5F50F23CCBEF90022F553 /* sonarBien.png */,
@@ -163,10 +179,10 @@
 		29DA6EFB2396E0A20081E4F8 = {
 			isa = PBXGroup;
 			children = (
-				29DA6F062396E0A20081E4F8 /* spaceMines */,
-				29DA6F1E2396E0A30081E4F8 /* spaceMinesTests */,
 				29DA6F052396E0A20081E4F8 /* Products */,
+				29DA6F062396E0A20081E4F8 /* spaceMines */,
 				290E4CB723C4FA7D005D609B /* spaceMines copy-Info.plist */,
+				29DA6F1E2396E0A30081E4F8 /* spaceMinesTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,25 +199,29 @@
 		29DA6F062396E0A20081E4F8 /* spaceMines */ = {
 			isa = PBXGroup;
 			children = (
-				290E4C7B23C4E483005D609B /* Imagenes */,
-				29C347E023C612500040E926 /* SonarCell.swift */,
-				2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */,
-				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
+				29DA6F162396E0A30081E4F8 /* Info.plist */,
+				29DA6F072396E0A20081E4F8 /* AppDelegate.swift */,
 				2915243923CDD83C00593E18 /* AtributoCell.swift */,
-				29C347F223C627B10040E926 /* NuevoSonarController.swift */,
+				2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */,
+				29C347EF23C6263B0040E926 /* ExploracionCell.swift */,
+				29C347E923C626120040E926 /* ExploracionTableViewController.swift */,
+				29C347F523C646D80040E926 /* ExploracionViewController.swift */,
+				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
+				63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */,
+				2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */,
 				29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */,
 				29D6A4B623CE20DC00903E69 /* MenuViewController.swift */,
-				29C347E623C621420040E926 /* SonaresTableViewController.swift */,
-				29C347E923C626120040E926 /* ExploracionTableViewController.swift */,
-				29C347EF23C6263B0040E926 /* ExploracionCell.swift */,
-				29C347F523C646D80040E926 /* ExploracionViewController.swift */,
 				298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */,
-				2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */,
-				29DA6F072396E0A20081E4F8 /* AppDelegate.swift */,
-				29DA6F0B2396E0A20081E4F8 /* Main.storyboard */,
+				29C347F223C627B10040E926 /* NuevoSonarController.swift */,
+				63997B7123CE5CD000C5EEFD /* PantallaInicioViewController.swift */,
+				63997B7723CE727200C5EEFD /* RecordarContraseniaViewController.swift */,
+				63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */,
+				29C347E023C612500040E926 /* SonarCell.swift */,
+				29C347E623C621420040E926 /* SonaresTableViewController.swift */,
 				29DA6F112396E0A30081E4F8 /* Assets.xcassets */,
+				290E4C7B23C4E483005D609B /* Imagenes */,
 				29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */,
-				29DA6F162396E0A30081E4F8 /* Info.plist */,
+				29DA6F0B2396E0A20081E4F8 /* Main.storyboard */,
 				29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */,
 			);
 			path = spaceMines;
@@ -322,6 +342,7 @@
 				29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
 				290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */,
+				63997B8923CEB3D500C5EEFD /* default_image.png in Resources */,
 				290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */,
 				290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */,
 				290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */,
@@ -343,6 +364,7 @@
 				29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4C8D23C4E483005D609B /* guardar.png in Resources */,
 				290E4C8B23C4E483005D609B /* Imagen_fondo_LPS.jpg in Resources */,
+				63997B8823CEB3D500C5EEFD /* default_image.png in Resources */,
 				290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */,
 				29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */,
 				290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */,
@@ -372,10 +394,14 @@
 				29C347E823C621420040E926 /* SonaresTableViewController.swift in Sources */,
 				29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */,
 				29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */,
+				63997B7323CE5F7900C5EEFD /* PantallaInicioViewController.swift in Sources */,
+				63997B7423CE5F7900C5EEFD /* IniciarSesionViewController.swift in Sources */,
 				290E4C9F23C4FA7D005D609B /* EditarExploracionViewController.swift in Sources */,
 				29C347E223C612500040E926 /* SonarCell.swift in Sources */,
 				298481C223C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */,
+				63997B7A23CE7B1700C5EEFD /* RegistrarUsuarioViewController.swift in Sources */,
 				29C347F123C6263B0040E926 /* ExploracionCell.swift in Sources */,
+				63997B7923CE7B1700C5EEFD /* RecordarContraseniaViewController.swift in Sources */,
 				290E4CA123C4FA7D005D609B /* InfoAtributosController.swift in Sources */,
 				2952FAE823C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */,
@@ -391,16 +417,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C347EA23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
+				63997B7023CE5C1200C5EEFD /* IniciarSesionViewController.swift in Sources */,
 				29C347E723C621420040E926 /* SonaresTableViewController.swift in Sources */,
+				63997B7223CE5CD000C5EEFD /* PantallaInicioViewController.swift in Sources */,
 				29C347F323C627B10040E926 /* NuevoSonarController.swift in Sources */,
 				29D6A4B723CE20DC00903E69 /* MenuViewController.swift in Sources */,
 				2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */,
+				63997B7823CE727200C5EEFD /* RecordarContraseniaViewController.swift in Sources */,
 				29C347E123C612500040E926 /* SonarCell.swift in Sources */,
 				298481C123C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */,
 				29C347F023C6263B0040E926 /* ExploracionCell.swift in Sources */,
 				2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */,
 				2952FAE723C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				29DA6F102396E0A20081E4F8 /* spaceMines.xcdatamodeld in Sources */,
+				63997B7623CE654B00C5EEFD /* RegistrarUsuarioViewController.swift in Sources */,
 				2915243A23CDD83C00593E18 /* AtributoCell.swift in Sources */,
 				29D6A4BA23CE211000903E69 /* MenuEnTransicion.swift in Sources */,
 				29DA6F082396E0A20081E4F8 /* AppDelegate.swift in Sources */,
