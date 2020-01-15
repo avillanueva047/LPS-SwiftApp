@@ -29,7 +29,8 @@ class ExploracionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        
+        inputNombre.becomeFirstResponder()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
@@ -77,7 +78,10 @@ class ExploracionViewController: UIViewController {
         
         if let imagenCD = exploracion.value(forKey: "imagen") as? Data {
             let imageneExpl = UIImage(data: imagenCD)
-             imagenExploracion.image = imageneExpl
+            imagenExploracion.image = imageneExpl
+            
+            self.imagenExploracion.layer.cornerRadius = imagenExploracion.bounds.size.width / 2.0
+            self.imagenExploracion.clipsToBounds = true
         }
         
         self.inputObjeto.text = exploracion.value(forKey: "tipo") as? String

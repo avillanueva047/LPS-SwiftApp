@@ -21,19 +21,21 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBOutlet weak var botonSiguiente: UIBarButtonItem!
     @IBOutlet weak var imagen: UIImageView!
     
-    
     let tipos = ["Mina", "Roca"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        inputNombre.becomeFirstResponder()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
         botonSiguiente.isEnabled = false
-        // Do any additional setup after loading the view.
+        
+        self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
+        self.imagen.clipsToBounds = true
+        
     }
     
     @IBAction func cancelar(_ sender: Any) {
@@ -67,9 +69,21 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         } else {
             imagen.image = UIImage(named: "rocaBien")
         }
+        self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
+        self.imagen.clipsToBounds = true
     }
     
-    @IBAction func seleccionarImagen(_ sender: Any) {
+    /*@IBAction func cambiarImagen(_ sender: Any) {
+        if labelTipo.text == "Mina" {
+            imagen.image = UIImage(named: "minaBien")
+        } else {
+            imagen.image = UIImage(named: "rocaBien")
+        }
+        self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
+        self.imagen.clipsToBounds = true
+    }*/
+    
+    /*@IBAction func seleccionarImagen(_ sender: Any) {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
@@ -87,7 +101,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         }
         
         dismiss(animated: true, completion: nil)
-    }
+    }*/
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){

@@ -35,8 +35,9 @@ class IntroducirAtributosViewController: UIViewController {
    
     
     override func viewDidLoad() {
-        super.viewDidLoad() 
-      
+        super.viewDidLoad()
+        
+        at4.becomeFirstResponder()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
