@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class RecordarContraseniaViewController: UIViewController {
+    
+    var usuarios: [NSManagedObject]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,10 @@ class RecordarContraseniaViewController: UIViewController {
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func recordarContrasenia(_ sender: UIButton) {
+    }
+    
     
     /*
     // MARK: - Navigation

@@ -27,7 +27,7 @@ class IniciarSesionViewController: UIViewController {
     
     @IBOutlet weak var recordarContraseniaBtn: UIButton!
     
-    @IBOutlet weak var nombreUsuarioTxt: UITextField!
+    @IBOutlet weak var correoUsuario: UITextField!
     
     @IBOutlet weak var contraseniaUsuarioTxt: UITextField!
     
@@ -40,12 +40,15 @@ class IniciarSesionViewController: UIViewController {
     }
     
     func comprobarDatos(){
-        if(nombreUsuarioTxt.hasText && contraseniaUsuarioTxt.hasText){
+        if(correoUsuario.hasText && contraseniaUsuarioTxt.hasText){
             for user in usuarios{
-                if (user.value(forKey: "correo_electronico") as? String == nombreUsuarioTxt.text){
+                if (user.value(forKey: "correo_electronico") as? String == correoUsuario.text){
                     usuario = user as? Usuario
                     if(usuario.contrasenia == contraseniaUsuarioTxt.text){
                         self.performSegue(withIdentifier: "verListaSonares", sender: self)
+                    }
+                    else{
+                        errorContrasenia()
                     }
                 }
             }
@@ -66,7 +69,7 @@ class IniciarSesionViewController: UIViewController {
         do {
             usuarios = try managedContext.fetch(fetchRequest)
         } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
+            print("No se ha podido cargar los Usuarios \(error), \(error.userInfo)")
         }
     }
     
@@ -77,19 +80,32 @@ class IniciarSesionViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    //Error Usuario No Encontrado
     func errorUsuarioNoEncontrado(){
         let alert = UIAlertController(title: "Error", message: "No se encuentra el Usuario Registrado", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    /*
+    
+    //Error Contraseña Incorrecta
+    func errorContrasenia(){
+        let alert = UIAlertController(title: "Error", message: "La contraseña introducida no es correcta", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if (segue.identifier == "recordarContrasenia"){
+            let controller = segue.destination as! UINavigationController
+            let recordarContraseniaController = controller.topViewController as! RecordarContraseniaViewController
+            recordarContraseniaController.usuarios = usuarios
+        }
     }
-    */
 
 }
