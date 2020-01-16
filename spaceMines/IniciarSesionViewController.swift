@@ -9,6 +9,31 @@
 import UIKit
 import CoreData
 
+
+
+extension UITextField {
+    func useUnderline() -> Void {
+        let border = CALayer()
+        let borderWidth = CGFloat(2.0) // Border Width
+        border.borderColor = UIColor.white.cgColor
+        border.frame = CGRect(origin: CGPoint(x: 0,y :self.frame.size.height - borderWidth), size: CGSize(width: self.frame.size.width, height: self.frame.size.height))
+        border.borderWidth = borderWidth
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+}
+
+extension UITextField{
+    @IBInspectable var placeHolderColor: UIColor? {
+        get {
+            return self.placeHolderColor
+        }
+        set {
+            self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: newValue!])
+        }
+    }
+}
+
 class IniciarSesionViewController: UIViewController {
     
     var usuarios: [NSManagedObject] = []
@@ -19,7 +44,7 @@ class IniciarSesionViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         iniciarSesionBtn.layer.cornerRadius = 7
         cargarUsuarios()
-
+        correoUsuario.useUnderline()
         // Do any additional setup after loading the view.
     }
     

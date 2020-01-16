@@ -23,7 +23,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYO-nY-o4z">
                                 <rect key="frame" x="57" y="534" width="300" height="40"/>
-                                <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="29t-RX-YoD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="oQT-Vt-IWO"/>
@@ -45,14 +45,14 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wu-oc-YGx">
                                 <rect key="frame" x="57" y="629" width="300" height="40"/>
-                                <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="b07-Ef-Zdu"/>
                                     <constraint firstAttribute="height" constant="40" id="u8h-au-uxg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Iniciar Sesión">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="dWr-h8-YV3" kind="show" identifier="" id="Jq8-Fo-Rd2"/>
@@ -102,9 +102,15 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu correo" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="viA-oY-5XF">
                                 <rect key="frame" x="55" y="501" width="300" height="30"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzg-Ok-PiK">
                                 <rect key="frame" x="55" y="545" width="170" height="20"/>
@@ -800,7 +806,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urT-Ro-1Q0">
                                 <rect key="frame" x="57" y="431" width="300" height="40"/>
-                                <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SZB-1m-ddX"/>
                                 </constraints>
@@ -855,7 +861,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXH-fy-Uh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-355" y="747"/>
+            <point key="canvasLocation" x="-355" y="664"/>
         </scene>
         <!--Recuperar Contraseña-->
         <scene sceneID="jVo-ir-LqK">
@@ -871,7 +877,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-0E-Fch">
                                 <rect key="frame" x="57" y="469" width="300" height="40"/>
-                                <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ohZ-R6-tSB"/>
                                 </constraints>
@@ -967,7 +973,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GG-Wl-1XW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1123" y="747"/>
+            <point key="canvasLocation" x="-1123" y="664"/>
         </scene>
         <!--Nuevo usuario-->
         <scene sceneID="feI-PY-OTa">
@@ -1081,7 +1087,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8k-vo-yQF">
                                 <rect key="frame" x="107" y="668" width="200" height="40"/>
-                                <color key="backgroundColor" red="0.92345303300000003" green="0.23961737750000001" blue="0.26361045239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ZfW-3U-sJI"/>
                                     <constraint firstAttribute="height" constant="40" id="syg-Jg-Tu7"/>
@@ -1487,7 +1493,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HK3-4x-Qtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506" y="747"/>
+            <point key="canvasLocation" x="506" y="664"/>
         </scene>
         <!--Exploracion View Controller-->
         <scene sceneID="Fni-Uw-5ge">
@@ -2557,6 +2563,6 @@
         <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ogU-R8-rva"/>
+        <segue reference="Jq8-Fo-Rd2"/>
     </inferredMetricsTieBreakers>
 </document>
