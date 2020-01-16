@@ -18,6 +18,7 @@ class RecordarContraseniaViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         recordarContraseniaBtn.layer.cornerRadius = 7
+        introducirCorreoTxt.useUnderline()
 
         // Do any additional setup after loading the view.
     }

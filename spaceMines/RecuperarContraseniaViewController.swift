@@ -16,6 +16,8 @@ class RecuperarContraseniaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
+        comprobacionContraseniaTxt.useUnderline()
+        nuevaContraseniaTxt.useUnderline()
         // Do any additional setup after loading the view.
     }
     
