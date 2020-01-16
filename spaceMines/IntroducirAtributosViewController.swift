@@ -46,7 +46,8 @@ class IntroducirAtributosViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-  
+    @IBOutlet weak var cancelar: UINavigationItem!
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -83,6 +84,10 @@ class IntroducirAtributosViewController: UIViewController {
         } catch let error as NSError {
         print("Se ha producido un error en el guardado de exploracion .\(error)")
         }
+    }
+    @IBAction func cancelar(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
+
     }
     /*
     // MARK: - Navigation
