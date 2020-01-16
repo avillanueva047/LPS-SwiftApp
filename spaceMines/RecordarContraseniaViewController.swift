@@ -12,7 +12,7 @@ import CoreData
 class RecordarContraseniaViewController: UIViewController {
     
     var usuarios: [NSManagedObject]!
-    var usuario: Usuario!
+    var usuario: NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()

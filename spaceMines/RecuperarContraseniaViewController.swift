@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class RecuperarContraseniaViewController: UIViewController {
     
-    var usuario: Usuario!
+    var usuario: NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +27,44 @@ class RecuperarContraseniaViewController: UIViewController {
     
     @IBAction func recuperarContrasenia(_ sender: UIButton) {
         if(nuevaContraseniaTxt.hasText && comprobacionContraseniaTxt.hasText){
-            
+            if (nuevaContraseniaTxt.text == comprobacionContraseniaTxt.text){
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                    return
+                }
+                let managedContext = appDelegate.persistentContainer.viewContext
+                usuario.setValue(nuevaContraseniaTxt.text, forKey: "contrasenia")
+                do{
+                    try managedContext.save()
+                    self.performSegue(withIdentifier: "iniciarSesion", sender: self)
+                }
+                catch let error as NSError{
+                    print("No se pudo establece la nueva Contraseña. \(error), \(error.userInfo)")
+                }
+            }
+            else{
+                errorConfirmacionContrasenia()
+            }
         }
         else{
-            
+            errorDatosNoIntroducidos()
         }
     }
     
+    func errorDatosNoIntroducidos(){
+        let alert = UIAlertController(title: "Error", message: "Faltan Campos por rellenar, por favor, revíselos antes de continuar", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
+    func errorConfirmacionContrasenia(){
+        let alert = UIAlertController(title: "Error", message: "La contraseña y su confirmación deben coincidir", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

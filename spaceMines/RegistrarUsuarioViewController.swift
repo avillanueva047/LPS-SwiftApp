@@ -39,21 +39,35 @@ class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerD
                     }
                     let managedContext = appDelegate.persistentContainer.viewContext
                     let entity = NSEntityDescription.entity(forEntityName: "Usuario", in: managedContext)!
-                    let imageData = cargarFotoPerfil.image?.jpegData(compressionQuality: 1.0)
-                    let usuario = NSManagedObject(entity: entity, insertInto: managedContext)
-                    usuario.setValue(nombreUsuarioTxt.text, forKey: "nombre_usuario")
-                    usuario.setValue(contraseniaUsuarioTxt.text, forKey: "contrasenia")
-                    usuario.setValue(correoUsuarioTxt.text, forKey: "correo_electronico")
-                    usuario.setValue(imageData, forKey: "foto_perfil")
                     
+                    //¿Existe el Usuario?
+                    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
+                    fetchRequest.predicate = NSPredicate(format: "correo_electronico = %@", correoUsuarioTxt.text!)
                     do{
-                        try managedContext.save()
+                        let fetchResult = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
+                        if (fetchResult.count != 0){
+                            errorUsuarioExistente()
+                        }
+                        else{
+                            let imageData = cargarFotoPerfil.image?.jpegData(compressionQuality: 1.0)
+                            let usuario = NSManagedObject(entity: entity, insertInto: managedContext)
+                            usuario.setValue(nombreUsuarioTxt.text, forKey: "nombre_usuario")
+                            usuario.setValue(contraseniaUsuarioTxt.text, forKey: "contrasenia")
+                            usuario.setValue(correoUsuarioTxt.text, forKey: "correo_electronico")
+                            usuario.setValue(imageData, forKey: "foto_perfil")
+                            
+                            do{
+                                try managedContext.save()
+                            }
+                            catch let error as NSError{
+                                print("No se ha podido Guardar el Usuario.\(error), \(error.userInfo)")
+                            }
+                            self.performSegue(withIdentifier: "iniciarSesionSegue", sender: self)
+                        }
                     }
                     catch let error as NSError{
-                        print("No se ha podido Guardar el Usuario.\(error), \(error.userInfo)")
+                        print("No se ha podido Realizar la Consulta. \(error), \(error.userInfo)")
                     }
-                    self.performSegue(withIdentifier: "iniciarSesionSegue", sender: self)
-                    
                 }
                 else{
                     errorConfirmacionContrasenia()
@@ -143,6 +157,12 @@ class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerD
     //Error de campos vacíos
     func errorDatosNoIntroducidos(){
         let alert = UIAlertController(title: "Error", message: "Faltan Campos por rellenar, por favor, revíselos antes de continuar", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func errorUsuarioExistente(){
+        let alert = UIAlertController(title: "Error", message: "Ya existe un Usuario registrado con dicho correo", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

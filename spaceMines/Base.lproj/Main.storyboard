@@ -844,7 +844,7 @@
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Comprobar" id="Tbq-ne-dfQ">
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="NG5-nQ-NPJ" kind="show" id="Qhz-lP-lBq"/>
+                                <segue destination="NG5-nQ-NPJ" kind="show" identifier="recuperarContraseña" id="Qhz-lP-lBq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -892,7 +892,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8iI-jd-KFz">
                                 <rect key="frame" x="57" y="335" width="300" height="30"/>
@@ -901,7 +901,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce tu nueva contraseña. Asegúrate que ambos campos coincidan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-b9-0mL">
                                 <rect key="frame" x="57" y="238" width="300" height="80"/>
@@ -949,7 +949,13 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancelar" id="G5O-Fz-Flf">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="dWr-h8-YV3" kind="showDetail" id="wpD-21-6hL"/>
+                                <action selector="cancel:" destination="NG5-nQ-NPJ" id="OR9-ok-fbk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Recuperar" id="Noc-AH-rKP">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="dWr-h8-YV3" kind="show" identifier="iniciarSesion" id="ogU-R8-rva"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2551,6 +2557,6 @@
         <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Aa-EB-p5C"/>
+        <segue reference="ogU-R8-rva"/>
     </inferredMetricsTieBreakers>
 </document>
