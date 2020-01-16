@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 
 
-
 extension UITextField {
     func useUnderline() -> Void {
         let border = CALayer()
@@ -45,6 +44,7 @@ class IniciarSesionViewController: UIViewController {
         iniciarSesionBtn.layer.cornerRadius = 7
         cargarUsuarios()
         correoUsuario.useUnderline()
+        contraseniaUsuarioTxt.useUnderline()
         // Do any additional setup after loading the view.
     }
     

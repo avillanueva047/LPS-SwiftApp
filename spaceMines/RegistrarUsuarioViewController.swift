@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 //Hace de la imagen redonda
 extension UIImageView {
     func setRounded() {
@@ -24,6 +25,10 @@ class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerD
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         registrarUsuarioBtn.layer.cornerRadius = 7
         cargarFotoPerfil.setRounded()
+        nombreUsuarioTxt.useUnderline()
+        correoUsuarioTxt.useUnderline()
+        contraseniaUsuarioTxt.useUnderline()
+        repetirContraseniaTxt.useUnderline()
         // Do any additional setup after loading the view.
     }
     

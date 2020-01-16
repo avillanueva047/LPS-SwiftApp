@@ -37,6 +37,7 @@
 		2952FAE823C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */; };
 		298481C123C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */; };
 		298481C223C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */; };
+		29BBC4E723D0AF3900DFF679 /* foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BBC4E623D0AF3800DFF679 /* foto.png */; };
 		29C347E123C612500040E926 /* SonarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E023C612500040E926 /* SonarCell.swift */; };
 		29C347E223C612500040E926 /* SonarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E023C612500040E926 /* SonarCell.swift */; };
 		29C347E723C621420040E926 /* SonaresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347E623C621420040E926 /* SonaresTableViewController.swift */; };
@@ -106,6 +107,7 @@
 		2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditarExploracionViewController.swift; path = "Parte Pablo/EditarExploracionViewController.swift"; sourceTree = "<group>"; };
 		2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroducirAtributosViewController.swift; sourceTree = "<group>"; };
 		298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaExploracionViewController.swift; sourceTree = "<group>"; };
+		29BBC4E623D0AF3800DFF679 /* foto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto.png; sourceTree = "<group>"; };
 		29C347E023C612500040E926 /* SonarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonarCell.swift; sourceTree = "<group>"; };
 		29C347E623C621420040E926 /* SonaresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonaresTableViewController.swift; sourceTree = "<group>"; };
 		29C347E923C626120040E926 /* ExploracionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionTableViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		290E4C7B23C4E483005D609B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				29BBC4E623D0AF3800DFF679 /* foto.png */,
 				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
 				290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */,
 				290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */,
@@ -365,6 +368,7 @@
 				290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */,
 				29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */,
 				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
+				29BBC4E723D0AF3900DFF679 /* foto.png in Resources */,
 				29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4C8D23C4E483005D609B /* guardar.png in Resources */,
 				290E4C8B23C4E483005D609B /* Imagen_fondo_LPS.jpg in Resources */,
