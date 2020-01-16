@@ -20,10 +20,11 @@ class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, U
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nombreSonar.becomeFirstResponder()
+        
         self.imagenSonar.layer.cornerRadius = imagenSonar.bounds.size.width / 2.0
         self.imagenSonar.clipsToBounds = true
+
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill

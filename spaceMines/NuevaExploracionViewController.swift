@@ -11,21 +11,10 @@ import CoreData
 
 class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
-    var sonar: NSManagedObject!
-    
-    @IBOutlet weak var inputNombre: UITextField!
-    @IBOutlet weak var inputUbicacion: UITextField!
-    @IBOutlet weak var fecha: UIDatePicker!
-    @IBOutlet weak var tipo: UIPickerView!
-    @IBOutlet weak var labelTipo: UILabel!
-    @IBOutlet weak var botonSiguiente: UIBarButtonItem!
-    @IBOutlet weak var imagen: UIImageView!
-    
-    let tipos = ["Mina", "Roca"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         inputNombre.becomeFirstResponder()
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
@@ -36,7 +25,25 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
         self.imagen.clipsToBounds = true
         
+        fecha.setValue(UIColor.white, forKeyPath: "textColor")
+        
     }
+    
+    var sonar: NSManagedObject!
+    
+    @IBOutlet weak var inputNombre: UITextField!
+    @IBOutlet weak var inputUbicacion: UITextField!
+    @IBOutlet weak var fecha: UIDatePicker!
+    @IBOutlet weak var tipo: UIPickerView!
+    @IBOutlet weak var labelTipo: UILabel!
+
+    
+    @IBOutlet weak var botonSiguiente: UIBarButtonItem!
+    @IBOutlet weak var imagen: UIImageView!
+    
+    let tipos = ["Mina", "Roca"]
+    
+    
     
     @IBAction func cancelar(_ sender: Any) {
         navigationController!.popViewController(animated: true)
@@ -51,6 +58,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         return 1
     }
     
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return tipos.count
     }
@@ -61,17 +69,25 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         labelTipo.text = tipos[row]
+        imagen.image =  UIImage(named: tipos[row].lowercased() + "Bien" )
     }
     
-    @IBAction func cambiarImagen(_ sender: Any) {
-        if labelTipo.text == "Mina" {
-            imagen.image = UIImage(named: "minaBien")
-        } else {
-            imagen.image = UIImage(named: "rocaBien")
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        var pickerLabel: UILabel? = (view as? UILabel)
+        
+        if pickerLabel == nil {
+            pickerLabel = UILabel()
+            pickerLabel?.font = UIFont(name: "Nombre fuente", size: 25)
+            pickerLabel?.textAlignment = .center
         }
-        self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
-        self.imagen.clipsToBounds = true
+        
+        pickerLabel?.text = tipos[row]
+        pickerLabel?.textColor = UIColor.white
+        
+        return pickerLabel!
     }
+    
+
     
     /*@IBAction func cambiarImagen(_ sender: Any) {
         if labelTipo.text == "Mina" {
