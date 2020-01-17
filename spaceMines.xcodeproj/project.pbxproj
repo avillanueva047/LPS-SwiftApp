@@ -37,7 +37,6 @@
 		290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8523C4E483005D609B /* imagen_perfil.png */; };
 		290E4C9023C4E483005D609B /* simbolo editar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8623C4E483005D609B /* simbolo editar.png */; };
 		290E4C9F23C4FA7D005D609B /* EditarExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */; };
-		290E4CA123C4FA7D005D609B /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
 		290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */; };
 		290E4CA323C4FA7D005D609B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F072396E0A20081E4F8 /* AppDelegate.swift */; };
 		290E4CA723C4FA7D005D609B /* aniadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* aniadir_imagen.png */; };
@@ -51,7 +50,6 @@
 		290E4CB123C4FA7D005D609B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F112396E0A30081E4F8 /* Assets.xcassets */; };
 		2915243A23CDD83C00593E18 /* AtributoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2915243923CDD83C00593E18 /* AtributoCell.swift */; };
 		2915243B23CDD83C00593E18 /* AtributoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2915243923CDD83C00593E18 /* AtributoCell.swift */; };
-		2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266823A9309500DDE781 /* InfoAtributosController.swift */; };
 		2951266B23A930C800DDE781 /* EditarExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */; };
 		2952FAE723C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */; };
 		2952FAE823C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */; };
@@ -137,7 +135,6 @@
 		290E4CB623C4FA7D005D609B /* spaceMines 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spaceMines 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		290E4CB723C4FA7D005D609B /* spaceMines copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "spaceMines copy-Info.plist"; path = "/Users/aula11/Documents/Codigo-Proyecto-LPS/spaceMines copy-Info.plist"; sourceTree = "<absolute>"; };
 		2915243923CDD83C00593E18 /* AtributoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AtributoCell.swift; path = ../AtributoCell.swift; sourceTree = "<group>"; };
-		2951266823A9309500DDE781 /* InfoAtributosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtributosController.swift; sourceTree = "<group>"; };
 		2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditarExploracionViewController.swift; path = "Parte Pablo/EditarExploracionViewController.swift"; sourceTree = "<group>"; };
 		2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroducirAtributosViewController.swift; sourceTree = "<group>"; };
 		298481C023C778830028ABA5 /* NuevaExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaExploracionViewController.swift; sourceTree = "<group>"; };
@@ -254,7 +251,6 @@
 				29C347EF23C6263B0040E926 /* ExploracionCell.swift */,
 				29C347E923C626120040E926 /* ExploracionTableViewController.swift */,
 				29C347F523C646D80040E926 /* ExploracionViewController.swift */,
-				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
 				2915243923CDD83C00593E18 /* AtributoCell.swift */,
 				63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */,
 				2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */,
@@ -479,7 +475,6 @@
 				63997B7A23CE7B1700C5EEFD /* RegistrarUsuarioViewController.swift in Sources */,
 				29C347F123C6263B0040E926 /* ExploracionCell.swift in Sources */,
 				63997B7923CE7B1700C5EEFD /* RecordarContraseniaViewController.swift in Sources */,
-				290E4CA123C4FA7D005D609B /* InfoAtributosController.swift in Sources */,
 				2905B4CB23D212CE00FF9642 /* iCarousel.m in Sources */,
 				2952FAE823C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */,
@@ -507,7 +502,6 @@
 				29C347E123C612500040E926 /* SonarCell.swift in Sources */,
 				298481C123C778830028ABA5 /* NuevaExploracionViewController.swift in Sources */,
 				29C347F023C6263B0040E926 /* ExploracionCell.swift in Sources */,
-				2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */,
 				2952FAE723C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				2905B4CA23D212CE00FF9642 /* iCarousel.m in Sources */,
 				29DA6F102396E0A20081E4F8 /* spaceMines.xcdatamodeld in Sources */,
@@ -731,7 +725,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ual.es.spaceMines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = spaceMines;
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "spaceMines/spaceMines-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -753,7 +747,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ual.es.spaceMines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = spaceMines;
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "spaceMines/spaceMines-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

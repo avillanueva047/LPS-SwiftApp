@@ -151,10 +151,9 @@ class IntroducirAtributosViewController: UIViewController {
             #if spaceMines
             
             #else
-                let alert = UIAlertController(title: "Error en los datos", message: "Segun nuestro algoritmo, el objeto se trata de una" + decidirTipo(), preferredStyle: .alert)
-            
-                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            
+                let alert2 = UIAlertController(title: "Objeto segun IA", message: "Segun nuestro algoritmo, el objeto se trata de una" + decidirTipo(), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                self.present(alert2, animated: true, completion: nil)
             #endif
         }
 
