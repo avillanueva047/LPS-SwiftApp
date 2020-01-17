@@ -21,12 +21,14 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
    // var sonar: NSManagedObject!
     var exploracion: NSManagedObject!
     
-    let tipos = ["Mina", "Robot"]
+    let tipos = ["Mina", "Roca"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        self.title = "Editar exploracion" + (exploracion.value(forKey: "nombre") as? String)!
+        self.title = "Editar " + (exploracion.value(forKey: "nombre") as? String)!
+        
+        
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
@@ -63,6 +65,8 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         labelTipo.text = tipos[row]
+        imagen.image =  UIImage(named: tipos[row].lowercased() + "Bien" )
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

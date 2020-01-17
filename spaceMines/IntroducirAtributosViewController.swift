@@ -43,7 +43,7 @@ class IntroducirAtributosViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        
+        botonGuardar.isEnabled = false
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var cancelar: UINavigationItem!
@@ -74,8 +74,20 @@ class IntroducirAtributosViewController: UIViewController {
         exploracion.setValue(fecha, forKey: "fecha")
         exploracion.setValue(nombre, forKey: "nombre")
         exploracion.setValue(ubicacion, forKey: "ubicacion")
-        exploracion.setValue(imagen?.pngData(), forKey: "imagen")
-        exploracion.setValue(tipo, forKey: "tipo")
+        
+        #if spaceMines
+            exploracion.setValue(imagen?.pngData(), forKey: "imagen")
+            exploracion.setValue(tipo, forKey: "tipo")
+        #else
+        
+            exploracion.setValue(decidirTipo(), forKey: "tipo")
+            if decidirTipo() == "Mina" {
+                exploracion.setValue(UIImage(named: "minabien")?.pngData(), forKey: "imagen")
+            } else {
+                exploracion.setValue(UIImage(named: "rocabien")?.pngData(), forKey: "imagen")
+            }
+        #endif
+        
        //Relacion
         exploracion.setValue(sonar, forKey: "hecha_por")
         
@@ -89,6 +101,71 @@ class IntroducirAtributosViewController: UIViewController {
         navigationController!.popViewController(animated: true)
 
     }
+    
+    @IBAction func validarDatlos(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Error en los datos", message: "Los datos que han introducido son erroneos, por favor, compruebelos otra vez", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        
+        if (at4.text?.isEmpty)! || Double(at4.text!)! > 1.0 || Double(at4.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at11.text?.isEmpty)! || Double(at11.text!)! > 1.0 || Double(at11.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+        
+        } else if (at17.text?.isEmpty)! || Double(at17.text!)! > 1.0 || Double(at17.text!)! < 0.0 {
+        
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at21.text?.isEmpty)! || Double(at21.text!)! > 1.0 || Double(at21.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at36.text?.isEmpty)! || Double(at36.text!)! > 1.0 || Double(at36.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at44.text?.isEmpty)! || Double(at44.text!)! > 1.0 || Double(at44.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at45.text?.isEmpty)! || Double(at45.text!)! > 1.0 || Double(at45.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at49.text?.isEmpty)! || Double(at49.text!)! > 1.0 || Double(at49.text!)! < 0.0 {
+          
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (at52.text?.isEmpty)! || Double(at52.text!)! > 1.0 || Double(at52.text!)! < 0.0 {
+            
+            self.present(alert, animated: true, completion: nil)
+        
+        } else {
+            
+            botonGuardar.isEnabled = true
+            
+        }
+
+    }
+    
+    
+    func decidirTipo() -> String{
+        
+        let tipoObjeto =  -(1.68 + Double(at4.text!)! * (-2.81) +  Double(at11.text!)! * (-3.26) +  Double(at11.text!)!   * (-3.26) + Double(at11.text!)! * (0.72) + Double(at11.text!)! * (-0.8) + Double(at11.text!)! * (1.57) + Double(at11.text!)! * (-1.2) + Double(at11.text!)! * (-1.79) + Double(at11.text!)! * (-8.6) + Double(at52.text!)! * (-21.16))
+       
+        if tipoObjeto > 1.68 {
+            return "Roca"
+        } else {
+            return "Mina"
+        }
+    
+    }
+    
+
     /*
     // MARK: - Navigation
 
