@@ -373,13 +373,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lista Sonares" id="4V2-A6-HEq">
-                        <barButtonItem key="leftBarButtonItem" title="Imagen perfil" style="done" id="olG-Ju-km9">
+                        <barButtonItem key="leftBarButtonItem" title="Paneles" style="done" id="olG-Ju-km9">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="menuLateral:" destination="1Lg-nC-2iO" id="imD-14-s2t"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Imagen añadir" id="xCS-El-Afc">
+                        <barButtonItem key="rightBarButtonItem" title="Nuevo Sonar" id="xCS-El-Afc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="1ET-8V-3jH" kind="show" identifier="NuevoSonarController" id="09F-ka-LaB"/>

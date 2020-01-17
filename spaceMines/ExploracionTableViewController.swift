@@ -82,17 +82,29 @@ class ExplorarcionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        let contexto = mngcontext
-        contexto.delete(self.exploraciones[indexPath.row] as NSManagedObject)
+        let alert = UIAlertController(title: "¡Atencion!", message: "Esta a punto de elimar un sonar y todas sus exploraciones, ¿esta seguro?", preferredStyle: .alert)
         
-        self.exploraciones.remove(at: indexPath.row)
-        
-        do{
-            try contexto.save()
-        }catch _{
+        let afirm = UIAlertAction(title: "Si", style: .destructive, handler: { action in
+            let contexto = self.mngcontext
+            contexto.delete(self.exploraciones[indexPath.row] as NSManagedObject)
             
-        }
-        self.tableView.deleteRows(at: [indexPath], with: .fade)
+            self.exploraciones.remove(at: indexPath.row)
+            
+            do{
+                try contexto.save()
+            }catch _{
+                
+            }
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        })
+        
+        let neg =  UIAlertAction(title: "Si", style: .destructive, handler:nil)
+        
+        alert.addAction(neg)
+        alert.addAction(afirm)
+        self.present(alert, animated: true, completion: nil)
+
     }
     
     @IBAction func ActualizarTablaExploraciones (sender: UIStoryboardSegue){

@@ -77,17 +77,7 @@ class SonaresTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        let contexto = mngcontext
-        contexto.delete(self.sonares[indexPath.row] as NSManagedObject)
-        
-        self.sonares.remove(at: indexPath.row)
-        
-        do{
-            try contexto.save()
-        }catch{
-
-        }
-        self.tableView.deleteRows(at: [indexPath], with: .fade)
+     
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
