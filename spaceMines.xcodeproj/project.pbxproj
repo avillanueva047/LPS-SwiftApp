@@ -7,8 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2905B4BA23D203DE00FF9642 /* AtributoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B4B923D203DE00FF9642 /* AtributoViewController.swift */; };
+		2905B4BB23D203DE00FF9642 /* AtributoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B4B923D203DE00FF9642 /* AtributoViewController.swift */; };
+		2905B4CA23D212CE00FF9642 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2905B4C923D212CE00FF9642 /* iCarousel.m */; };
+		2905B4CB23D212CE00FF9642 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2905B4C923D212CE00FF9642 /* iCarousel.m */; };
+		2905B4D523D21FBD00FF9642 /* Vista_uv.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CC23D21FBC00FF9642 /* Vista_uv.png */; };
+		2905B4D623D21FBD00FF9642 /* Vista_uv.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CC23D21FBC00FF9642 /* Vista_uv.png */; };
+		2905B4D723D21FBD00FF9642 /* Vista_gamma.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CD23D21FBC00FF9642 /* Vista_gamma.png */; };
+		2905B4D823D21FBD00FF9642 /* Vista_gamma.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CD23D21FBC00FF9642 /* Vista_gamma.png */; };
+		2905B4D923D21FBD00FF9642 /* Vista_protones.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CE23D21FBD00FF9642 /* Vista_protones.png */; };
+		2905B4DA23D21FBD00FF9642 /* Vista_protones.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CE23D21FBD00FF9642 /* Vista_protones.png */; };
+		2905B4DB23D21FBD00FF9642 /* Vista_Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CF23D21FBD00FF9642 /* Vista_Y.png */; };
+		2905B4DC23D21FBD00FF9642 /* Vista_Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4CF23D21FBD00FF9642 /* Vista_Y.png */; };
+		2905B4DD23D21FBD00FF9642 /* Vista_betha.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D023D21FBD00FF9642 /* Vista_betha.png */; };
+		2905B4DE23D21FBD00FF9642 /* Vista_betha.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D023D21FBD00FF9642 /* Vista_betha.png */; };
+		2905B4E123D21FBD00FF9642 /* Vista_alpha 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D223D21FBD00FF9642 /* Vista_alpha 2.png */; };
+		2905B4E223D21FBD00FF9642 /* Vista_alpha 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D223D21FBD00FF9642 /* Vista_alpha 2.png */; };
+		2905B4E323D21FBD00FF9642 /* Vista_electron.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D323D21FBD00FF9642 /* Vista_electron.png */; };
+		2905B4E423D21FBD00FF9642 /* Vista_electron.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D323D21FBD00FF9642 /* Vista_electron.png */; };
+		2905B4E523D21FBD00FF9642 /* Vista_X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D423D21FBD00FF9642 /* Vista_X.png */; };
+		2905B4E623D21FBD00FF9642 /* Vista_X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4D423D21FBD00FF9642 /* Vista_X.png */; };
+		2905B4E823D230C200FF9642 /* Microondas.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4E723D230C200FF9642 /* Microondas.png */; };
+		2905B4E923D230C200FF9642 /* Microondas.png in Resources */ = {isa = PBXBuildFile; fileRef = 2905B4E723D230C200FF9642 /* Microondas.png */; };
 		290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
-		290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
 		290E4C8B23C4E483005D609B /* Imagen_fondo_LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */; };
 		290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8223C4E483005D609B /* aniadir_imagen.png */; };
 		290E4C8D23C4E483005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
@@ -23,7 +44,6 @@
 		290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8523C4E483005D609B /* imagen_perfil.png */; };
 		290E4CAA23C4FA7D005D609B /* guardar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8323C4E483005D609B /* guardar.png */; };
 		290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */; };
-		290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */; };
 		290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */; };
 		290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */; };
 		290E4CAF23C4FA7D005D609B /* simbolo editar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290E4C8623C4E483005D609B /* simbolo editar.png */; };
@@ -92,8 +112,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2905B4B923D203DE00FF9642 /* AtributoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtributoViewController.swift; sourceTree = "<group>"; };
+		2905B4C523D212CC00FF9642 /* spaceMines-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spaceMines-Bridging-Header.h"; sourceTree = "<group>"; };
+		2905B4C623D212CC00FF9642 /* spaceMines 2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spaceMines 2-Bridging-Header.h"; sourceTree = "<group>"; };
+		2905B4C723D212CD00FF9642 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		2905B4C823D212CE00FF9642 /* iCarouselEffectss-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iCarouselEffectss-Bridging-Header.h"; sourceTree = "<group>"; };
+		2905B4C923D212CE00FF9642 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		2905B4CC23D21FBC00FF9642 /* Vista_uv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_uv.png; sourceTree = "<group>"; };
+		2905B4CD23D21FBC00FF9642 /* Vista_gamma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_gamma.png; sourceTree = "<group>"; };
+		2905B4CE23D21FBD00FF9642 /* Vista_protones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_protones.png; sourceTree = "<group>"; };
+		2905B4CF23D21FBD00FF9642 /* Vista_Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_Y.png; sourceTree = "<group>"; };
+		2905B4D023D21FBD00FF9642 /* Vista_betha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_betha.png; sourceTree = "<group>"; };
+		2905B4D223D21FBD00FF9642 /* Vista_alpha 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vista_alpha 2.png"; sourceTree = "<group>"; };
+		2905B4D323D21FBD00FF9642 /* Vista_electron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_electron.png; sourceTree = "<group>"; };
+		2905B4D423D21FBD00FF9642 /* Vista_X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vista_X.png; sourceTree = "<group>"; };
+		2905B4E723D230C200FF9642 /* Microondas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microondas.png; sourceTree = "<group>"; };
 		290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL2.png; sourceTree = "<group>"; };
-		290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoRedondoFINAL3.png; sourceTree = "<group>"; };
 		290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Imagen_fondo_LPS.jpg; sourceTree = "<group>"; };
 		290E4C8223C4E483005D609B /* aniadir_imagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aniadir_imagen.png; sourceTree = "<group>"; };
 		290E4C8323C4E483005D609B /* guardar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guardar.png; sourceTree = "<group>"; };
@@ -167,7 +201,6 @@
 			children = (
 				29BBC4E623D0AF3800DFF679 /* foto.png */,
 				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
-				290E4C7E23C4E483005D609B /* LogoRedondoFINAL3.png */,
 				290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */,
 				63997B8723CEB3D400C5EEFD /* default_image.png */,
 				29E5F50923CCB2FF0022F553 /* minaBien.png */,
@@ -178,6 +211,15 @@
 				290E4C8423C4E483005D609B /* simbolo cancelar.png */,
 				290E4C8523C4E483005D609B /* imagen_perfil.png */,
 				290E4C8623C4E483005D609B /* simbolo editar.png */,
+				2905B4E723D230C200FF9642 /* Microondas.png */,
+				2905B4D223D21FBD00FF9642 /* Vista_alpha 2.png */,
+				2905B4D023D21FBD00FF9642 /* Vista_betha.png */,
+				2905B4D323D21FBD00FF9642 /* Vista_electron.png */,
+				2905B4CD23D21FBC00FF9642 /* Vista_gamma.png */,
+				2905B4CE23D21FBD00FF9642 /* Vista_protones.png */,
+				2905B4CC23D21FBC00FF9642 /* Vista_uv.png */,
+				2905B4D423D21FBD00FF9642 /* Vista_X.png */,
+				2905B4CF23D21FBD00FF9642 /* Vista_Y.png */,
 			);
 			path = Imagenes;
 			sourceTree = "<group>";
@@ -207,12 +249,13 @@
 			children = (
 				29DA6F162396E0A30081E4F8 /* Info.plist */,
 				29DA6F072396E0A20081E4F8 /* AppDelegate.swift */,
-				2915243923CDD83C00593E18 /* AtributoCell.swift */,
+				2905B4B923D203DE00FF9642 /* AtributoViewController.swift */,
 				2951266A23A930C800DDE781 /* EditarExploracionViewController.swift */,
 				29C347EF23C6263B0040E926 /* ExploracionCell.swift */,
 				29C347E923C626120040E926 /* ExploracionTableViewController.swift */,
 				29C347F523C646D80040E926 /* ExploracionViewController.swift */,
 				2951266823A9309500DDE781 /* InfoAtributosController.swift */,
+				2915243923CDD83C00593E18 /* AtributoCell.swift */,
 				63997B6F23CE5C1200C5EEFD /* IniciarSesionViewController.swift */,
 				2952FAE623C8B24A000140EB /* IntroducirAtributosViewController.swift */,
 				29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */,
@@ -225,11 +268,16 @@
 				63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */,
 				29C347E023C612500040E926 /* SonarCell.swift */,
 				29C347E623C621420040E926 /* SonaresTableViewController.swift */,
+				2905B4C723D212CD00FF9642 /* iCarousel.h */,
+				2905B4C923D212CE00FF9642 /* iCarousel.m */,
+				2905B4C823D212CE00FF9642 /* iCarouselEffectss-Bridging-Header.h */,
 				29DA6F112396E0A30081E4F8 /* Assets.xcassets */,
 				290E4C7B23C4E483005D609B /* Imagenes */,
 				29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */,
 				29DA6F0B2396E0A20081E4F8 /* Main.storyboard */,
 				29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */,
+				2905B4C523D212CC00FF9642 /* spaceMines-Bridging-Header.h */,
+				2905B4C623D212CC00FF9642 /* spaceMines 2-Bridging-Header.h */,
 			);
 			path = spaceMines;
 			sourceTree = "<group>";
@@ -308,6 +356,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = ual;
 				TargetAttributes = {
+					290E4C9A23C4FA7D005D609B = {
+						LastSwiftMigration = 1010;
+					};
 					29DA6F032396E0A20081E4F8 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -343,19 +394,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905B4E223D21FBD00FF9642 /* Vista_alpha 2.png in Resources */,
 				290E4CA723C4FA7D005D609B /* aniadir_imagen.png in Resources */,
 				29E5F50C23CCB2FF0022F553 /* minaBien.png in Resources */,
 				290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */,
 				29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
+				2905B4E923D230C200FF9642 /* Microondas.png in Resources */,
 				290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */,
 				29D3664C23CF7BEB0035FFDA /* Main.storyboard in Resources */,
+				2905B4DC23D21FBD00FF9642 /* Vista_Y.png in Resources */,
+				2905B4E623D21FBD00FF9642 /* Vista_X.png in Resources */,
 				63997B8923CEB3D500C5EEFD /* default_image.png in Resources */,
-				290E4CAC23C4FA7D005D609B /* LogoRedondoFINAL3.png in Resources */,
+				2905B4DA23D21FBD00FF9642 /* Vista_protones.png in Resources */,
+				2905B4DE23D21FBD00FF9642 /* Vista_betha.png in Resources */,
 				290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */,
+				2905B4D623D21FBD00FF9642 /* Vista_uv.png in Resources */,
 				290E4CAE23C4FA7D005D609B /* LogoRedondoFINAL2.png in Resources */,
+				2905B4D823D21FBD00FF9642 /* Vista_gamma.png in Resources */,
 				290E4CAF23C4FA7D005D609B /* simbolo editar.png in Resources */,
 				290E4CB023C4FA7D005D609B /* simbolo cancelar.png in Resources */,
+				2905B4E423D21FBD00FF9642 /* Vista_electron.png in Resources */,
 				29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */,
 				290E4CB123C4FA7D005D609B /* Assets.xcassets in Resources */,
 			);
@@ -365,16 +424,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905B4DD23D21FBD00FF9642 /* Vista_betha.png in Resources */,
+				2905B4D523D21FBD00FF9642 /* Vista_uv.png in Resources */,
 				290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */,
 				29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */,
+				2905B4E523D21FBD00FF9642 /* Vista_X.png in Resources */,
+				2905B4E123D21FBD00FF9642 /* Vista_alpha 2.png in Resources */,
 				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
+				2905B4D723D21FBD00FF9642 /* Vista_gamma.png in Resources */,
+				2905B4E823D230C200FF9642 /* Microondas.png in Resources */,
 				29BBC4E723D0AF3900DFF679 /* foto.png in Resources */,
 				29E5F50D23CCB2FF0022F553 /* rocaBien.png in Resources */,
+				2905B4D923D21FBD00FF9642 /* Vista_protones.png in Resources */,
 				290E4C8D23C4E483005D609B /* guardar.png in Resources */,
 				290E4C8B23C4E483005D609B /* Imagen_fondo_LPS.jpg in Resources */,
+				2905B4DB23D21FBD00FF9642 /* Vista_Y.png in Resources */,
 				63997B8823CEB3D500C5EEFD /* default_image.png in Resources */,
-				290E4C8923C4E483005D609B /* LogoRedondoFINAL3.png in Resources */,
 				29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */,
+				2905B4E323D21FBD00FF9642 /* Vista_electron.png in Resources */,
 				290E4C8823C4E483005D609B /* LogoRedondoFINAL2.png in Resources */,
 				290E4C9023C4E483005D609B /* simbolo editar.png in Resources */,
 				290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */,
@@ -400,6 +467,7 @@
 			files = (
 				29C347EB23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
 				29C347E823C621420040E926 /* SonaresTableViewController.swift in Sources */,
+				2905B4BB23D203DE00FF9642 /* AtributoViewController.swift in Sources */,
 				29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */,
 				29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */,
 				63997B7323CE5F7900C5EEFD /* PantallaInicioViewController.swift in Sources */,
@@ -412,6 +480,7 @@
 				29C347F123C6263B0040E926 /* ExploracionCell.swift in Sources */,
 				63997B7923CE7B1700C5EEFD /* RecordarContraseniaViewController.swift in Sources */,
 				290E4CA123C4FA7D005D609B /* InfoAtributosController.swift in Sources */,
+				2905B4CB23D212CE00FF9642 /* iCarousel.m in Sources */,
 				2952FAE823C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
 				290E4CA223C4FA7D005D609B /* spaceMines.xcdatamodeld in Sources */,
 				2915243B23CDD83C00593E18 /* AtributoCell.swift in Sources */,
@@ -427,6 +496,7 @@
 			files = (
 				29C347EA23C626120040E926 /* ExploracionTableViewController.swift in Sources */,
 				63997B7023CE5C1200C5EEFD /* IniciarSesionViewController.swift in Sources */,
+				2905B4BA23D203DE00FF9642 /* AtributoViewController.swift in Sources */,
 				29C347E723C621420040E926 /* SonaresTableViewController.swift in Sources */,
 				63997B7223CE5CD000C5EEFD /* PantallaInicioViewController.swift in Sources */,
 				29C347F323C627B10040E926 /* NuevoSonarController.swift in Sources */,
@@ -439,6 +509,7 @@
 				29C347F023C6263B0040E926 /* ExploracionCell.swift in Sources */,
 				2951266923A9309500DDE781 /* InfoAtributosController.swift in Sources */,
 				2952FAE723C8B24A000140EB /* IntroducirAtributosViewController.swift in Sources */,
+				2905B4CA23D212CE00FF9642 /* iCarousel.m in Sources */,
 				29DA6F102396E0A20081E4F8 /* spaceMines.xcdatamodeld in Sources */,
 				63997B7623CE654B00C5EEFD /* RegistrarUsuarioViewController.swift in Sources */,
 				2915243A23CDD83C00593E18 /* AtributoCell.swift in Sources */,
@@ -502,6 +573,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = spaceMines2;
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "spaceMines/spaceMines 2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,6 +596,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = spaceMines2;
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "spaceMines/spaceMines 2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -660,6 +733,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "spaceMines/spaceMines-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,6 +755,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "spaceMines/spaceMines-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -75,8 +75,6 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
         let entidad = NSEntityDescription.entity(forEntityName: "Exploracion", in: mngcontext)!
         exploracion = NSManagedObject(entity: entidad, insertInto: mngcontext)
         
-        
-
         exploracion.setValue(inputNombre.text, forKey: "nombre")
         exploracion.setValue(inputUbicacion.text, forKey: "fecha")
         exploracion.setValue(inputFecha.text, forKey: "ubicacion")
