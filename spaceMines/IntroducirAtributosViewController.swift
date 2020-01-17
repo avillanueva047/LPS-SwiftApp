@@ -70,7 +70,7 @@ class IntroducirAtributosViewController: UIViewController {
         exploracion.setValue(at45.text, forKey: "atributo45")
         exploracion.setValue(at49.text, forKey: "atributo49")
         exploracion.setValue(at52.text, forKey: "atributo52")
-       //Caracteristicas
+        //Caracteristicas
         exploracion.setValue(fecha, forKey: "fecha")
         exploracion.setValue(nombre, forKey: "nombre")
         exploracion.setValue(ubicacion, forKey: "ubicacion")
@@ -148,6 +148,14 @@ class IntroducirAtributosViewController: UIViewController {
             
             botonGuardar.isEnabled = true
             
+            #if spaceMines
+            
+            #else
+                let alert = UIAlertController(title: "Error en los datos", message: "Segun nuestro algoritmo, el objeto se trata de una" + decidirTipo(), preferredStyle: .alert)
+            
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            
+            #endif
         }
 
     }

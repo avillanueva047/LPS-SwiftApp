@@ -2587,7 +2587,7 @@
                 <exit id="K18-JA-0aK" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozw-9p-Hh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3947.826086956522" y="663.61607142857144"/>
+            <point key="canvasLocation" x="3948" y="664"/>
         </scene>
         <!--Nuevo Sonar-->
         <scene sceneID="Jbw-gt-sO8">
