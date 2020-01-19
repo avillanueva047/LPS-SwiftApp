@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imagenSonar: UIImageView!
     @IBOutlet weak var nombreSonar: UITextField!
@@ -21,9 +21,12 @@ class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         nombreSonar.becomeFirstResponder()
-        
+        nombreSonar.delegate = self
+        descSonar.delegate =  self
         self.imagenSonar.layer.cornerRadius = imagenSonar.bounds.size.width / 2.0
         self.imagenSonar.clipsToBounds = true
+        nombreSonar.useUnderline()
+        descSonar.useUnderline()
 
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
@@ -31,7 +34,17 @@ class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, U
         self.view.insertSubview(backgroundImage, at: 0)
         
         botonGuardar.isEnabled = false
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
     
     @IBAction func labelDescCambia(_ sender: UITextField) {
         botonGuardar.isEnabled = !(sender.text?.isEmpty)!
@@ -87,6 +100,20 @@ class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, U
             print("Error en el guardado de los atributos de un sonar . \(error)")
         }
         
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     /*
     // MARK: - Navigation
