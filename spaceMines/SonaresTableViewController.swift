@@ -13,13 +13,26 @@ class SonaresTableViewController: UITableViewController {
 
     var usuario: NSManagedObject!
     var sonar: NSManagedObject!
-    var sonares =  [NSManagedObject]()
+    var sonares =  [NSManagedObject](){
+        didSet{
+            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+            if sonares.count == 0 {
+                emptyLabel.text = "Sin Sonares por Mostrar"
+                emptyLabel.font = UIFont.boldSystemFont(ofSize: 18)
+                emptyLabel.textAlignment = NSTextAlignment.center
+                emptyLabel.textColor = .white
+                self.tableView.addSubview(emptyLabel)
+                self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+            }
+            else{
+                emptyLabel.isHidden = true
+            }
+        }
+    }
+    
+    
     private let appdelegate = UIApplication.shared.delegate as! AppDelegate
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    override func viewWillAppear(_ animated: Bool) {
-        cargarDatos()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,8 +90,28 @@ class SonaresTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-     
+        if editingStyle != .delete {return}
+        let alertController = UIAlertController (title: "Aviso", message: "¿Deseas eliminar el sonar \(sonares[indexPath.row].value(forKey: "nombre")!)?", preferredStyle: .alert)
+        //Botón eliminar
+        let deleteAction = UIAlertAction (title: "Eliminar", style: .destructive, handler: {(action) in tableView.deleteRows(at: [indexPath], with: .fade)
+        })
+        alertController.addAction(deleteAction)
+        //Botón cancelar
+        let cancelAction = UIAlertAction (title: "Cancelar", style: .default, handler: nil)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true, completion: nil)
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        do {
+            managedContext.delete(self.sonares[indexPath.row])
+            try managedContext.save()
+            self.sonares.remove(at: indexPath.row)
+            
+        } catch let error as NSError {
+            print("Could not delete. \(error), \(error.userInfo)")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){

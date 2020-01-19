@@ -140,7 +140,7 @@ class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
             let recordarContraseniaController = controller.topViewController as! RecordarContraseniaViewController
             recordarContraseniaController.usuarios = usuarios
         }
-        if (segue.identifier == "listaSonares"){
+        if (segue.identifier == "verListaSonares"){
             let controller = segue.destination as! UINavigationController
             let listaSonaresController = controller.topViewController as! SonaresTableViewController
             listaSonaresController.usuario = usuario

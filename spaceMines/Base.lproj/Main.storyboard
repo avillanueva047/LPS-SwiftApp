@@ -2315,7 +2315,6 @@
         <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qhz-lP-lBq"/>
-        <segue reference="ogU-R8-rva"/>
+        <segue reference="1Aa-EB-p5C"/>
     </inferredMetricsTieBreakers>
 </document>
