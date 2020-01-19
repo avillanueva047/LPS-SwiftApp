@@ -33,13 +33,15 @@ extension UITextField{
     }
 }
 
-class IniciarSesionViewController: UIViewController {
+class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
     
     var usuarios: [NSManagedObject] = []
     var usuario: Usuario!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        correoUsuario.delegate = self
+        contraseniaUsuarioTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         iniciarSesionBtn.layer.cornerRadius = 7
         cargarUsuarios()
@@ -62,6 +64,12 @@ class IniciarSesionViewController: UIViewController {
     
     @IBAction func iniciarSesion(_ sender: UIButton) {
         comprobarDatos()
+    }
+        
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
     }
     
     func comprobarDatos(){

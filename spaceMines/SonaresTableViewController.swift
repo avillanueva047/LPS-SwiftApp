@@ -26,7 +26,7 @@ class SonaresTableViewController: UITableViewController {
         
         tableView.backgroundColor = UIColor.clear
         tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
-        buttonMenu.image = usuario.value(forKey: "foto_perfil") as? UIImage 
+        //buttonMenu.image = usuario.value(forKey: "foto_perfil") as? UIImage 
         cargarDatos()
     }
     

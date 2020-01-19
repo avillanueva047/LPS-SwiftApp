@@ -9,13 +9,14 @@
 import UIKit
 import CoreData
 
-class RecordarContraseniaViewController: UIViewController {
+class RecordarContraseniaViewController: UIViewController, UITextFieldDelegate {
     
     var usuarios: [NSManagedObject]!
     var usuario: NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        introducirCorreoTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         recordarContraseniaBtn.layer.cornerRadius = 7
         introducirCorreoTxt.useUnderline()
@@ -33,6 +34,12 @@ class RecordarContraseniaViewController: UIViewController {
     
     @IBAction func recordarContrasenia(_ sender: UIButton) {
         return comprobarCorreo()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
     }
     
     func comprobarCorreo(){

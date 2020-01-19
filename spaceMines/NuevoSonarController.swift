@@ -44,8 +44,6 @@ class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, U
         return true
     }
     
-    
-    
     @IBAction func labelDescCambia(_ sender: UITextField) {
         botonGuardar.isEnabled = !(sender.text?.isEmpty)!
     }

@@ -9,15 +9,18 @@
 import UIKit
 import CoreData
 
-class RecuperarContraseniaViewController: UIViewController {
+class RecuperarContraseniaViewController: UIViewController, UITextFieldDelegate {
     
     var usuario: NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        comprobacionContraseniaTxt.delegate = self
+        nuevaContraseniaTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         comprobacionContraseniaTxt.useUnderline()
         nuevaContraseniaTxt.useUnderline()
+        recuperarContraseniaBtn.layer.cornerRadius = 7
         // Do any additional setup after loading the view.
     }
     
@@ -50,6 +53,12 @@ class RecuperarContraseniaViewController: UIViewController {
         else{
             errorDatosNoIntroducidos()
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
     }
     
     func errorDatosNoIntroducidos(){

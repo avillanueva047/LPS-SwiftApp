@@ -18,10 +18,14 @@ extension UIImageView {
     }
 }
 
-class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nombreUsuarioTxt.delegate = self
+        correoUsuarioTxt.delegate = self
+        contraseniaUsuarioTxt.delegate = self
+        repetirContraseniaTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         registrarUsuarioBtn.layer.cornerRadius = 7
         cargarFotoPerfil.setRounded()
@@ -29,6 +33,8 @@ class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerD
         correoUsuarioTxt.useUnderline()
         contraseniaUsuarioTxt.useUnderline()
         repetirContraseniaTxt.useUnderline()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
     }
     
@@ -109,6 +115,26 @@ class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerD
         picker.delegate = self
         picker.allowsEditing = true
         present(picker, animated: true, completion: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
