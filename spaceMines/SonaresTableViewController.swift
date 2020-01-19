@@ -26,10 +26,11 @@ class SonaresTableViewController: UITableViewController {
         
         tableView.backgroundColor = UIColor.clear
         tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
-        
+        buttonMenu.image = usuario.value(forKey: "foto_perfil") as? UIImage 
         cargarDatos()
     }
     
+    @IBOutlet weak var buttonMenu: UIBarButtonItem!
     
     override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return "Eliminar"

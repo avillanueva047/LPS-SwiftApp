@@ -75,6 +75,7 @@ class IniciarSesionViewController: UIViewController {
                     else{
                         errorContrasenia()
                     }
+                    break
                 }
             }
             errorUsuarioNoEncontrado()
@@ -130,6 +131,11 @@ class IniciarSesionViewController: UIViewController {
             let controller = segue.destination as! UINavigationController
             let recordarContraseniaController = controller.topViewController as! RecordarContraseniaViewController
             recordarContraseniaController.usuarios = usuarios
+        }
+        if (segue.identifier == "listaSonares"){
+            let controller = segue.destination as! UINavigationController
+            let listaSonaresController = controller.topViewController as! SonaresTableViewController
+            listaSonaresController.usuario = usuario
         }
     }
 

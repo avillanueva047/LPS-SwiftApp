@@ -68,13 +68,11 @@
 		29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F223C627B10040E926 /* NuevoSonarController.swift */; };
 		29C347F623C646D80040E926 /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F523C646D80040E926 /* ExploracionViewController.swift */; };
 		29C347F723C646D80040E926 /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F523C646D80040E926 /* ExploracionViewController.swift */; };
-		29D3664C23CF7BEB0035FFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		29D6A4B723CE20DC00903E69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B623CE20DC00903E69 /* MenuViewController.swift */; };
 		29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B623CE20DC00903E69 /* MenuViewController.swift */; };
 		29D6A4BA23CE211000903E69 /* MenuEnTransicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */; };
 		29D6A4BB23CE211000903E69 /* MenuEnTransicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B923CE211000903E69 /* MenuEnTransicion.swift */; };
 		29DA6F082396E0A20081E4F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F072396E0A20081E4F8 /* AppDelegate.swift */; };
-		29DA6F0D2396E0A20081E4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		29DA6F102396E0A20081E4F8 /* spaceMines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29DA6F0E2396E0A20081E4F8 /* spaceMines.xcdatamodeld */; };
 		29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F112396E0A30081E4F8 /* Assets.xcassets */; };
 		29DA6F152396E0A30081E4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F132396E0A30081E4F8 /* LaunchScreen.storyboard */; };
@@ -85,6 +83,8 @@
 		29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
 		29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
 		29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
+		632FA12723D4B41D005F39BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
+		632FA12823D4B440005F39BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		6374F92023D3C84A008B3DC6 /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374F91F23D3C84A008B3DC6 /* MiPerfilViewController.swift */; };
 		6374F92123D3C84A008B3DC6 /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374F91F23D3C84A008B3DC6 /* MiPerfilViewController.swift */; };
 		6374F92323D3CB2A008B3DC6 /* EditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374F92223D3CB2A008B3DC6 /* EditarPerfilViewController.swift */; };
@@ -406,11 +406,11 @@
 				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
 				2905B4E923D230C200FF9642 /* Microondas.png in Resources */,
 				290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */,
-				29D3664C23CF7BEB0035FFDA /* Main.storyboard in Resources */,
 				2905B4DC23D21FBD00FF9642 /* Vista_Y.png in Resources */,
 				2905B4E623D21FBD00FF9642 /* Vista_X.png in Resources */,
 				63997B8923CEB3D500C5EEFD /* default_image.png in Resources */,
 				2905B4DA23D21FBD00FF9642 /* Vista_protones.png in Resources */,
+				632FA12823D4B440005F39BC /* Main.storyboard in Resources */,
 				2905B4DE23D21FBD00FF9642 /* Vista_betha.png in Resources */,
 				290E4CAD23C4FA7D005D609B /* LaunchScreen.storyboard in Resources */,
 				2905B4D623D21FBD00FF9642 /* Vista_uv.png in Resources */,
@@ -431,6 +431,7 @@
 				2905B4DD23D21FBD00FF9642 /* Vista_betha.png in Resources */,
 				2905B4D523D21FBD00FF9642 /* Vista_uv.png in Resources */,
 				290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */,
+				632FA12723D4B41D005F39BC /* Main.storyboard in Resources */,
 				29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */,
 				2905B4E523D21FBD00FF9642 /* Vista_X.png in Resources */,
 				2905B4E123D21FBD00FF9642 /* Vista_alpha 2.png in Resources */,
@@ -451,7 +452,6 @@
 				290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */,
 				29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */,
 				29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */,
-				29DA6F0D2396E0A20081E4F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

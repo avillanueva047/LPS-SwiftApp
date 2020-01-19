@@ -13,6 +13,10 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        inputNombre.useUnderline()
+        inputUbicacion.useUnderline()
+        
         inputNombre.becomeFirstResponder()
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -27,6 +31,14 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         
         fecha.setValue(UIColor.white, forKeyPath: "textColor")
         
+        #if spaceMines
+        calcularObjetoBtn.isHidden = true
+        #endif
+        
+        #if spaceMines2
+        tipo.isHidden = true
+        #endif
+        
     }
     
     var sonar: NSManagedObject!
@@ -36,7 +48,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     @IBOutlet weak var fecha: UIDatePicker!
     @IBOutlet weak var tipo: UIPickerView!
     @IBOutlet weak var labelTipo: UILabel!
-
+    @IBOutlet weak var calcularObjetoBtn: UIButton!
     
     @IBOutlet weak var botonSiguiente: UIBarButtonItem!
     @IBOutlet weak var imagen: UIImageView!
