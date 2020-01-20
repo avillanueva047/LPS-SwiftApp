@@ -94,7 +94,7 @@ class ExplorarcionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        let alert = UIAlertController(title: "¡Atencion!", message: "Esta a punto de elimar un sonar y todas sus exploraciones, ¿esta seguro?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "¡Atencion!", message: "Esta a punto de elimar la exploración ", preferredStyle: .alert)
         
         let afirm = UIAlertAction(title: "Si", style: .destructive, handler: { action in
             let contexto = self.mngcontext
@@ -111,7 +111,7 @@ class ExplorarcionTableViewController: UITableViewController {
             
         })
         
-        let neg =  UIAlertAction(title: "Si", style: .destructive, handler:nil)
+        let neg =  UIAlertAction(title: "No", style: .cancel , handler:nil)
         
         alert.addAction(neg)
         alert.addAction(afirm)

@@ -43,6 +43,19 @@ class IntroducirAtributosViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
+        at4.useUnderline()
+        at11.useUnderline()
+        at17.useUnderline()
+        at21.useUnderline()
+        at36.useUnderline()
+        at44.useUnderline()
+        at36.useUnderline()
+        at44.useUnderline()
+        at45.useUnderline()
+        at49.useUnderline()
+        at52.useUnderline()
+        
+        
         botonGuardar.isEnabled = false
         // Do any additional setup after loading the view.
     }
@@ -153,7 +166,7 @@ class IntroducirAtributosViewController: UIViewController {
             #else
                 let alert2 = UIAlertController(title: "Objeto segun IA", message: "Segun nuestro algoritmo, el objeto se trata de una" + decidirTipo(), preferredStyle: .alert)
                 let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                alert.addAction(ok)
+                alert2.addAction(ok)
                 self.present(alert2, animated: true, completion: nil)
             #endif
         }
