@@ -40,6 +40,7 @@ class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        correoUsuario.becomeFirstResponder()
         correoUsuario.delegate = self
         contraseniaUsuarioTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
@@ -139,11 +140,6 @@ class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
             let controller = segue.destination as! UINavigationController
             let recordarContraseniaController = controller.topViewController as! RecordarContraseniaViewController
             recordarContraseniaController.usuarios = usuarios
-        }
-        if (segue.identifier == "verListaSonares"){
-            let controller = segue.destination as! UINavigationController
-            let listaSonaresController = controller.topViewController as! SonaresTableViewController
-            listaSonaresController.usuario = usuario
         }
     }
 

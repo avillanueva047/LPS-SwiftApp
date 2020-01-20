@@ -13,7 +13,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        inputNombre.becomeFirstResponder()
         inputNombre.useUnderline()
         inputUbicacion.useUnderline()
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))

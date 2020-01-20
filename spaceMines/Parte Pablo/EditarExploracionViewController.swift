@@ -64,7 +64,11 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
         
         exploracion.setValue(inputNombre.text, forKey: "nombre")
         exploracion.setValue(inputUbicacion.text, forKey: "ubicacion")
-        exploracion.setValue(elegirFecha.s.text, forKey: "fecha")
+        
+        let dateformater = DateFormatter()
+        dateformater.dateFormat = "MM/dd/yyyy"
+        exploracion.setValue(  dateformater.string(from: elegirFecha.date), forKey: "fecha")
+        
         exploracion.setValue(tipos, forKey: "tipo")
         exploracion.setValue(imagen.image?.pngData(), forKey: "imagen")
 

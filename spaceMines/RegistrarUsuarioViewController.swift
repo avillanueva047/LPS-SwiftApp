@@ -22,6 +22,7 @@ class RegistrarUsuarioViewController: UIViewController, UIImagePickerControllerD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nombreUsuarioTxt.becomeFirstResponder()
         nombreUsuarioTxt.delegate = self
         correoUsuarioTxt.delegate = self
         contraseniaUsuarioTxt.delegate = self

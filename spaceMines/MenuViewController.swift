@@ -8,30 +8,22 @@
 
 import UIKit
 
-enum MenuType: Int {
-    case img
-    case sonar
-    case perfil
-    case contacto
-    case cerrar
-}
-
 class MenuViewController: UITableViewController {
     
-    var didTapMenuType: ((MenuType) -> Void)?
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         
-        // Do any additional setup after loading the view.
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        guard let menuType = MenuType(rawValue: indexPath.row) else { return }
-        dismiss(animated: true) { [weak self] in
-            print("Dismissing: \(menuType)")
-            self?.didTapMenuType?(menuType)
+        switch indexPath.row {
+        case 0:
+            NotificationCenter.default.post(name: NSNotification.Name("VerImagen"), object: nil)
+        case 1:
+            NotificationCenter.default.post(name: NSNotification.Name("VerEditarPerfil"), object: nil)
+        case 2:
+            NotificationCenter.default.post(name: NSNotification.Name("VerContacto"), object: nil)
+        case 3:
+            NotificationCenter.default.post(name: NSNotification.Name("VerInicioSesion"), object: nil)
+        default: break
         }
     }
-    
 }
-

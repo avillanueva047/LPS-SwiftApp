@@ -15,6 +15,7 @@ class RecuperarContraseniaViewController: UIViewController, UITextFieldDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nuevaContraseniaTxt.becomeFirstResponder()
         comprobacionContraseniaTxt.delegate = self
         nuevaContraseniaTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))

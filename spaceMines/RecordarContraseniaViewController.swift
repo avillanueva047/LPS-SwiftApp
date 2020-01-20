@@ -16,6 +16,7 @@ class RecordarContraseniaViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        introducirCorreoTxt.becomeFirstResponder()
         introducirCorreoTxt.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         recordarContraseniaBtn.layer.cornerRadius = 7
