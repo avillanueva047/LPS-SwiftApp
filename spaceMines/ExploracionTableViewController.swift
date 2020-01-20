@@ -96,7 +96,7 @@ class ExplorarcionTableViewController: UITableViewController {
         
         let alert = UIAlertController(title: "¡Atencion!", message: "Esta a punto de elimar la exploración ", preferredStyle: .alert)
         
-        let afirm = UIAlertAction(title: "Si", style: .destructive, handler: { action in
+        let afirm = UIAlertAction(title: "Eliminar", style: .destructive, handler: { action in
             let contexto = self.mngcontext
             contexto.delete(self.exploraciones[indexPath.row] as NSManagedObject)
             
@@ -110,11 +110,12 @@ class ExplorarcionTableViewController: UITableViewController {
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             
         })
-        
-        let neg =  UIAlertAction(title: "No", style: .cancel , handler:nil)
-        
-        alert.addAction(neg)
         alert.addAction(afirm)
+        
+        let neg =  UIAlertAction(title: "Cancelar", style: .default , handler:nil)
+       
+        alert.addAction(neg)
+        
         self.present(alert, animated: true, completion: nil)
 
     }

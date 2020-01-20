@@ -27,10 +27,7 @@ class AtributoViewController: UIViewController {
         
         valores = cargarValores()
         
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         
         carrusel.type = .rotary
         carrusel.contentMode = .scaleToFill
@@ -73,11 +70,12 @@ extension AtributoViewController: iCarouselDataSource, iCarouselDelegate {
         tempeView.layer.cornerRadius = tempeView.bounds.size.width / 2.0
         tempeView.clipsToBounds = true
         
-        let label = UILabel(frame: CGRect(x: 100, y: 235, width: 200, height: 50))
+        let label = UILabel(frame: CGRect(x: 0, y: 235, width: 300, height: 50))
         
         label.textColor = .black
         label.font = UIFont(name: "System", size: 100)
-        label.text = "Valor = " + valores[index]
+        label.text = valores[index]
+        label.textAlignment = .center
 
         tempeView.addSubview(label)
         tempeView.image = imagenes[index]

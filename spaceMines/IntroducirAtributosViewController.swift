@@ -38,11 +38,9 @@ class IntroducirAtributosViewController: UIViewController {
         super.viewDidLoad()
         
         at4.becomeFirstResponder()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         
+        guardarDatosBtn.layer.cornerRadius = 7
         at4.useUnderline()
         at11.useUnderline()
         at17.useUnderline()
@@ -60,6 +58,8 @@ class IntroducirAtributosViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var cancelar: UINavigationItem!
+    
+    @IBOutlet weak var guardarDatosBtn: UIButton!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -92,12 +92,11 @@ class IntroducirAtributosViewController: UIViewController {
             exploracion.setValue(imagen?.pngData(), forKey: "imagen")
             exploracion.setValue(tipo, forKey: "tipo")
         #else
-        
             exploracion.setValue(decidirTipo(), forKey: "tipo")
             if decidirTipo() == "Mina" {
-                exploracion.setValue(UIImage(named: "minabien")?.pngData(), forKey: "imagen")
+                exploracion.setValue(UIImage(named: "minaBien")?.pngData(), forKey: "imagen")
             } else {
-                exploracion.setValue(UIImage(named: "rocabien")?.pngData(), forKey: "imagen")
+                exploracion.setValue(UIImage(named: "rocaBien")?.pngData(), forKey: "imagen")
             }
         #endif
         
@@ -164,7 +163,7 @@ class IntroducirAtributosViewController: UIViewController {
             #if spaceMines
             
             #else
-                let alert2 = UIAlertController(title: "Objeto segun IA", message: "Segun nuestro algoritmo, el objeto se trata de una" + decidirTipo(), preferredStyle: .alert)
+                let alert2 = UIAlertController(title: "Objeto segun IA", message: "Segun nuestro algoritmo, el objeto se trata de una " + decidirTipo(), preferredStyle: .alert)
                 let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 alert2.addAction(ok)
                 self.present(alert2, animated: true, completion: nil)
@@ -191,11 +190,6 @@ class IntroducirAtributosViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     fecha
-     nombre
-     tipo
-     ubicacion
-     imagen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

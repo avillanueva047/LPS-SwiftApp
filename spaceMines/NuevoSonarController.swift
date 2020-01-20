@@ -15,8 +15,6 @@ class NuevoSonarController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var nombreSonar: UITextField!
     @IBOutlet weak var descSonar: UITextField!
     @IBOutlet weak var botonGuardar: UIBarButtonItem!
-    
-    var usuario: NSManagedObject!
    
     override func viewDidLoad() {
         super.viewDidLoad()

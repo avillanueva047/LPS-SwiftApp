@@ -27,14 +27,13 @@ class ExploracionViewController: UIViewController {
         cargarDatos()
     }
     
+    @IBOutlet weak var verAtributosBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        verAtributosBtn.layer.cornerRadius = 7
         inputNombre.becomeFirstResponder()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         
         self.title = "Exploracion " + (exploracion.value(forKey: "nombre") as? String)!
         
@@ -44,6 +43,11 @@ class ExploracionViewController: UIViewController {
         inputObjeto.isUserInteractionEnabled = false
         inputFecha.isUserInteractionEnabled = false
         inputUbicacion.isUserInteractionEnabled = false
+        
+        inputObjeto.useUnderline()
+        inputNombre.useUnderline()
+        inputFecha.useUnderline()
+        inputUbicacion.useUnderline()
     }
 
     @IBAction func cancelar(_ sender: Any) {
@@ -83,7 +87,6 @@ class ExploracionViewController: UIViewController {
         }
         
         self.inputObjeto.text = exploracion.value(forKey: "tipo") as? String
-        
     }
     /*
     // MARK: - Navigation

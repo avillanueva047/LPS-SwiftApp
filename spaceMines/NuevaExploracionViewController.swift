@@ -29,6 +29,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         
         self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
         self.imagen.clipsToBounds = true
+        calcularObjetoBtn.layer.cornerRadius = 7
         
         fecha.setValue(UIColor.white, forKeyPath: "textColor")
         

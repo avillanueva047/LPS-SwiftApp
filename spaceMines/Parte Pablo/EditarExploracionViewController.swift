@@ -28,12 +28,7 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
        
         self.title = "Editar " + (exploracion.value(forKey: "nombre") as? String)!
         
-        
-        
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "Imagen fondo LPS.jpg")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
 
         botonGuardar.isEnabled = false
     }
@@ -76,12 +71,10 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
         }
         
         let mngcontext = appdelegate.persistentContainer.viewContext
-        let entidad = NSEntityDescription.entity(forEntityName: "Exploracion", in: mngcontext)!
-        exploracion = NSManagedObject(entity: entidad, insertInto: mngcontext)
         
         exploracion.setValue(inputNombre.text, forKey: "nombre")
-        exploracion.setValue(inputUbicacion.text, forKey: "fecha")
-        exploracion.setValue(inputFecha.text, forKey: "ubicacion")
+        exploracion.setValue(inputUbicacion.text, forKey: "ubicacion")
+        exploracion.setValue(inputFecha.text, forKey: "fecha")
         exploracion.setValue(labelTipo.text, forKey: "tipo")
         exploracion.setValue(imagen.image?.pngData(), forKey: "imagen")
 

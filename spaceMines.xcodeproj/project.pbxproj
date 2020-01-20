@@ -101,6 +101,7 @@
 		63997B7A23CE7B1700C5EEFD /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63997B7523CE654B00C5EEFD /* RegistrarUsuarioViewController.swift */; };
 		63997B8823CEB3D500C5EEFD /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 63997B8723CEB3D400C5EEFD /* default_image.png */; };
 		63997B8923CEB3D500C5EEFD /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 63997B8723CEB3D400C5EEFD /* default_image.png */; };
+		63C2E63C23D5CBEB007A183C /* foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BBC4E623D0AF3800DFF679 /* foto.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -409,6 +410,7 @@
 				2905B4DC23D21FBD00FF9642 /* Vista_Y.png in Resources */,
 				2905B4E623D21FBD00FF9642 /* Vista_X.png in Resources */,
 				63997B8923CEB3D500C5EEFD /* default_image.png in Resources */,
+				63C2E63C23D5CBEB007A183C /* foto.png in Resources */,
 				2905B4DA23D21FBD00FF9642 /* Vista_protones.png in Resources */,
 				632FA12823D4B440005F39BC /* Main.storyboard in Resources */,
 				2905B4DE23D21FBD00FF9642 /* Vista_betha.png in Resources */,
