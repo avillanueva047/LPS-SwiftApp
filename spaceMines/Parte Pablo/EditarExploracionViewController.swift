@@ -17,6 +17,7 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var elegirFecha: UIDatePicker!
     @IBOutlet weak var elegirTipo: UIPickerView!
+    @IBOutlet weak var labelTipo: UILabel!
     
     // var sonar: NSManagedObject!
     var exploracion: NSManagedObject!
@@ -31,7 +32,18 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
 
         botonGuardar.isEnabled = false
+        elegirFecha.setValue(UIColor.white, forKeyPath: "textColor")
+        
+        self.imagen.layer.cornerRadius = imagen.bounds.size.width / 2.0
+        self.imagen.clipsToBounds = true
+        
+        inputNombre.useUnderline()
+        inputUbicacion.useUnderline()
+        
+        
     }
+    
+    
     
     @IBAction func labelCambia(_ sender: UITextField) {
         botonGuardar.isEnabled = !((sender.text?.isEmpty)!)
@@ -40,6 +52,7 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return tipos.count
@@ -50,9 +63,25 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        tipo = tipos[row]
+        labelTipo.text = tipos[row]
         imagen.image =  UIImage(named: tipos[row].lowercased() + "Bien" )
     }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        var pickerLabel: UILabel? = (view as? UILabel)
+        
+        if pickerLabel == nil {
+            pickerLabel = UILabel()
+            pickerLabel?.font = UIFont(name: "Nombre fuente", size: 25)
+            pickerLabel?.textAlignment = .center
+        }
+        
+        pickerLabel?.text = tipos[row]
+        pickerLabel?.textColor = UIColor.white
+        
+        return pickerLabel!
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

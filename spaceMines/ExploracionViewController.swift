@@ -48,6 +48,12 @@ class ExploracionViewController: UIViewController {
         inputNombre.useUnderline()
         inputFecha.useUnderline()
         inputUbicacion.useUnderline()
+        
+        inputNombre.text = exploracion.value(forKey: "nombre") as? String
+        inputUbicacion.text = exploracion.value(forKey: "ubicacion") as? String
+        
+        self.imagenExploracion.layer.cornerRadius = imagenExploracion.bounds.size.width / 2.0
+        self.imagenExploracion.clipsToBounds = true
     }
 
     @IBAction func cancelar(_ sender: Any) {

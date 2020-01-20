@@ -74,6 +74,9 @@
 		29C347F423C627B10040E926 /* NuevoSonarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F223C627B10040E926 /* NuevoSonarController.swift */; };
 		29C347F623C646D80040E926 /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F523C646D80040E926 /* ExploracionViewController.swift */; };
 		29C347F723C646D80040E926 /* ExploracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C347F523C646D80040E926 /* ExploracionViewController.swift */; };
+		29CE9B4523D62692009DBF4B /* astronauta.png in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9B4423D62692009DBF4B /* astronauta.png */; };
+		29CE9B4923D62CAB009DBF4B /* fotoGrupal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9B4823D62CAB009DBF4B /* fotoGrupal.jpeg */; };
+		29CE9B4A23D62CAB009DBF4B /* fotoGrupal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9B4823D62CAB009DBF4B /* fotoGrupal.jpeg */; };
 		29D6A4B723CE20DC00903E69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B623CE20DC00903E69 /* MenuViewController.swift */; };
 		29D6A4B823CE20DC00903E69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B623CE20DC00903E69 /* MenuViewController.swift */; };
 		29D6A4BA23CE211000903E69 /* MenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6A4B923CE211000903E69 /* MenuContainerViewController.swift */; };
@@ -159,6 +162,8 @@
 		29C347EF23C6263B0040E926 /* ExploracionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionCell.swift; sourceTree = "<group>"; };
 		29C347F223C627B10040E926 /* NuevoSonarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoSonarController.swift; sourceTree = "<group>"; };
 		29C347F523C646D80040E926 /* ExploracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploracionViewController.swift; sourceTree = "<group>"; };
+		29CE9B4423D62692009DBF4B /* astronauta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronauta.png; sourceTree = "<group>"; };
+		29CE9B4823D62CAB009DBF4B /* fotoGrupal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fotoGrupal.jpeg; sourceTree = "<group>"; };
 		29D6A4B623CE20DC00903E69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		29D6A4B923CE211000903E69 /* MenuContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContainerViewController.swift; sourceTree = "<group>"; };
 		29DA6F042396E0A20081E4F8 /* spaceMines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spaceMines.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,9 +217,11 @@
 		290E4C7B23C4E483005D609B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				29CE9B4423D62692009DBF4B /* astronauta.png */,
 				2952D76C23D6113F008C7C52 /* logout.png */,
 				2952D76923D61124008C7C52 /* info.png */,
 				29BBC4E623D0AF3800DFF679 /* foto.png */,
+				29CE9B4823D62CAB009DBF4B /* fotoGrupal.jpeg */,
 				290E4C7D23C4E483005D609B /* LogoRedondoFINAL2.png */,
 				290E4C8023C4E483005D609B /* Imagen_fondo_LPS.jpg */,
 				63997B8723CEB3D400C5EEFD /* default_image.png */,
@@ -417,6 +424,7 @@
 				290E4CA923C4FA7D005D609B /* imagen_perfil.png in Resources */,
 				29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */,
 				290E4CAA23C4FA7D005D609B /* guardar.png in Resources */,
+				29CE9B4A23D62CAB009DBF4B /* fotoGrupal.jpeg in Resources */,
 				2905B4E923D230C200FF9642 /* Microondas.png in Resources */,
 				290E4CAB23C4FA7D005D609B /* Imagen_fondo_LPS.jpg in Resources */,
 				2905B4DC23D21FBD00FF9642 /* Vista_Y.png in Resources */,
@@ -451,6 +459,7 @@
 				29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */,
 				2905B4E523D21FBD00FF9642 /* Vista_X.png in Resources */,
 				2905B4E123D21FBD00FF9642 /* Vista_alpha 2.png in Resources */,
+				29CE9B4523D62692009DBF4B /* astronauta.png in Resources */,
 				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
 				2905B4D723D21FBD00FF9642 /* Vista_gamma.png in Resources */,
 				2905B4E823D230C200FF9642 /* Microondas.png in Resources */,
@@ -469,6 +478,7 @@
 				290E4C9023C4E483005D609B /* simbolo editar.png in Resources */,
 				290E4C8E23C4E483005D609B /* simbolo cancelar.png in Resources */,
 				29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */,
+				29CE9B4923D62CAB009DBF4B /* fotoGrupal.jpeg in Resources */,
 				29DA6F122396E0A30081E4F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

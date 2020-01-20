@@ -57,8 +57,6 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     
     let tipos = ["Mina", "Roca"]
     
-    
-    
     @IBAction func cancelar(_ sender: Any) {
         navigationController!.popViewController(animated: true)
     }

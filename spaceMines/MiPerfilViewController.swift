@@ -12,11 +12,21 @@ class MiPerfilViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
+        imagenPerfil.setRounded()
+        
+        nombreUsuario.useUnderline()
+        correoUsuario.useUnderline()
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var imagenPerfil: UIImageView!
+    
+    @IBOutlet weak var nombreUsuario: UITextField!
+    
+    @IBOutlet weak var correoUsuario: UITextField!
+    
     /*
     // MARK: - Navigation
 
