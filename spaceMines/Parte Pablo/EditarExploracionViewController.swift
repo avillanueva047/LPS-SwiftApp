@@ -20,7 +20,7 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     
     // var sonar: NSManagedObject!
     var exploracion: NSManagedObject!
-    
+    var tipo: String = ""
     let tipos = ["Mina", "Roca"]
     
     override func viewDidLoad() {
@@ -34,18 +34,9 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     }
     
     @IBAction func labelCambia(_ sender: UITextField) {
-        botonGuardar.isEnabled = !((sender.text?.isEmpty)! && (inputUbicacion.text?.isEmpty)! && (inputFecha.text?.isEmpty)!)
+        botonGuardar.isEnabled = !((sender.text?.isEmpty)!)
     }
-    
-    @IBAction func cambiaImagen(_ sender: Any) {
-        if labelTipo.text == "Mina" {
-            imagen.image = UIImage(named: "minaBien")
-        } else {
-            imagen.image = UIImage(named: "rocaBien")
-        }
-    }
-    
-    
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -59,9 +50,8 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        labelTipo.text = tipos[row]
+        tipo = tipos[row]
         imagen.image =  UIImage(named: tipos[row].lowercased() + "Bien" )
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -74,8 +64,8 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
         
         exploracion.setValue(inputNombre.text, forKey: "nombre")
         exploracion.setValue(inputUbicacion.text, forKey: "ubicacion")
-        exploracion.setValue(inputFecha.text, forKey: "fecha")
-        exploracion.setValue(labelTipo.text, forKey: "tipo")
+        exploracion.setValue(elegirFecha.s.text, forKey: "fecha")
+        exploracion.setValue(tipos, forKey: "tipo")
         exploracion.setValue(imagen.image?.pngData(), forKey: "imagen")
 
         do {

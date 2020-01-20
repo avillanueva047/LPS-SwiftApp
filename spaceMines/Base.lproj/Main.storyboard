@@ -1313,9 +1313,6 @@
                                 <rect key="frame" x="107" y="128" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="VSK-sP-wkP" appends="YES" id="X7I-ZY-IsL"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paW-Tn-xus">
                                 <rect key="frame" x="57" y="362" width="300" height="30"/>
@@ -1351,10 +1348,6 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWV-fg-58l">
                                 <rect key="frame" x="57" y="670" width="300" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Vu0-yF-tsY" id="ixz-T3-ulb"/>
-                                    <outlet property="delegate" destination="Vu0-yF-tsY" id="Zda-Q1-aDr"/>
-                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de objeto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXG-4v-Sp8">
                                 <rect key="frame" x="57" y="632" width="300" height="30"/>
@@ -1423,7 +1416,7 @@
                     <connections>
                         <outlet property="botonGuardar" destination="Bxk-L8-xho" id="OJB-zl-6k8"/>
                         <outlet property="elegirFecha" destination="LMm-cO-BQv" id="bfv-T9-gIb"/>
-                        <outlet property="elegirTipo" destination="KWV-fg-58l" id="62V-mS-2L6"/>
+                        <outlet property="elegirTipo" destination="KWV-fg-58l" id="q4q-Ez-r8M"/>
                         <outlet property="imagen" destination="Vi7-cB-IxT" id="Xq7-b0-FBo"/>
                         <outlet property="inputNombre" destination="61R-Tc-Ckg" id="ZOk-TT-PyP"/>
                         <outlet property="inputUbicacion" destination="MbD-85-KiC" id="YyM-An-nR4"/>
@@ -1431,11 +1424,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFS-6o-NvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EPJ-rR-Rtr" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="VSK-sP-wkP">
-                    <connections>
-                        <action selector="cambiaImagen:" destination="Vu0-yF-tsY" id="gTa-la-NEi"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2167" y="2137"/>
         </scene>
