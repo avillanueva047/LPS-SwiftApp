@@ -13,12 +13,12 @@ class EditarExploracionViewController: UIViewController,UIPickerViewDataSource, 
 
     @IBOutlet weak var inputNombre: UITextField!
     @IBOutlet weak var inputUbicacion: UITextField!
-    @IBOutlet weak var inputFecha: UITextField!
     @IBOutlet weak var botonGuardar: UIBarButtonItem!
     @IBOutlet weak var imagen: UIImageView!
-    @IBOutlet weak var labelTipo: UILabel!
+    @IBOutlet weak var elegirFecha: UIDatePicker!
+    @IBOutlet weak var elegirTipo: UIPickerView!
     
-   // var sonar: NSManagedObject!
+    // var sonar: NSManagedObject!
     var exploracion: NSManagedObject!
     
     let tipos = ["Mina", "Roca"]

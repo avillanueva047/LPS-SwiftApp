@@ -1367,6 +1367,7 @@
                                 <rect key="frame" x="57" y="544" width="300" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <date key="date" timeIntervalSinceReferenceDate="600352501.78550398">
                                     <!--2020-01-10 12:35:01 +0000-->
                                 </date>
@@ -1421,6 +1422,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="botonGuardar" destination="Bxk-L8-xho" id="OJB-zl-6k8"/>
+                        <outlet property="elegirFecha" destination="LMm-cO-BQv" id="bfv-T9-gIb"/>
+                        <outlet property="elegirTipo" destination="KWV-fg-58l" id="62V-mS-2L6"/>
                         <outlet property="imagen" destination="Vi7-cB-IxT" id="Xq7-b0-FBo"/>
                         <outlet property="inputNombre" destination="61R-Tc-Ckg" id="ZOk-TT-PyP"/>
                         <outlet property="inputUbicacion" destination="MbD-85-KiC" id="YyM-An-nR4"/>
