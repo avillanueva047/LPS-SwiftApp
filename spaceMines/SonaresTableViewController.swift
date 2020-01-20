@@ -19,13 +19,14 @@ class SonaresTableViewController: UITableViewController {
             if sonares.count == 0 {
                 emptyLabel.text = "Sin Sonares por Mostrar"
                 emptyLabel.font = UIFont.boldSystemFont(ofSize: 18)
+                emptyLabel.tag = 500
                 emptyLabel.textAlignment = NSTextAlignment.center
                 emptyLabel.textColor = .white
                 self.tableView.addSubview(emptyLabel)
-                self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
             }
             else{
-                emptyLabel.isHidden = true
+                let viewWithTag = self.view.viewWithTag(500)
+                viewWithTag?.removeFromSuperview()
             }
         }
     }
@@ -36,9 +37,8 @@ class SonaresTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.backgroundColor = UIColor.clear
-        tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "Imagen_fondo_LPS.jpg")!)
         //buttonMenu.image = usuario.value(forKey: "foto_perfil") as? UIImage 
         cargarDatos()
     }
@@ -93,25 +93,27 @@ class SonaresTableViewController: UITableViewController {
         if editingStyle != .delete {return}
         let alertController = UIAlertController (title: "Aviso", message: "¿Deseas eliminar el sonar \(sonares[indexPath.row].value(forKey: "nombre")!)?", preferredStyle: .alert)
         //Botón eliminar
-        let deleteAction = UIAlertAction (title: "Eliminar", style: .destructive, handler: {(action) in tableView.deleteRows(at: [indexPath], with: .fade)
+        let deleteAction = UIAlertAction (title: "Eliminar", style: .destructive, handler: {
+            (action) in
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            let managedContext = appDelegate.persistentContainer.viewContext
+            do {
+                managedContext.delete(self.sonares[indexPath.row])
+                self.sonares.remove(at: indexPath.row)
+                try managedContext.save()
+                self.tableView.reloadData()
+            } catch let error as NSError {
+                print("Could not delete. \(error), \(error.userInfo)")
+            }
         })
         alertController.addAction(deleteAction)
         //Botón cancelar
         let cancelAction = UIAlertAction (title: "Cancelar", style: .default, handler: nil)
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        do {
-            managedContext.delete(self.sonares[indexPath.row])
-            try managedContext.save()
-            self.sonares.remove(at: indexPath.row)
-            
-        } catch let error as NSError {
-            print("Could not delete. \(error), \(error.userInfo)")
-        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -125,6 +127,34 @@ class SonaresTableViewController: UITableViewController {
     
     @IBAction func ActualizarTabla (sender: UIStoryboardSegue){
         self.cargarDatos()
+    }
+    
+    @IBAction func addSonar(sender: UIStoryboardSegue){
+        
+        let nombre_sonar: String! = (sender.source as! NuevoSonarController).nombreSonar.text
+        let descripcion_sonar: String! = (sender.source as! NuevoSonarController).descSonar.text
+        let imagen_sonar: UIImage! = (sender.source as! NuevoSonarController).imagenSonar.image
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        
+        let mngcontext = appdelegate.persistentContainer.viewContext
+        
+        let entidad = NSEntityDescription.entity(forEntityName: "Sonar", in: mngcontext)!
+        
+        let sonar = NSManagedObject(entity: entidad, insertInto: mngcontext)
+        
+        sonar.setValue(nombre_sonar, forKey: "nombre")
+        sonar.setValue(descripcion_sonar, forKey: "descripcion")
+        sonar.setValue(imagen_sonar.pngData(), forKey: "imagen")
+        
+        do{
+            sonares.append(sonar)
+            try mngcontext.save()
+            self.tableView.reloadData()
+        } catch let error as NSError{
+            print("Error en el guardado de los atributos de un sonar . \(error)")
+        }
     }
     
     func cargarDatos(){

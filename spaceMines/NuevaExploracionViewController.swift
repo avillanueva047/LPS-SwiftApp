@@ -16,13 +16,14 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         
         inputNombre.useUnderline()
         inputUbicacion.useUnderline()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         inputNombre.becomeFirstResponder()
-        
+        /*
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Imagen_fondo_LPS.jpg")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+        */
         
         botonSiguiente.isEnabled = false
         

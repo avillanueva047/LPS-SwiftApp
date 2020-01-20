@@ -12,19 +12,31 @@ import CoreData
 class ExplorarcionTableViewController: UITableViewController {
   
     var sonar: NSManagedObject!
-    var exploraciones :[NSManagedObject] = []
+    var exploraciones :[NSManagedObject] = []{
+        didSet{
+            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+            if exploraciones.count == 0 {
+                emptyLabel.text = "Sin Exploraciones"
+                emptyLabel.font = UIFont.boldSystemFont(ofSize: 18)
+                emptyLabel.tag = 500
+                emptyLabel.textAlignment = NSTextAlignment.center
+                emptyLabel.textColor = .white
+                self.tableView.addSubview(emptyLabel)
+            }
+            else{
+                let viewWithTag = self.view.viewWithTag(500)
+                viewWithTag?.removeFromSuperview()
+            }
+        }
+    }
     
     private let appdelegate = UIApplication.shared.delegate as! AppDelegate
     private let mngcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
-    
-    override func viewWillAppear(_ animated: Bool) {
-        cargarDatos()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundView = UIImageView(image: UIImage(named: "Imagen_fondo_LPS.jpg"))
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "Imagen_fondo_LPS.jpg")!)
        cargarDatos()
     }
     
