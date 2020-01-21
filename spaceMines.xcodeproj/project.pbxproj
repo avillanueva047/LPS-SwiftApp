@@ -92,7 +92,6 @@
 		29E5F50E23CCB2FF0022F553 /* rocaBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50A23CCB2FF0022F553 /* rocaBien.png */; };
 		29E5F51023CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
 		29E5F51123CCBEFB0022F553 /* sonarBien.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E5F50F23CCBEF90022F553 /* sonarBien.png */; };
-		632FA12723D4B41D005F39BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		632FA12823D4B440005F39BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 		6374F92023D3C84A008B3DC6 /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374F91F23D3C84A008B3DC6 /* MiPerfilViewController.swift */; };
 		6374F92123D3C84A008B3DC6 /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374F91F23D3C84A008B3DC6 /* MiPerfilViewController.swift */; };
@@ -111,6 +110,7 @@
 		63997B8823CEB3D500C5EEFD /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 63997B8723CEB3D400C5EEFD /* default_image.png */; };
 		63997B8923CEB3D500C5EEFD /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 63997B8723CEB3D400C5EEFD /* default_image.png */; };
 		63C2E63C23D5CBEB007A183C /* foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BBC4E623D0AF3800DFF679 /* foto.png */; };
+		63C2E64223D78F5A007A183C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DA6F0B2396E0A20081E4F8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -455,11 +455,11 @@
 				2905B4DD23D21FBD00FF9642 /* Vista_betha.png in Resources */,
 				2905B4D523D21FBD00FF9642 /* Vista_uv.png in Resources */,
 				290E4C8C23C4E483005D609B /* aniadir_imagen.png in Resources */,
-				632FA12723D4B41D005F39BC /* Main.storyboard in Resources */,
 				29E5F50B23CCB2FF0022F553 /* minaBien.png in Resources */,
 				2905B4E523D21FBD00FF9642 /* Vista_X.png in Resources */,
 				2905B4E123D21FBD00FF9642 /* Vista_alpha 2.png in Resources */,
 				29CE9B4523D62692009DBF4B /* astronauta.png in Resources */,
+				63C2E64223D78F5A007A183C /* Main.storyboard in Resources */,
 				290E4C8F23C4E483005D609B /* imagen_perfil.png in Resources */,
 				2905B4D723D21FBD00FF9642 /* Vista_gamma.png in Resources */,
 				2905B4E823D230C200FF9642 /* Microondas.png in Resources */,

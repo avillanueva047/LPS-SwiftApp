@@ -1,0 +1,375 @@
+
+/* Class = "UINavigationItem"; title = "Mi perfil"; ObjectID = "1G6-Ff-v3A"; */
+"1G6-Ff-v3A.title" = "Mi perfil";
+
+/* Class = "UITableViewController"; title = "Lista Sonares"; ObjectID = "1Lg-nC-2iO"; */
+"1Lg-nC-2iO.title" = "Lista Sonares";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "1eR-oR-Uvv"; */
+"1eR-oR-Uvv.text" = "Nombre";
+
+/* Class = "UITextField"; text = "pablodaniel@email.com"; ObjectID = "2a1-Mf-QTS"; */
+"2a1-Mf-QTS.text" = "pablodaniel@email.com";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "2eH-CA-ZCW"; */
+"2eH-CA-ZCW.title" = "Cancelar";
+
+/* Class = "UITextField"; placeholder = "Introduce el nombre del Sonar"; ObjectID = "31E-M0-jwE"; */
+"31E-M0-jwE.placeholder" = "Introduce el nombre del Sonar";
+
+/* Class = "UILabel"; text = "Direccion"; ObjectID = "3du-Id-oCY"; */
+"3du-Id-oCY.text" = "Direccion";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "4Tf-N3-P03"; */
+"4Tf-N3-P03.title" = "Cancel";
+
+/* Class = "UINavigationItem"; title = "Lista Sonares"; ObjectID = "4V2-A6-HEq"; */
+"4V2-A6-HEq.title" = "Lista Sonares";
+
+/* Class = "UITextField"; placeholder = "Repite tu Contraseña"; ObjectID = "4bs-Aj-ohN"; */
+"4bs-Aj-ohN.placeholder" = "Repite tu Contraseña";
+
+/* Class = "UIBarButtonItem"; title = "Editar"; ObjectID = "4os-Q4-763"; */
+"4os-Q4-763.title" = "Editar";
+
+/* Class = "UIBarButtonItem"; title = "Añadir"; ObjectID = "55T-N9-JMv"; */
+"55T-N9-JMv.title" = "Añadir";
+
+/* Class = "UILabel"; text = "Rayos Alpha"; ObjectID = "5Ir-rj-RtV"; */
+"5Ir-rj-RtV.text" = "Rayos Alpha";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "6Nw-59-8s9"; */
+"6Nw-59-8s9.title" = "Atrás";
+
+/* Class = "UINavigationItem"; title = "Lista Exploraciones"; ObjectID = "6Ty-VW-rhA"; */
+"6Ty-VW-rhA.title" = "Lista Exploraciones";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "6tn-kb-bOc"; */
+"6tn-kb-bOc.text" = "Descripción";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "7O5-7v-tlh"; */
+"7O5-7v-tlh.placeholder" = "0.0";
+
+/* Class = "UIBarButtonItem"; title = "Guardar"; ObjectID = "8Pb-JW-Fbz"; */
+"8Pb-JW-Fbz.title" = "Guardar";
+
+/* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "8iI-jd-KFz"; */
+"8iI-jd-KFz.placeholder" = "Contraseña";
+
+/* Class = "UILabel"; text = "Mina"; ObjectID = "8nx-vf-dYY"; */
+"8nx-vf-dYY.text" = "Mina";
+
+/* Class = "UITextField"; placeholder = "Introduce un Correo Electrónico"; ObjectID = "9N1-f7-BYO"; */
+"9N1-f7-BYO.placeholder" = "Introduce un Correo Electrónico";
+
+/* Class = "UILabel"; text = "Tipo de objeto:"; ObjectID = "9gJ-Mv-iCy"; */
+"9gJ-Mv-iCy.text" = "Tipo de objeto:";
+
+/* Class = "UIButton"; normalTitle = "Iniciar Sesión"; ObjectID = "9wu-oc-YGx"; */
+"9wu-oc-YGx.normalTitle" = "Iniciar Sesión";
+
+/* Class = "UILabel"; text = "Rayos Gamma"; ObjectID = "BEj-qF-w6L"; */
+"BEj-qF-w6L.text" = "Rayos Gamma";
+
+/* Class = "UIBarButtonItem"; title = "Guardar"; ObjectID = "Bxk-L8-xho"; */
+"Bxk-L8-xho.title" = "Guardar";
+
+/* Class = "UILabel"; text = "Introduce el correo electrónico asociado a tu cuenta."; ObjectID = "CXj-jX-paN"; */
+"CXj-jX-paN.text" = "Introduce el correo electrónico asociado a tu cuenta.";
+
+/* Class = "UILabel"; text = "Ubicación"; ObjectID = "Cih-Ui-Quf"; */
+"Cih-Ui-Quf.text" = "Ubicación";
+
+/* Class = "UILabel"; text = "Nombre Exploracion"; ObjectID = "CrI-GX-eOl"; */
+"CrI-GX-eOl.text" = "Nombre Exploracion";
+
+/* Class = "UITextField"; placeholder = "Introduce tu correo electrónico"; ObjectID = "D79-Ni-cp1"; */
+"D79-Ni-cp1.placeholder" = "Introduce tu correo electrónico";
+
+/* Class = "UILabel"; text = "Ultravioletas"; ObjectID = "ESH-3x-7Uv"; */
+"ESH-3x-7Uv.text" = "Ultravioletas";
+
+/* Class = "UILabel"; text = "Rayos Y"; ObjectID = "EfN-Vy-q2m"; */
+"EfN-Vy-q2m.text" = "Rayos Y";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "EhZ-kK-xyd"; */
+"EhZ-kK-xyd.text" = "Nombre";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "Ey0-SG-9AM"; */
+"Ey0-SG-9AM.title" = "Cancelar";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "G5O-Fz-Flf"; */
+"G5O-Fz-Flf.title" = "Cancelar";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "Ga3-hc-1ce"; */
+"Ga3-hc-1ce.placeholder" = "0.0";
+
+/* Class = "UILabel"; text = "Microondas"; ObjectID = "IXt-OX-6qu"; */
+"IXt-OX-6qu.text" = "Microondas";
+
+/* Class = "UIBarButtonItem"; title = "Guardar"; ObjectID = "IyU-w2-oRJ"; */
+"IyU-w2-oRJ.title" = "Guardar";
+
+/* Class = "UITextField"; placeholder = "Introduce tu Contraseña"; ObjectID = "J8w-w0-hnV"; */
+"J8w-w0-hnV.placeholder" = "Introduce tu Contraseña";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "JA0-Dm-58g"; */
+"JA0-Dm-58g.placeholder" = "0.0";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "Jpq-Uc-IWk"; */
+"Jpq-Uc-IWk.placeholder" = "0.0";
+
+/* Class = "UILabel"; text = "Tipo"; ObjectID = "JxC-PE-ffc"; */
+"JxC-PE-ffc.text" = "Tipo";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "MCD-Xv-eAZ"; */
+"MCD-Xv-eAZ.title" = "Atrás";
+
+/* Class = "UILabel"; text = "Rayos X"; ObjectID = "Mq3-65-HLj"; */
+"Mq3-65-HLj.text" = "Rayos X";
+
+/* Class = "UINavigationItem"; title = "Nuevo Sonar"; ObjectID = "Mrq-SU-zHU"; */
+"Mrq-SU-zHU.title" = "Nuevo Sonar";
+
+/* Class = "UINavigationItem"; title = "Atributos"; ObjectID = "MtL-BE-5Sr"; */
+"MtL-BE-5Sr.title" = "Atributos";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NM6-hq-Ofi"; */
+"NM6-hq-Ofi.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Recuperar"; ObjectID = "Noc-AH-rKP"; */
+"Noc-AH-rKP.title" = "Recuperar";
+
+/* Class = "UILabel"; text = "Electrones"; ObjectID = "OBv-2C-ybH"; */
+"OBv-2C-ybH.text" = "Electrones";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "OFd-n1-gii"; */
+"OFd-n1-gii.title" = "Cancelar";
+
+/* Class = "UILabel"; text = "Tipo de objeto:"; ObjectID = "PXG-4v-Sp8"; */
+"PXG-4v-Sp8.text" = "Tipo de objeto:";
+
+/* Class = "UILabel"; text = "Ubicación"; ObjectID = "Qm5-3m-UPy"; */
+"Qm5-3m-UPy.text" = "Ubicación";
+
+/* Class = "UILabel"; text = "Nombre Usuario"; ObjectID = "RSe-VI-HAd"; */
+"RSe-VI-HAd.text" = "Nombre Usuario";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "RVv-bI-fRV"; */
+"RVv-bI-fRV.text" = "Fecha";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "RjQ-2i-AKF"; */
+"RjQ-2i-AKF.title" = "Cancelar";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "Rwu-Fv-IRH"; */
+"Rwu-Fv-IRH.title" = "Cancelar";
+
+/* Class = "UILabel"; text = "Al registrarte aceptas nuestras condiciones de política de datos"; ObjectID = "S9l-Da-VNG"; */
+"S9l-Da-VNG.text" = "Al registrarte aceptas nuestras condiciones de política de datos";
+
+/* Class = "UILabel"; text = "Correo Electrónico"; ObjectID = "Se7-B9-iNC"; */
+"Se7-B9-iNC.text" = "Correo Electrónico";
+
+/* Class = "UILabel"; text = "Contraseña nueva"; ObjectID = "T3H-yo-AYo"; */
+"T3H-yo-AYo.text" = "Contraseña nueva";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "TF7-8N-7zp"; */
+"TF7-8N-7zp.text" = "Nombre";
+
+/* Class = "UIBarButtonItem"; title = "Comprobar"; ObjectID = "Tbq-ne-dfQ"; */
+"Tbq-ne-dfQ.title" = "Comprobar";
+
+/* Class = "UITextField"; text = "Pablo Daniel"; ObjectID = "Tyu-sh-Hzt"; */
+"Tyu-sh-Hzt.text" = "Pablo Daniel";
+
+/* Class = "UITextField"; placeholder = "Introduce el nombre de la exploración"; ObjectID = "Ugg-5G-vI7"; */
+"Ugg-5G-vI7.placeholder" = "Introduce el nombre de la exploración";
+
+/* Class = "UINavigationItem"; title = "Nueva Exploración"; ObjectID = "V4W-Uu-CbW"; */
+"V4W-Uu-CbW.title" = "Nueva Exploración";
+
+/* Class = "UINavigationItem"; title = "Iniciar sesión"; ObjectID = "VBb-bv-7dj"; */
+"VBb-bv-7dj.title" = "Iniciar sesión";
+
+/* Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "W8k-vo-yQF"; */
+"W8k-vo-yQF.normalTitle" = "Registrarse";
+
+/* Class = "UITextField"; placeholder = "Introduce una Contraseña Segura"; ObjectID = "Woi-YH-MyI"; */
+"Woi-YH-MyI.placeholder" = "Introduce una Contraseña Segura";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "XJd-IP-IGC"; */
+"XJd-IP-IGC.title" = "Atrás";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "XR9-Xl-2S8"; */
+"XR9-Xl-2S8.title" = "Atrás";
+
+/* Class = "UILabel"; text = "Telefono Contacto"; ObjectID = "YY5-sa-8Xy"; */
+"YY5-sa-8Xy.text" = "Telefono Contacto";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "Z8O-du-a6Z"; */
+"Z8O-du-a6Z.text" = "Fecha";
+
+/* Class = "UILabel"; text = "¿Has Olvidado tus datos de Inicio de Sesión?"; ObjectID = "akA-uZ-sUP"; */
+"akA-uZ-sUP.text" = "¿Has Olvidado tus datos de Inicio de Sesión?";
+
+/* Class = "UITextField"; text = "Equipo 04"; ObjectID = "bHf-oT-Ijz"; */
+"bHf-oT-Ijz.text" = "Equipo 04";
+
+/* Class = "UILabel"; text = "Nombre Equipo"; ObjectID = "bdZ-GR-vnR"; */
+"bdZ-GR-vnR.text" = "Nombre Equipo";
+
+/* Class = "UINavigationItem"; title = "Recuperar Contraseña"; ObjectID = "cHK-w8-528"; */
+"cHK-w8-528.title" = "Recuperar Contraseña";
+
+/* Class = "UINavigationItem"; title = "Recordar Contraseña"; ObjectID = "cOf-TC-zQE"; */
+"cOf-TC-zQE.title" = "Recordar Contraseña";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "cdP-lY-VH2"; */
+"cdP-lY-VH2.title" = "Atrás";
+
+/* Class = "UIButton"; normalTitle = "Recuperar Contraseña"; ObjectID = "dSi-0E-Fch"; */
+"dSi-0E-Fch.normalTitle" = "Recuperar Contraseña";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "djw-JE-BJV"; */
+"djw-JE-BJV.text" = "Fecha";
+
+/* Class = "UITextField"; placeholder = "Introduce la ubicación"; ObjectID = "fKA-iT-ZBY"; */
+"fKA-iT-ZBY.placeholder" = "Introduce la ubicación";
+
+/* Class = "UILabel"; text = "Introduce tu nueva contraseña. Asegúrate que ambos campos coincidan"; ObjectID = "fXQ-b9-0mL"; */
+"fXQ-b9-0mL.text" = "Introduce tu nueva contraseña. Asegúrate que ambos campos coincidan";
+
+/* Class = "UINavigationItem"; title = "Editar perfil"; ObjectID = "fcA-Jv-YFq"; */
+"fcA-Jv-YFq.title" = "Editar perfil";
+
+/* Class = "UINavigationItem"; title = "Valores Atributos"; ObjectID = "fhj-do-f9Y"; */
+"fhj-do-f9Y.title" = "Valores Atributos";
+
+/* Class = "UITextField"; text = "+34695345987"; ObjectID = "geT-Y2-Fug"; */
+"geT-Y2-Fug.text" = "+34695345987";
+
+/* Class = "UILabel"; text = "Rayos Betha"; ObjectID = "h2L-jd-Qde"; */
+"h2L-jd-Qde.text" = "Rayos Betha";
+
+/* Class = "UIButton"; normalTitle = "Iniciar sesion"; ObjectID = "hT1-uf-etB"; */
+"hT1-uf-etB.normalTitle" = "Iniciar sesion";
+
+/* Class = "UILabel"; text = "Muones"; ObjectID = "hVB-6l-2Dx"; */
+"hVB-6l-2Dx.text" = "Muones";
+
+/* Class = "UILabel"; text = "Contraseña antigua"; ObjectID = "iLW-kL-Pte"; */
+"iLW-kL-Pte.text" = "Contraseña antigua";
+
+/* Class = "UIBarButtonItem"; title = "Siguiente"; ObjectID = "iQq-6L-0fc"; */
+"iQq-6L-0fc.title" = "Siguiente";
+
+/* Class = "UILabel"; text = "Cerrar Sesión"; ObjectID = "iZm-7E-76P"; */
+"iZm-7E-76P.text" = "Cerrar Sesión";
+
+/* Class = "UILabel"; text = "Mina"; ObjectID = "izD-Gd-jOn"; */
+"izD-Gd-jOn.text" = "Mina";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "kBo-Hy-EVh"; */
+"kBo-Hy-EVh.title" = "Add";
+
+/* Class = "UIBarButtonItem"; title = "Añadir"; ObjectID = "mkZ-oc-0oD"; */
+"mkZ-oc-0oD.title" = "Añadir";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nZg-S8-nua"; */
+"nZg-S8-nua.text" = "Label";
+
+/* Class = "UILabel"; text = "Contacto"; ObjectID = "nno-HB-G7a"; */
+"nno-HB-G7a.text" = "Contacto";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "oUG-K9-g71"; */
+"oUG-K9-g71.placeholder" = "0.0";
+
+/* Class = "UIBarButtonItem"; title = "Paneles"; ObjectID = "olG-Ju-km9"; */
+"olG-Ju-km9.title" = "Paneles";
+
+/* Class = "UITextField"; placeholder = "Introduce tu Nombre "; ObjectID = "p0x-wv-pyW"; */
+"p0x-wv-pyW.placeholder" = "Introduce tu Nombre ";
+
+/* Class = "UIButton"; normalTitle = "Guardar datos"; ObjectID = "p1A-xi-Kr2"; */
+"p1A-xi-Kr2.normalTitle" = "Guardar datos";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "p3T-7W-ai5"; */
+"p3T-7W-ai5.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Cada valor debe estar comprendido entre 0.0 y 1.0. Si no se introduce ningún valor en el atributo, se fijara a 0.0"; ObjectID = "p7S-KQ-PYc"; */
+"p7S-KQ-PYc.text" = "Cada valor debe estar comprendido entre 0.0 y 1.0. Si no se introduce ningún valor en el atributo, se fijara a 0.0";
+
+/* Class = "UINavigationItem"; title = "Nuevo usuario"; ObjectID = "pBJ-Zg-7P0"; */
+"pBJ-Zg-7P0.title" = "Nuevo usuario";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "paW-Tn-xus"; */
+"paW-Tn-xus.text" = "Nombre";
+
+/* Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "qYO-nY-o4z"; */
+"qYO-nY-o4z.normalTitle" = "Registrarse";
+
+/* Class = "UIViewController"; title = "PantallaInicio"; ObjectID = "rGz-HF-5wN"; */
+"rGz-HF-5wN.title" = "PantallaInicio";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rJV-jN-eon"; */
+"rJV-jN-eon.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "ref-6w-krh"; */
+"ref-6w-krh.placeholder" = "0.0";
+
+/* Class = "UITextField"; placeholder = "Repetir Contraseña"; ObjectID = "ruc-mG-qTR"; */
+"ruc-mG-qTR.placeholder" = "Repetir Contraseña";
+
+/* Class = "UILabel"; text = "Nombre sonar"; ObjectID = "sTW-n2-Enn"; */
+"sTW-n2-Enn.text" = "Nombre sonar";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "sV8-yK-DWh"; */
+"sV8-yK-DWh.placeholder" = "0.0";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "tcv-Hx-iuC"; */
+"tcv-Hx-iuC.placeholder" = "0.0";
+
+/* Class = "UILabel"; text = "Ubicación"; ObjectID = "tsv-NK-4EJ"; */
+"tsv-NK-4EJ.text" = "Ubicación";
+
+/* Class = "UIButton"; normalTitle = "Pulsa Aquí"; ObjectID = "uD6-2V-tsa"; */
+"uD6-2V-tsa.normalTitle" = "Pulsa Aquí";
+
+/* Class = "UITextField"; text = "Calle Sacramento Nº 12"; ObjectID = "uQ8-5d-mqa"; */
+"uQ8-5d-mqa.text" = "Calle Sacramento Nº 12";
+
+/* Class = "UILabel"; text = "Mi Perfil\t"; ObjectID = "unc-hv-wCj"; */
+"unc-hv-wCj.text" = "Mi Perfil\t";
+
+/* Class = "UIButton"; normalTitle = "Calcular Objeto"; ObjectID = "uoi-a5-p7E"; */
+"uoi-a5-p7E.normalTitle" = "Calcular Objeto";
+
+/* Class = "UIButton"; normalTitle = "Comprobar Correo"; ObjectID = "urT-Ro-1Q0"; */
+"urT-Ro-1Q0.normalTitle" = "Comprobar Correo";
+
+/* Class = "UILabel"; text = "Introduce el valor de cada atributo"; ObjectID = "vaq-BJ-YNK"; */
+"vaq-BJ-YNK.text" = "Introduce el valor de cada atributo";
+
+/* Class = "UITextField"; placeholder = "Introduce tu Correo Electrónico"; ObjectID = "viA-oY-5XF"; */
+"viA-oY-5XF.placeholder" = "Introduce tu Correo Electrónico";
+
+/* Class = "UITextField"; placeholder = "0.0"; ObjectID = "wCe-8F-aRf"; */
+"wCe-8F-aRf.placeholder" = "0.0";
+
+/* Class = "UIBarButtonItem"; title = "Cancelar"; ObjectID = "wiF-fo-Usj"; */
+"wiF-fo-Usj.title" = "Cancelar";
+
+/* Class = "UIBarButtonItem"; title = "Nuevo Sonar"; ObjectID = "xCS-El-Afc"; */
+"xCS-El-Afc.title" = "Nuevo Sonar";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "yRv-br-8XY"; */
+"yRv-br-8XY.title" = "Atrás";
+
+/* Class = "UIButton"; normalTitle = "Ver Atributos"; ObjectID = "zFY-6P-pJT"; */
+"zFY-6P-pJT.normalTitle" = "Ver Atributos";
+
+/* Class = "UITextField"; placeholder = "Introduce una pequeña descripción"; ObjectID = "zKP-Ko-aoI"; */
+"zKP-Ko-aoI.placeholder" = "Introduce una pequeña descripción";
+
+/* Class = "UIBarButtonItem"; title = "Editar"; ObjectID = "zOx-Go-1JW"; */
+"zOx-Go-1JW.title" = "Editar";
