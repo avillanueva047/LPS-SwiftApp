@@ -12,11 +12,15 @@ class EditarPerfilViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var nombreUsuarioTxt: UITextField!
+    
+    @IBOutlet weak var contraseniaUsuario: UITextField!
+    
+    @IBOutlet weak var confirmarContraseniaUsuario: UITextField!
     /*
     // MARK: - Navigation
 

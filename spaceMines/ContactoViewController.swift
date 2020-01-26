@@ -14,9 +14,6 @@ class ContactoViewController: UIViewController {
         super.viewDidLoad()
         self.imagenPerfil.setRounded()
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
-        nombreEquipoTxt.useUnderline()
-        telefonoContactoTxt.useUnderline()
-        direccionContactoTxt.useUnderline()
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var imagenPerfil: UIImageView!

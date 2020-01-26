@@ -14,10 +14,6 @@ class MiPerfilViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         imagenPerfil.setRounded()
-        
-        nombreUsuario.useUnderline()
-        correoUsuario.useUnderline()
-        
         // Do any additional setup after loading the view.
     }
     

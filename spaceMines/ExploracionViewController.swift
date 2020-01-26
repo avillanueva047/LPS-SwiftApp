@@ -44,11 +44,6 @@ class ExploracionViewController: UIViewController {
         inputFecha.isUserInteractionEnabled = false
         inputUbicacion.isUserInteractionEnabled = false
         
-        inputObjeto.useUnderline()
-        inputNombre.useUnderline()
-        inputFecha.useUnderline()
-        inputUbicacion.useUnderline()
-        
         inputNombre.text = exploracion.value(forKey: "nombre") as? String
         inputUbicacion.text = exploracion.value(forKey: "ubicacion") as? String
         
