@@ -58,6 +58,7 @@ class SonaresTableViewController: UITableViewController {
     
     @objc func verEditarPerfil() {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "VerEditarPerfil") as! MiPerfilViewController
+        controller.usuario = usuario
         self.navigationController?.pushViewController(controller, animated: true)
         //performSegue(withIdentifier: "ShowSettings", sender: nil)
     }

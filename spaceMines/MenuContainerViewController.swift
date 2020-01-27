@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class MenuContainerViewController: UIViewController {
+    
+    var usuario : NSManagedObject!
     
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     var sideMenuOpen = false
@@ -35,4 +38,13 @@ class MenuContainerViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if (segue.identifier == "verListaSonaresSegue"){
+            let controller = segue.destination as! UINavigationController
+            let sonaresTableViewController = controller.topViewController as! SonaresTableViewController
+            sonaresTableViewController.usuario = usuario
+        }
+    }
 }

@@ -36,6 +36,7 @@ extension UITextField{
 class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
     
     var usuarios: [NSManagedObject] = []
+    var usuario_NS: NSManagedObject!
     var usuario: Usuario!
 
     override func viewDidLoad() {
@@ -77,6 +78,7 @@ class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
         if(correoUsuario.hasText && contraseniaUsuarioTxt.hasText){
             for user in usuarios{
                 if (user.value(forKey: "correo_electronico") as? String == correoUsuario.text){
+                    usuario_NS = user
                     usuario = user as? Usuario
                     if(usuario.contrasenia == contraseniaUsuarioTxt.text){
                         self.performSegue(withIdentifier: "verListaSonares", sender: self)
@@ -141,6 +143,9 @@ class IniciarSesionViewController: UIViewController, UITextFieldDelegate{
             let recordarContraseniaController = controller.topViewController as! RecordarContraseniaViewController
             recordarContraseniaController.usuarios = usuarios
         }
+        if (segue.identifier == "verListaSonares" ){
+            let controller = segue.destination as! MenuContainerViewController
+            controller.usuario = usuario_NS
+        }
     }
-
 }

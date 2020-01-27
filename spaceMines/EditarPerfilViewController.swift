@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class EditarPerfilViewController: UIViewController {
+class EditarPerfilViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    var usuario: Usuario!
+    var usuario: NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,9 @@ class EditarPerfilViewController: UIViewController {
         nombreUsuarioTxt.useUnderline()
         contraseniaUsuario.useUnderline()
         confirmarContraseniaUsuario.useUnderline()
+        cargarFotoPerfil.setRounded()
+        cargarFotoPerfil.image = UIImage(data: (usuario.value(forKey: "foto_perfil") as! NSData) as Data)
+        nombreUsuarioTxt.text = usuario.value(forKey: "nombre_usuario") as? String
         // Do any additional setup after loading the view.
     }
     
@@ -30,7 +33,25 @@ class EditarPerfilViewController: UIViewController {
     
     @IBOutlet weak var guardarEditarPerfil: UIBarButtonItem!
     
+    @IBOutlet weak var cargarFotoPerfil: UIImageView!
+    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func seleccionarImagen(_ sender: UITapGestureRecognizer) {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)}
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+        cargarFotoPerfil.image = info[.originalImage] as?UIImage
         dismiss(animated: true, completion: nil)
     }
     
@@ -50,7 +71,13 @@ class EditarPerfilViewController: UIViewController {
     
     func  contraseniasIntroducidas() -> Bool {
         if(contraseniaUsuario.hasText && confirmarContraseniaUsuario.hasText){
-            return true
+            if(contraseniaUsuario.text == confirmarContraseniaUsuario.text){
+                    return true
+            }
+            else{
+                errorConfirmacionContrasenia()
+                return false
+            }
         }
         return false
     }
@@ -65,14 +92,21 @@ class EditarPerfilViewController: UIViewController {
                 return
             }
             let managedContext = appDelegate.persistentContainer.viewContext
-            let entity = NSEntityDescription.entity(forEntityName: "Usuario", in: managedContext)!
-            
+            let imageData = cargarFotoPerfil.image?.jpegData(compressionQuality: 1.0)
+            usuario.setValue(imageData, forKey: "foto_perfil")
             if(nombreIntroducido()){
-                
+                usuario.setValue(nombreUsuarioTxt.text, forKey: "nombre_usuario")
             }
             if(contraseniasIntroducidas()){
-                
+                usuario.setValue(contraseniaUsuario.text, forKey: "contrasenia")
             }
+            do{
+                try managedContext.save()
+            }
+            catch let error as NSError{
+                print("No se ha podido Guardar el Usuario.\(error), \(error.userInfo)")
+            }
+            self.performSegue(withIdentifier: "verPerfilEditado", sender: self)
         }
         else{
             errorDatosNoIntroducidos()
