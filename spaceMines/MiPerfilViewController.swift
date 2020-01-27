@@ -42,5 +42,9 @@ class MiPerfilViewController: UIViewController {
             let editarPerfilViewController = controller.topViewController as! EditarPerfilViewController
             editarPerfilViewController.usuario = usuario
         }
+        if (segue.identifier == "verSonares"){
+            let controller = segue.destination as! MenuContainerViewController
+            controller.usuario = usuario
+        }
     }
 }

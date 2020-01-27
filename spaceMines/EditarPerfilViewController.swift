@@ -102,11 +102,13 @@ class EditarPerfilViewController: UIViewController, UIImagePickerControllerDeleg
             }
             do{
                 try managedContext.save()
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: "VerEditarPerfil") as! MiPerfilViewController
+                controller.usuario = usuario
+                self.navigationController?.pushViewController(controller, animated: true)
             }
             catch let error as NSError{
                 print("No se ha podido Guardar el Usuario.\(error), \(error.userInfo)")
             }
-            self.performSegue(withIdentifier: "verPerfilEditado", sender: self)
         }
         else{
             errorDatosNoIntroducidos()
