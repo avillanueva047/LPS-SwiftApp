@@ -9,13 +9,15 @@
 import UIKit
 import CoreData
 
-class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate , UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
         inputNombre.becomeFirstResponder()
         inputNombre.useUnderline()
         inputUbicacion.useUnderline()
+        inputNombre.delegate = self
+        inputUbicacion.delegate = self
         self.view.backgroundColor = UIColor(patternImage: UIImage(imageLiteralResourceName: "Imagen_fondo_LPS.jpg"))
         inputNombre.becomeFirstResponder()
         /*
@@ -99,7 +101,11 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         return pickerLabel!
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
+    }
     
     /*@IBAction func cambiarImagen(_ sender: Any) {
         if labelTipo.text == "Mina" {

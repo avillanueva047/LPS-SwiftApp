@@ -9,18 +9,76 @@
 import UIKit
 import CoreData
 
-class IntroducirAtributosViewController: UIViewController {
+extension UITextField {
+    func addDoneCancelToolbar(onDone: (target: Any, action: Selector)? = nil, onCancel: (target: Any, action: Selector)? = nil) {
+        let onCancel = onCancel ?? (target: self, action: #selector(cancelButtonTapped))
+        let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
+        
+        let toolbar: UIToolbar = UIToolbar()
+        toolbar.barStyle = .default
+        toolbar.items = [
+            UIBarButtonItem(title: "Cancel", style: .plain, target: onCancel.target, action: onCancel.action),
+            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
+            UIBarButtonItem(title: "Done", style: .done, target: onDone.target, action: onDone.action)
+        ]
+        toolbar.sizeToFit()
+        
+        self.inputAccessoryView = toolbar
+    }
+    
+    // Default actions:
+    @objc func doneButtonTapped() { self.resignFirstResponder() }
+    @objc func cancelButtonTapped() { self.resignFirstResponder() }
+}
+
+class IntroducirAtributosViewController: UIViewController, UITextFieldDelegate {
 
     //Atributos de cada exploracion
-    @IBOutlet weak var at4: UITextField!
-    @IBOutlet weak var at11: UITextField!
-    @IBOutlet weak var at17: UITextField!
-    @IBOutlet weak var at21: UITextField!
-    @IBOutlet weak var at36: UITextField!
-    @IBOutlet weak var at44: UITextField!
-    @IBOutlet weak var at45: UITextField!
-    @IBOutlet weak var at49: UITextField!
-    @IBOutlet weak var at52: UITextField!
+    @IBOutlet weak var at4: UITextField!{
+        didSet {
+            at4.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at11: UITextField!{
+        didSet {
+            at11.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at17: UITextField!{
+        didSet {
+            at17.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at21: UITextField!{
+        didSet {
+            at21.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at36: UITextField!{
+        didSet {
+            at36.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at44: UITextField!{
+        didSet {
+            at44.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at45: UITextField!{
+        didSet {
+            at45.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at49: UITextField!{
+        didSet {
+            at49.addDoneCancelToolbar()
+        }
+    }
+    @IBOutlet weak var at52: UITextField!{
+        didSet {
+            at52.addDoneCancelToolbar()
+        }
+    }
     @IBOutlet weak var botonGuardar: UIBarButtonItem!
     
     //Valores que se nos dan en el segue de la vista anterior
@@ -47,15 +105,24 @@ class IntroducirAtributosViewController: UIViewController {
         at21.useUnderline()
         at36.useUnderline()
         at44.useUnderline()
-        at36.useUnderline()
-        at44.useUnderline()
         at45.useUnderline()
         at49.useUnderline()
         at52.useUnderline()
         
+        at4.delegate = self
+        at11.delegate = self
+        at17.delegate = self
+        at21.delegate = self
+        at36.delegate = self
+        at44.delegate = self
+        at45.delegate = self
+        at49.delegate = self
+        at52.delegate = self
         
         botonGuardar.isEnabled = false
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     @IBOutlet weak var cancelar: UINavigationItem!
     
@@ -109,9 +176,30 @@ class IntroducirAtributosViewController: UIViewController {
         print("Se ha producido un error en el guardado de exploracion .\(error)")
         }
     }
+    
     @IBAction func cancelar(_ sender: Any) {
         navigationController!.popViewController(animated: true)
 
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide Keyboard
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func validarDatlos(_ sender: Any) {
