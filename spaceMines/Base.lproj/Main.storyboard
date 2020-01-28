@@ -496,7 +496,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Atrás" id="cdP-lY-VH2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="OgQ-4a-RNN" kind="showDetail" id="gb8-dh-Bbr"/>
+                                <segue destination="OgQ-4a-RNN" kind="showDetail" identifier="verSonares" id="gb8-dh-Bbr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1371,7 +1371,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoi-a5-p7E">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoi-a5-p7E">
                                 <rect key="frame" x="57" y="597" width="300" height="40"/>
                                 <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1381,6 +1381,9 @@
                                 <state key="normal" title="Calcular Objeto">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="obH-Ln-5Q4" kind="show" identifier="introducirAtributos" id="3ab-uU-2m9"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gFX-vb-hIq">
                                 <rect key="frame" x="57" y="440" width="300" height="80"/>
@@ -2137,7 +2140,7 @@
                                 <rect key="frame" x="57" y="623" width="300" height="34"/>
                                 <color key="backgroundColor" red="0.090047203004360199" green="0.43264055252075195" blue="0.43753528594970703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Guardar datos">
+                                <state key="normal" title="Validar datos">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2337,7 +2340,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cada valor debe estar comprendido entre 0.0 y 1.0. Si no se introduce ningún valor en el atributo, se fijara a 0.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7S-KQ-PYc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cada valor debe estar comprendido entre 0.0 y 1.0." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7S-KQ-PYc">
                                 <rect key="frame" x="57" y="156" width="296" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="GaC-1x-Yrq"/>
@@ -5778,7 +5781,8 @@ YgACjWoAAo1tAAKNfwACjYIAAo2HAAAAAAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAACjYk
         <image name="sonarBien.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8yv-ez-xWl"/>
+        <segue reference="gb8-dh-Bbr"/>
+        <segue reference="kry-1G-0Eg"/>
         <segue reference="1Aa-EB-p5C"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class ContactoViewController: UIViewController {
+    
+    var usuario : NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,13 @@ class ContactoViewController: UIViewController {
     @IBOutlet weak var telefonoContactoTxt: UITextField!
     
     @IBOutlet weak var direccionContactoTxt: UITextField!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "verSonares"){
+            let controller = segue.destination as! MenuContainerViewController
+            controller.usuario = usuario
+        }
+    }
     /*
     // MARK: - Navigation
 

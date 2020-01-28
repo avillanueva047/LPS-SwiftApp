@@ -65,6 +65,7 @@ class SonaresTableViewController: UITableViewController {
     
     @objc func verContacto() {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "VerContacto") as! ContactoViewController
+        controller.usuario = usuario
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

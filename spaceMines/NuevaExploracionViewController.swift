@@ -40,6 +40,7 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
         #endif
         
         #if spaceMines2
+        labelTipo.isHidden = true
         tipo.isHidden = true
         #endif
         
@@ -64,7 +65,14 @@ class NuevaExploracionViewController: UIViewController,UIPickerViewDataSource, U
     }
     
     @IBAction func labelCambia(_ sender: UITextField) {
+        #if spaceMines
         botonSiguiente.isEnabled = !(sender.text?.isEmpty)!
+        #endif
+        
+        #if spaceMines2
+        self.navigationItem.setRightBarButton(nil, animated: false)
+        calcularObjetoBtn.isEnabled = !(sender.text?.isEmpty)!
+        #endif
     }
   
 
